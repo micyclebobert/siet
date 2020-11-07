@@ -1,0 +1,2595 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>CoD Mobile | Database</title>
+    <meta name="title" content="CoD Mobile | Database">
+    <meta name="description" content="CoD Mobile actual weapon data. Efficiently designed Season 11 Gunsmithing software with brilliant and exotic features. First and Fastest of it's kind.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codmdatabase.ml/">
+    <meta property="og:title" content="CoD Mobile | Database">
+    <meta property="og:description" content="CoD Mobile actual weapon data. Efficiently designed Season 11 Gunsmithing software with brilliant and exotic features. First and Fastest of it's kind.">
+    <meta property="og:image" content="https://codmdatabase.ml/Display.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codmdatabase.ml/">
+    <meta property="twitter:title" content="CoD Mobile | Database">
+    <meta property="twitter:description" content="CoD Mobile actual weapon data. Efficiently designed Season 11 Gunsmithing software with brilliant and exotic features. First and Fastest of it's kind.">
+    <meta property="twitter:image" content="https://codmdatabase.ml/Display.png">
+
+    <meta name="KeyWords" content="CoD Mobile, Damage, Ads time, Movement Speed, Call of Duty Mobile, Database, Season 11 Gunsmithing, Time to kill, Shots to kill, Damage Range, Type 25, AK117, M16, KN44, AK47, ASM10, M4, BK57, LK24, ICR-1, MAN-O-WAR, HBRa3, DR-H, Rus79U, Chicom, PDW57, Razorback, MSMC, HG40, Pharo, GKS, Corodite, QQ9, DLQ33, Arctic .50, XPR 50, Locus, Outlaw, M21 EBR, Kilo Bolt Action Rifle, BY15, HS2126, HS0405, KRM262, Striker, MW11, J358, Assault Rifle, Sub-Machine Guns, Sniper Rifle, Shotgun, Marksman Rifle, Pistols, Sniper, AR, SMG, Operator Skills, MP, BR">
+<!--
+    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+        server: '768807986339512350', // CoD Mobile Database
+        channel: '768808479619809280' // #questions
+      })
+    </script>-->
+
+    <link rel="icon" type="image/png" sizes="16×16" href="Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      @media screen and (max-width : 704px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .header-right {
+          float: none;
+        }
+      }
+
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+
+      .slider:hover {
+        opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #00BCFF;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        overflow: hidden;
+        background-color: #00D3FF;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      @media screen and (max-width : 704px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .header-right {
+          float: none;
+        }
+      }
+
+      .page-header {
+        background: #00A2FF;
+        background: -moz-linear-gradient(top, #00a3ef 0%, #0b4182 100%);
+        background: -webkit-linear-gradient(top, #00a3ef 0%, #0b4182 100%);
+        background: linear-gradient(to bottom, #00a3ef 0%, #0b4182 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A2FF', endColorstr='#0b4182', GradientType=0);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+
+      .left {
+        width: 150px;
+      }
+
+      .left1 {
+        width: 200px;
+      }
+
+      .right {}
+
+      .pa {
+        width: 25%;
+      }
+
+      .pb {
+        width: 75%;
+        max-height: 600px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .header {
+        text-align: center;
+        padding: 1px;
+      }
+
+      /* Create two equal columns that floats next to each other */
+
+      .column img {
+        margin-top: 1px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .top-left {
+        position: absolute;
+
+        top: 11%;
+        color: Black;
+      }
+
+      .bottom-left {
+        position: absolute;
+        left: 10%;
+        top: 91%;
+        color: Black;
+      }
+
+      .iii {
+        left: 10%;
+      }
+
+      .top-center {
+        position: absolute;
+        top: 5%;
+        right: 50%;
+        color: Black;
+      }
+
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+      .dropbtn {
+        background-color: #00BCFF;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #808080;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #00A2FF;
+      }
+
+      .btn {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Blue */
+      .info {
+        border-color: #2196F3;
+        color: dodgerblue;
+      }
+
+      .info:hover {
+        background: #2196F3;
+        color: white;
+      }
+
+    </style>
+  </head>
+
+  <body onResize="myResize()">
+    <div class="header">
+      <div class="page-header">
+        <a href="index.html" class="logo">CoDM Database</a>
+        <div class="header-right">
+          <a class="active">Stats</a>
+          <a href="MP/index.html">MP</a>
+          <a href="BR/index.html">BR</a>
+          <a href="Stuff/index.html">Stuff</a>
+          <a href="Contact/index.html">Contact</a>
+          <a href="About/index.html">About</a>
+        </div>
+      </div>
+    </div>
+    <h2 style="padding-left:20px">Select distance</h2>
+    <p style="padding-left:25px">Drag the slider to change the enemy distance</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <h2 style="padding-left:20px">Chose the weapon</h2>
+    <p id="d" style="padding-left:25px">Click on the weapon type and select from the dropdown list.</p>
+    <p> </p>
+    <p id="de"> </p>
+    <p id="ye">&nbsp;</p>
+    <div style="padding-left:30px;">
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">ARs</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=1;mode=1;myType25();">Type 25</a>
+          <a href="javascript:type=1;mode=1;myType25SP();">Type 25 SP</a>
+          <a href="javascript:type=1;mode=1;myAK117();">AK117</a>
+          <a href="javascript:type=1;mode=1;myM16();">M16</a>
+          <a href="javascript:type=1;mode=1;myKN44();">KN44</a>
+          <a href="javascript:type=1;mode=1;myAK47();">AK47</a>
+          <a href="javascript:type=1;mode=1;myAK47La();">AK47 Large</a>
+          <a href="javascript:type=1;mode=1;myASM10();">ASM10</a>
+          <a href="javascript:type=1;mode=1;myM4();">M4</a>
+          <a href="javascript:type=1;mode=1;myBK57();">BK57</a>
+          <a href="javascript:type=1;mode=1;myBK57La();">BK57 Large</a>
+          <a href="javascript:type=1;mode=1;myLK24();">LK24</a>
+          <a href="javascript:type=1;mode=1;myICR1();">ICR-1</a>
+          <a href="javascript:type=1;mode=1;myManowar();">MAN-O-WAR</a>
+          <a href="javascript:type=1;mode=1;myHBRa3();">HBRa3</a>
+          <a href="javascript:type=1;mode=1;myHVK30();">HVK30</a>
+          <a href="javascript:type=1;mode=1;myDRH();">DR-H</a>
+          <a href="javascript:type=1;mode=1;myDRHOTM();">DR-H OTM</a>
+        </div>
+      </div>
+
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">SMGs</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=2;mode=1;mode=1;myRus79U();">Rus79U</a>
+          <a href="javascript:type=2;mode=1;myChicom();">Chicom</a>
+          <a href="javascript:type=2;mode=1;myPDW57();">PDW57</a>
+          <a href="javascript:type=2;mode=1;myRazorback();">Razorback</a>
+          <a href="javascript:type=2;mode=1;myMSMC();">MSMC</a>
+          <a href="javascript:type=2;mode=1;myHG40();">HG40</a>
+          <a href="javascript:type=2;mode=1;myPharo();">Pharo</a>
+          <a href="javascript:type=2;mode=1;myGKS();">GKS</a>
+          <a href="javascript:type=2;mode=1;myCorodite();">Corodite</a>
+          <a href="javascript:type=2;mode=1;myQQ9();">QQ9</a>
+          <a href="javascript:type=2;mode=1;myQQ910mm();">QQ9 10mm</a>
+          <a href="javascript:type=2;mode=1;myFennec();">Fennec</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">Snipers</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=3;mode=1;myDLQ33();">DLQ33</a>
+          <a href="javascript:type=3;mode=1;myArctic50();">Arctic .50</a>
+          <a href="javascript:type=3;mode=1;myArctic50SP();">Arctic .50 SP</a>
+          <a href="javascript:type=3;mode=1;myXPR50();">XPR 50</a>
+          <a href="javascript:type=3;mode=1;myXPR50SP();">XPR 50 SP</a>
+          <a href="javascript:type=3;mode=1;myLocus();">Locus</a>
+          <a href="javascript:type=3;mode=1;myLocusSP();">Locus SP</a>
+          <a href="javascript:type=3;mode=1;myOutlaw();">Outlaw</a>
+          <a href="javascript:type=3;mode=1;myM21EBR();">M21 EBR</a>
+          <a href="javascript:type=3;mode=1;myNA45();">NA45</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">LMGs</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=4;mode=1;myM4LMG();">M4LMG</a>
+          <a href="javascript:type=4;mode=1;myRPD();">RPD</a>
+          <a href="javascript:type=4;mode=1;myChopper();">Chopper</a>
+          <a href="javascript:type=4;mode=1;myUL736();">UL736</a>
+          <a href="javascript:type=4;mode=1;myS36();">S36</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">Marksman Rifle</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=5;mode=1;myKar98();">Kilo/Kar98</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">Shotguns</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=7;mode=1;myBY15();">BY15</a>
+          <a href="javascript:type=7;mode=1;myHS2126();">HS2126</a>
+          <a href="javascript:type=7;mode=1;myHS0405();">HS0405</a>
+          <a href="javascript:type=7;mode=1;myKRM262();">KRM262</a>
+          <a href="javascript:type=7;mode=1;myStriker();">Striker</a>
+          <a href="javascript:type=7;mode=1;myEcho();">Echo</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:15px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">Pistols</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=6;mode=1;myMW11();">MW11</a>
+          <a href="javascript:type=6;mode=1;myJ358();">J358</a>
+          <a href="javascript:type=6;mode=1;myJ358SP();">J358 SP</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p>&nbsp;</p>
+    <div class="slidecontainer" style="padding-left:20px;padding-right:20px;display: none;" id="sn">
+      <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+      <p style="padding-left:13px">Distance: <span id="demo"></span>m</p>
+    </div>
+    <div class="slidecontainer" style="padding-left:20px;padding-right:20px;" id="s100">
+      <input type="range" min="1" max="100" value="1" class="slider" id="myRange1">
+      <p style="padding-left:13px">Distance: <span id="demo1"></span>m</p>
+    </div>
+
+    <div class="row">
+      <div id="parta">
+        <div style="padding-left:35px;">
+        </div>
+        <div style="padding-left:35px;">
+          <div>
+            <div>
+              <nobr><input type="checkbox" id="Check1" value="Value2" onclick="selectOnlyThis(this.id)" checked /><span id="dmg"> Damage</span></nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="Check2" value="Value2" onclick="selectOnlyThis(this.id)" /><span id="ttk"> Time to Kill</span></nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="Check3" value="Value2" onclick="selectOnlyThis(this.id)" /> Shots to Kill</nobr>
+            </div>
+            <div id="ptk" style="display: none;">
+              <nobr><input type="checkbox" id="Check4" value="Value2" onclick="selectOnlyThis(this.id)" /> Pellets to Kill</nobr>
+            </div>
+          </div>
+          <p></p>
+          <div style="padding-left:15px;padding-top:15px;">
+            <div>
+              <nobr><input type="checkbox" id="Wbv0" value="1" onclick="selectOnlyThis5(this.id);document.getElementById('Wb').style.display = 'none';" checked /> No Wall/Corner Bang</nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="Wbv1" value="1" onclick="selectOnlyThis5(this.id);document.getElementById('Wb').style.display = 'block';" /> Wall/Corner Bang without FMJ</nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="Wbv2" value="1" onclick="selectOnlyThis5(this.id);document.getElementById('Wb').style.display = 'block';" /> Wall/Corner Bang with FMJ</nobr>
+            </div>
+              <p></p>
+              <div style="padding-left:15px;padding-top:15px;display: none;" id="Wb">
+                <div>
+                  <nobr><input type="checkbox" id="Wb0" value="1" onclick="selectOnlyThis6(this.id);" checked />Thin</nobr>
+                </div>
+                <div>
+                  <nobr><input type="checkbox" id="Wb1" value="1" onclick="selectOnlyThis6(this.id);" /> Medium</nobr>
+                </div>
+                <div>
+                  <nobr><input type="checkbox" id="Wb2" value="1" onclick="selectOnlyThis6(this.id);" /> Thick</nobr>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <p>&nbsp;</p>
+        <div style="padding-left:35px;">
+          <div>
+            <nobr><input type="checkbox" id="MpBr1" value="Value3" onclick="selectOnlyThis1(this.id)" checked /> MP&nbsp; &nbsp; &nbsp;&nbsp;</nobr>
+            <nobr><input type="checkbox" id="MpBr2" value="Value3" onclick="selectOnlyThis1(this.id)" /> BR</nobr>
+          </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <div style="padding-left:45px;" id="mpmode">
+          <div>
+            <nobr><input type="checkbox" id="MpHp1" value="100" onclick="hp = 100;selectOnlyThis2(this.id);" checked /> 100</nobr>
+          </div>
+          <div>
+            <nobr><input type="checkbox" id="MpHp2" value="30" onclick="hp = 30;selectOnlyThis2(this.id);" /> 30</nobr>
+          </div>
+          <div>
+            <nobr><input type="checkbox" id="MpHp3" value="Value4" onclick="hp = document.getElementById('myRange2').value;selectOnlyThis2(this.id);" /> Select HP</nobr>
+          </div>
+        </div>
+
+
+
+        <div style="padding-left:35px;display: none;" class="row" id="brmode">
+          <span class="column left">
+            <div>
+              <nobr><input type="checkbox" id="BrHp1" value="100" onclick="hp = 100;selectOnlyThis3(this.id);" checked /> 100</nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="BrHp2" value="150" onclick="hp = 150;selectOnlyThis3(this.id);" /> 150</nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="BrHp3" value="Value1" onclick="hp = document.getElementById('myRange2').value;selectOnlyThis3(this.id);" /> Select HP</nobr>
+            </div>
+          </span>
+          <p></p>
+          <span class="column right">
+            <div>
+              <nobr><input type="checkbox" id="Vest0" value="1" onclick="Vest = 1;Helmet = 1;selectOnlyThis4(this.id);" checked /> No Vest</nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="Vest1" value="1.25" onclick="Vest = 0.75;Helmet = 1;selectOnlyThis4(this.id);" /> Vest Level 1</nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="Vest2" value="1.35" onclick="Vest = 0.65;Helmet = 1;selectOnlyThis4(this.id);" /> Vest Level 2</nobr>
+            </div>
+            <div>
+              <nobr><input type="checkbox" id="Vest3" value="1.45" onclick="Vest = 0.55;Helmet = 0.55;selectOnlyThis4(this.id);" /> Vest Level 3</nobr>
+            </div>
+          </span>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <!--<div class="slidecontainer" style="padding-left:20px;padding-right:20px;display: none;" id="HPBar">
+  <input type="range" min="1" max="100" value="100" class="slider" id="myRange2">
+  <p style="padding-left:13px">HP: <span id="demo2">100</span></p>
+</div>
+	-->
+        <div class="slidecontainer" style="padding-left:20px;padding-right:20px;display: none;" id="HPBar">
+          <input type="range" min="1" max="100" value="100" class="slider" id="myRange2">
+          <p style="padding-left:13px">HP: <span id="demo2"></span></p>
+        </div>
+        <div style="padding-left:25px">
+
+          <button onclick="myGunsmith()" class="btn info">Gunsmith</button>
+        </div>
+      </div>
+      <div id="partb">
+        <div id="kkk" class="row">
+          <div class="container">
+            <img src="H.png" id="Himg" style="width:50%" alt="Head" />
+            <div id="Head" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="AC.png" id="ACimg" style="width:50%" alt="Arms and Chest" />
+            <div id="Arms" class="top-left iii">00</div>
+            <div id="Chest" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="S.png" id="Simg" style="width:50%" alt="Stomach" />
+            <div id="Stomach" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="L.png" id="Limg" style="width:50%" alt="Legs" />
+            <div id="Legs" class="top-center">00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="padding-left: 10px;">This text will turn red after new update arrives or the site has not been updated in 15 days. Currently optimised for Season-11</p>
+
+    <script>
+      function myResize() {
+        var w = window.innerWidth;
+        if (w >= 725) {
+          document.getElementById("parta").classList.add("column");
+          document.getElementById("parta").classList.add("pa");
+          document.getElementById("partb").classList.add("column");
+          document.getElementById("partb").classList.add("pb");
+          //document.getElementById("Arms").style.left = ((((document.getElementById("partb").clientWidth - document.getElementById("ACimg").clientWidth) / 2) - 18) + document.getElementById("parta").clientWidth) + "px";
+
+            document.getElementById("Himg").style.width = "237px";
+            document.getElementById("ACimg").style.width = "237px";
+            document.getElementById("Simg").style.width = "237px";
+            document.getElementById("Limg").style.width = "237px";
+          document.getElementById("Arms").style.left = (((document.getElementById("partb").clientWidth - document.getElementById("ACimg").clientWidth) / 2) - 18) + "px";
+        } else {
+          document.getElementById("Arms").style.left = "10%";
+          document.getElementById("parta").classList.remove("column");
+          document.getElementById("parta").classList.remove("pa");
+          document.getElementById("partb").classList.remove("column");
+          document.getElementById("partb").classList.remove("pb");
+          document.getElementById("Himg").style.width = "85%";
+          document.getElementById("ACimg").style.width = "85%";
+          document.getElementById("Simg").style.width = "85%";
+          document.getElementById("Limg").style.width = "85%";
+          if (w >= 450) {
+            document.getElementById("Himg").style.width = "75%";
+            document.getElementById("ACimg").style.width = "75%";
+            document.getElementById("Simg").style.width = "75%";
+            document.getElementById("Limg").style.width = "75%";
+            if (w >= 650) {
+              document.getElementById("Himg").style.width = "65%";
+              document.getElementById("ACimg").style.width = "65%";
+              document.getElementById("Simg").style.width = "65%";
+              document.getElementById("Limg").style.width = "65%";
+              document.getElementById("Arms").style.left = (((document.getElementById("partb").clientWidth - document.getElementById("ACimg").clientWidth) / 2) - 18) + "px";
+            }
+            document.getElementById("Arms").style.left = (((document.getElementById("partb").clientWidth - document.getElementById("ACimg").clientWidth) / 2) - 18) + "px";
+          }
+        }
+      }
+      //
+
+      //var gun = 1;
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = 6;
+
+      slider.oninput = function() {
+        if (slider.value == 1) {
+          output.innerHTML = 6;
+
+          eef();
+        } else if (slider.value == 2) {
+          output.innerHTML = 11;
+
+          eef();
+        } else if (slider.value == 3) {
+          output.innerHTML = 21;
+
+          eef();
+        } else if (slider.value == 4) {
+          output.innerHTML = 31;
+
+          eef();
+        } else {
+          output.innerHTML = 41;
+          eef();
+        }
+      }
+      var slider1 = document.getElementById("myRange1");
+      var output1 = document.getElementById("demo1");
+      output1.innerHTML = slider1.value;
+
+      slider1.oninput = function() {
+        eef();
+        if (slider1.value == 100) {
+          output1.innerHTML = "99+ ";
+        } else {
+          output1.innerHTML = slider1.value;
+        }
+      }
+      document.getElementById("demo2").innerHTML = 100;
+
+      document.getElementById("myRange2").oninput = function() {
+        document.getElementById("demo2").innerHTML = document.getElementById("myRange2").value;
+        hp = document.getElementById("myRange2").value;
+
+        eef();
+      }
+
+      function eef() {
+        if (gun == 1) {
+          myType25();
+        } else if (gun == 2) {
+          myType25SP();
+        } else if (gun == 3) {
+          myAK117();
+        } else if (gun == 4) {
+          myM16();
+        } else if (gun == 5) {
+          myAK47();
+        } else if (gun == 6) {
+          myASM10();
+        } else if (gun == 7) {
+          myM4();
+        } else if (gun == 8) {
+          myBK57();
+        } else if (gun == 9) {
+          myLK24();
+        } else if (gun == 10) {
+          myICR1();
+        } else if (gun == 11) {
+          myManowar();
+        } else if (gun == 12) {
+          myKN44();
+        } else if (gun == 13) {
+          myHBRa3();
+        } else if (gun == 14) {
+          myHVK30();
+        } else if (gun == 15) {
+          myDRH();
+        } else if (gun == 16) {
+          myDRHOTM();
+        } else if (gun == 17) {
+          myRus79U();
+        } else if (gun == 18) {
+          myChicom();
+        } else if (gun == 19) {
+          myPDW57();
+        } else if (gun == 20) {
+          myRazorback();
+        } else if (gun == 21) {
+          myMSMC();
+        } else if (gun == 22) {
+          myCorodite();
+        } else if (gun == 23) {
+          myHG40();
+        } else if (gun == 24) {
+          myPharo();
+        } else if (gun == 25) {
+          myGKS();
+        } else if (gun == 26) {
+          myQQ9();
+        } else if (gun == 27) {
+          myQQ910mm();
+        } else if (gun == 28) {
+          myJ358();
+        } else if (gun == 29) {
+          myJ358SP();
+        } else if (gun == 30) {
+          myMW11();
+        } else if (gun == 31) {
+          myS36();
+        } else if (gun == 32) {
+          myUL736();
+        } else if (gun == 33) {
+          myRPD();
+        } else if (gun == 34) {
+          myM4LMG();
+        } else if (gun == 35) {
+          myChopper();
+        } else if (gun == 36) {
+          myBY15();
+        } else if (gun == 37) {
+          myHS2126();
+        } else if (gun == 38) {
+          myHS0405();
+        } else if (gun == 39) {
+          myStriker();
+        } else if (gun == 40) {
+          myKRM262();
+        } else if (gun == 41) {
+          myLocus();
+        } else if (gun == 42) {
+          myXPR50();
+        } else if (gun == 43) {
+          myXPR50SP();
+        } else if (gun == 44) {
+          myArctic50();
+        } else if (gun == 45) {
+          myM21EBR();
+        } else if (gun == 46) {
+          myDLQ33();
+        } else if (gun == 47) {
+          myLoscusSP();
+        } else if (gun == 48) {
+          myOutlaw();
+        } else if (gun == 49) {
+          myKar98();
+        } else if (gun == 50) {
+          myArctic50SP();
+        } else if (gun == 51) {
+          myEcho();
+        } else if (gun == 52) {
+          myFennec();
+        } else if (gun == 53) {
+          myNA45();
+        } else if (gun == 54) {
+          myBK57La();
+        } else if (gun == 55) {
+          myAK47La();
+        } else if (gun == 56) {
+          myKar98SP();
+        }
+      }
+      var weapon = 11;
+      var gun = 0;
+      var type = 0;
+      var mode = 0;
+      var hp = 100;
+      var Vest = 1;
+      var Helmet = 1;
+      var wbv = 1;
+      var tbs;
+      var tbb;
+      var bib;
+      var pellets;
+      var rh;
+      var ra;
+      var rc;
+      var rs;
+      var rl;
+      var ab;
+//Chopper & S36 & UL 25-18-16-13 rpd 26-18-17-14 M4lmg 31-22-20-16 = 1-0.7123970223-0.6438014888-0.5229181141
+//xpr 55-39-37-29 outlaw 108-77-72-58 M21 60-43-40-32 DL 120-86-80-64 arctic50 126-90-85-68 = 1-0.7139345839-0.6694660895-0.5341317941
+//hvk 20-11-10 type25 24-13-12 HBr 26-14-13 M16 36-20-18 DRH 32-17-16 M4 24-13-12 ICR 25-14-13 BK57 27-15-14 AK47 33-18-17 AK117 23-12-12 = 1-0.5441349658795310969224012702273571838789230093577919664876186615317050099658795-0.5
+//Chicom 35-12 QQ9 & Corodite & PDW 22-10 Rus 24-11 HG40 & GKS 28-13 = 1-0.4419140383426097711811997526283240568954854669140383426097711811997526283240569)
+//J358 60-28 J358_SP 70-33 MW11 26-12 = 1-0.4665445665445665445665445665445665445665445665445665445665445665445665445665446
+//k9 102-57-53
+      function myFull() {
+        document.getElementById("sn").style.display = "block";
+        document.getElementById("s100").style.display = "none";
+      }
+
+      function myFull1() {
+        document.getElementById("sn").style.display = "none";
+        document.getElementById("s100").style.display = "block";
+      }
+
+      function my1range(d1,mh,ma,mc,ml) {
+        if (slider1.value >= 0 && slider1.value <= 100) {
+          rs = d1;
+        } else {
+          myError();
+        }
+        rh = rs*mh;
+        ra = rs*ma;
+        rc = rs*mc;
+        rl = rs*ml;
+      }
+
+      function my2range(r1,d1,d2,mh,ma,mc,ml) {
+        if (slider1.value > r1 && slider1.value <= 100) {
+          rs = d2;
+        } else if (slider1.value >= 0 && slider1.value <= r1) {
+          rs = d1;
+        } else {
+          myError();
+        }
+        rh = rs*mh;
+        ra = rs*ma;
+        rc = rs*mc;
+        rl = rs*ml;
+      }
+
+      function my3range(r1,r2,d1,d2,d3,mh,ma,mc,ml) {
+        if (slider1.value > r2 && slider1.value <= 100) {
+          rs = d3;
+        } else if (slider1.value > r1 && slider1.value <= r2) {
+          rs = d2;
+        } else if (slider1.value >= 0 && slider1.value <= r1) {
+          rs = d1;
+        } else {
+          myError();
+        }
+        rh = rs*mh;
+        ra = rs*ma;
+        rc = rs*mc;
+        rl = rs*ml;
+      }
+
+      function my4range(r1,r2,r3,d1,d2,d3,d4,mh,ma,mc,ml) {//r=range //d=damage // m=multiplier
+        if (slider1.value > r3 && slider1.value <= 100) {
+          rs = d4;
+        } else if (slider1.value > r2 && slider1.value <= r3) {
+          rs = d3;
+        } else if (slider1.value > r1 && slider1.value <= r2) {
+          rs = d2;
+        } else if (slider1.value >= 0 && slider1.value <= r1) {
+          rs = d1;
+        } else {
+          myError();
+        }
+        rh = rs*mh;
+        ra = rs*ma;
+        rc = rs*mc;
+        rl = rs*ml;
+      }
+
+      function my5range(r1,r2,r3,r4,d1,d2,d3,d4,d5,mh,ma,mc,ml) {//r=range //d=damage // m=multiplier
+        if (slider1.value > r4 && slider1.value <= 100) {
+          rs = d5;
+        } else if (slider1.value > r3 && slider1.value <= r4) {
+          rs = d4;
+        } else if (slider1.value > r2 && slider1.value <= r3) {
+          rs = d3;
+        } else if (slider1.value > r1 && slider1.value <= r2) {
+          rs = d2;
+        } else if (slider1.value >= 0 && slider1.value <= r1) {
+          rs = d1;
+        } else {
+          myError();
+        }
+        rh = rs*mh;
+        ra = rs*ma;
+        rc = rs*mc;
+        rl = rs*ml;
+      }
+
+      function my6range(r1,r2,r3,r4,r5,d1,d2,d3,d4,d5,d6,mh,ma,mc,ml) {//r=range //d=damage // m=multiplier
+        if (slider1.value > r5 && slider1.value <= 100) {
+          rs = d6;
+        } else if (slider1.value > r4 && slider1.value <= r5) {
+          rs = d5;
+        } else if (slider1.value > r3 && slider1.value <= r4) {
+          rs = d4;
+        } else if (slider1.value > r2 && slider1.value <= r3) {
+          rs = d3;
+        } else if (slider1.value > r1 && slider1.value <= r2) {
+          rs = d2;
+        } else if (slider1.value >= 0 && slider1.value <= r1) {
+          rs = d1;
+        } else {
+          myError();
+        }
+        rh = rs*mh;
+        ra = rs*ma;
+        rc = rs*mc;
+        rl = rs*ml;
+      }
+
+      function myError() {
+        alert("Fatal error! This should never happen. If you know how to recreate this please contact the developer at atulpurna@gmail.com. Error code: 0x"+gun+"1"+rs+"2"+type+"3"+mode+"4");
+        output.innerHTML = "Error!";
+        output1.innerHTML = "Error! Error code: 0x"+gun+"1"+rs+"2"+type+"3"+mode+"4";
+        document.getElementById("d").innerHTML = "Error!!!";
+        document.getElementById("Head").innerHTML = "Error!!!";
+        document.getElementById("Arms").innerHTML = "Error!!!";
+        document.getElementById("Chest").innerHTML = "Error!!!";
+        document.getElementById("Stomach").innerHTML = "Error!!!";
+        document.getElementById("Legs").innerHTML = "Error!!!";
+        throw new Error("Something went badly wrong! Error code: 0x"+gun+"1"+rs+"2"+type+"3"+mode+"4");
+      }
+
+      function hC4() {
+        document.getElementById("ptk").style.display = "none";
+        document.getElementById("dmg").innerHTML = " Damage";
+        document.getElementById("ttk").innerHTML = " Time to Kill";
+        if (document.getElementById("Check4").checked == true) {
+          selectOnlyThis("Check3");
+        }
+      }
+
+      function myBang() {
+        if (document.getElementById("Wbv0").checked == true) {
+            wbv=1;
+        } else if (document.getElementById("Wbv1").checked == true) {
+          if (type==0||type==7){//None||Shotgun
+            wbv=0;
+          } else if (type == 1) {//AR
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.5470507322;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0.507650395;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0;
+            } else {
+              myError();
+            }
+          } else if (type == 2) {//SMG
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.4635200393;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0;
+            } else {
+              myError();
+            }
+          } else if (type == 3) {//Sniper
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.7149427412;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0.6718141888;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0.5373077737;
+            } else {
+              myError();
+            }
+          } else if (type == 4) {//LMG
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.7123970223;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0.6438014888;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0.5229181141;
+            } else {
+              myError();
+            }
+          } else if (type == 5) {//Marksman
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.5588235294;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0.5196078431;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0;
+            } else {
+              myError();
+            }
+          } else if (type == 6) {//Pistol
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.4665445665;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0;
+            } else {
+              myError();
+            }
+          } else {
+            myError();
+          }
+		} else if (document.getElementById("Wbv2").checked == true) {
+          if (type==0||type==7){//None||Shotgun
+            wbv=1;
+          } else if (type == 1) {//AR
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.8063762583;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0.7949379858;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0;
+            } else {
+              myError();
+            }
+          } else if (type == 2) {//SMG
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.7777530066;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0;
+            } else {
+              myError();
+            }
+          } else if (type == 3) {//Sniper
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.8816657288;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0.8635328446;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0.8090090573;
+            } else {
+              myError();
+            }
+          } else if (type == 4) {//LMG
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.8791166253;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0.8409727047;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0.8028287841;
+            } else {
+              myError();
+            }
+          } else if (type == 5) {//Marksman
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.8235294118;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0.8039215686;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0;
+            } else {
+              myError();
+            }
+          } else if (type == 6) {//Pistol
+            if (document.getElementById("Wb0").checked == true) {
+              wbv=0.7794261294;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv=0;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv=0;
+            } else {
+              myError();
+            }
+          } else {
+            myError();
+          }
+		}
+
+        rh = rh*wbv;
+        ra = ra*wbv;
+        rc = rc*wbv;
+        rs = rs*wbv;
+        rl = rl*wbv;
+	  }
+      function myText() {
+        myBang();
+        if (gun == 0) {
+          ab = 0;
+          document.getElementById("Head").innerHTML = "00";
+          document.getElementById("Arms").innerHTML = "00";
+          document.getElementById("Chest").innerHTML = "00";
+          document.getElementById("Stomach").innerHTML = "00";
+          document.getElementById("Legs").innerHTML = "00";
+          hC4();
+        } else if (gun != 0 && gun != 4 && gun != 18 && gun != 24 && gun != 36 && gun != 37 && gun != 38 && gun != 39 && gun != 40 && gun != 51) {
+          ab = 0;
+          if (document.getElementById("MpBr1").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              document.getElementById("Head").innerHTML = rh;
+              document.getElementById("Arms").innerHTML = ra;
+              document.getElementById("Chest").innerHTML = rc;
+              document.getElementById("Stomach").innerHTML = rs;
+              document.getElementById("Legs").innerHTML = rl;
+            } else if (document.getElementById("Check3").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil(hp / rh);
+              document.getElementById("Arms").innerHTML = Math.ceil(hp / ra);
+              document.getElementById("Chest").innerHTML = Math.ceil(hp / rc);
+              document.getElementById("Stomach").innerHTML = Math.ceil(hp / rs);
+              document.getElementById("Legs").innerHTML = Math.ceil(hp / rl);
+            } else if (document.getElementById("Check2").checked == true) {
+              document.getElementById("Head").innerHTML = parseFloat((Math.ceil((hp / rh) - 1) * tbs).toFixed(2));
+              document.getElementById("Arms").innerHTML = parseFloat((Math.ceil((hp / ra) - 1) * tbs).toFixed(2));
+              document.getElementById("Chest").innerHTML = parseFloat((Math.ceil((hp / rc) - 1) * tbs).toFixed(2));
+              document.getElementById("Stomach").innerHTML = parseFloat((Math.ceil((hp / rs) - 1) * tbs).toFixed(2));
+              document.getElementById("Legs").innerHTML = parseFloat((Math.ceil((hp / rl) - 1) * tbs).toFixed(2));
+            }
+          } else if (document.getElementById("MpBr2").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              document.getElementById("Head").innerHTML = parseFloat((rh * Helmet).toFixed(2));
+              document.getElementById("Arms").innerHTML = parseFloat((ra * Vest).toFixed(2));
+              document.getElementById("Chest").innerHTML = parseFloat((rc * Vest).toFixed(2));
+              document.getElementById("Stomach").innerHTML = parseFloat((rs * Vest).toFixed(2));
+              document.getElementById("Legs").innerHTML = parseFloat((rl * Vest).toFixed(2));
+            } else if (document.getElementById("Check3").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil(hp / (rh * Helmet));
+              document.getElementById("Arms").innerHTML = Math.ceil(hp / (ra * Vest));
+              document.getElementById("Chest").innerHTML = Math.ceil(hp / (rc * Vest));
+              document.getElementById("Stomach").innerHTML = Math.ceil(hp / (rs * Vest));
+              document.getElementById("Legs").innerHTML = Math.ceil(hp / (rl * Vest));
+            } else if (document.getElementById("Check2").checked == true) {
+              document.getElementById("Head").innerHTML = parseFloat((Math.ceil((hp / (rh * Helmet)) - 1) * tbs).toFixed(2));
+              document.getElementById("Arms").innerHTML = parseFloat((Math.ceil((hp / (ra * Vest)) - 1) * tbs).toFixed(2));
+              document.getElementById("Chest").innerHTML = parseFloat((Math.ceil((hp / (rc * Vest)) - 1) * tbs).toFixed(2));
+              document.getElementById("Stomach").innerHTML = parseFloat((Math.ceil((hp / (rs * Vest)) - 1) * tbs).toFixed(2));
+              document.getElementById("Legs").innerHTML = parseFloat((Math.ceil((hp / (rl * Vest)) - 1) * tbs).toFixed(2));
+            }
+          } else {
+            myError();
+          }
+          hC4();
+        } else if (gun == 4 || gun == 18 || gun == 24) {
+          ab = 0;
+          if (document.getElementById("MpBr1").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              document.getElementById("Head").innerHTML = rh;
+              document.getElementById("Arms").innerHTML = ra;
+              document.getElementById("Chest").innerHTML = rc;
+              document.getElementById("Stomach").innerHTML = rs;
+              document.getElementById("Legs").innerHTML = rl;
+            } else if (document.getElementById("Check3").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil(hp / rh);
+              document.getElementById("Arms").innerHTML = Math.ceil(hp / ra);
+              document.getElementById("Chest").innerHTML = Math.ceil(hp / rc);
+              document.getElementById("Stomach").innerHTML = Math.ceil(hp / rs);
+              document.getElementById("Legs").innerHTML = Math.ceil(hp / rl);
+            } else if (document.getElementById("Check2").checked == true) {
+              if ((Math.ceil(hp / rh)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / rh)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Head").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / rh) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / rh)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / rh)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Head").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil(hp / ra)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / ra)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Arms").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / ra) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / ra)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / ra)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Arms").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil(hp / rc)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / rc)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Chest").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / rc) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / rc)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / rc)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Chest").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil(hp / rs)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / rs)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Stomach").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / rs) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / rs)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / rs)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Stomach").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil(hp / rl)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / rl)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Legs").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / rl) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / rl)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / rl)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Legs").innerHTML = parseFloat((cc).toFixed(2));
+              }
+            }
+          } else if (document.getElementById("MpBr2").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              document.getElementById("Head").innerHTML = parseFloat((rh * Helmet).toFixed(2));
+              document.getElementById("Arms").innerHTML = parseFloat((ra * Vest).toFixed(2));
+              document.getElementById("Chest").innerHTML = parseFloat((rc * Vest).toFixed(2));
+              document.getElementById("Stomach").innerHTML = parseFloat((rs * Vest).toFixed(2));
+              document.getElementById("Legs").innerHTML = parseFloat((rl * Vest).toFixed(2));
+            } else if (document.getElementById("Check3").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil(hp / (rh * Helmet));
+              document.getElementById("Arms").innerHTML = Math.ceil(hp / (ra * Vest));
+              document.getElementById("Chest").innerHTML = Math.ceil(hp / (rc * Vest));
+              document.getElementById("Stomach").innerHTML = Math.ceil(hp / (rs * Vest));
+              document.getElementById("Legs").innerHTML = Math.ceil(hp / (rl * Vest));
+            } else if (document.getElementById("Check2").checked == true) {
+              if ((Math.ceil(hp / (rh * Helmet))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (rh * Helmet))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Head").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / (rh * Helmet)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (rh * Helmet))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (rh * Helmet))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Head").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil(hp / (ra * Vest))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (ra * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Arms").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / (ra * Vest)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (ra * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (ra * Vest))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Arms").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil(hp / (rc * Vest))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (rc * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Chest").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / (rc * Vest)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (rc * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (rc * Vest))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Chest").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil(hp / (rs * Vest))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (rs * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Stomach").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / (rs * Vest)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (rs * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (rs * Vest))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Stomach").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil(hp / (rl * Vest))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (rl * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Legs").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil(hp / (rl * Vest)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (rl * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (rl * Vest))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Legs").innerHTML = parseFloat((cc).toFixed(2));
+              }
+            }
+          } else {
+            myError();
+          }
+          hC4();
+        }
+        else if (gun == 36 || gun == 38 || gun == 39 || gun == 40 || gun == 51) {
+          document.getElementById("ttk").innerHTML = " Time to Kill (if all pellets hit)";
+          document.getElementById("dmg").innerHTML = " Damage per pellet";
+          document.getElementById("ptk").style.display = "block";
+          ab = 1;
+          if (document.getElementById("MpBr1").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              document.getElementById("Head").innerHTML = rh;
+              document.getElementById("Arms").innerHTML = ra;
+              document.getElementById("Chest").innerHTML = rc;
+              document.getElementById("Stomach").innerHTML = rs;
+              document.getElementById("Legs").innerHTML = rl;
+            } else if (document.getElementById("Check4").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil(hp / rh);
+              document.getElementById("Arms").innerHTML = Math.ceil(hp / ra);
+              document.getElementById("Chest").innerHTML = Math.ceil(hp / rc);
+              document.getElementById("Stomach").innerHTML = Math.ceil(hp / rs);
+              document.getElementById("Legs").innerHTML = Math.ceil(hp / rl);
+            } else if (document.getElementById("Check3").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil((hp / rh) / pellets);
+              document.getElementById("Arms").innerHTML = Math.ceil((hp / ra) / pellets);
+              document.getElementById("Chest").innerHTML = Math.ceil((hp / rc) / pellets);
+              document.getElementById("Stomach").innerHTML = Math.ceil((hp / rs) / pellets);
+              document.getElementById("Legs").innerHTML = Math.ceil((hp / rl) / pellets);
+            } else if (document.getElementById("Check2").checked == true) {
+              document.getElementById("Head").innerHTML = parseFloat((Math.ceil(((hp / rh) / pellets) - 1) * tbs).toFixed(2));
+              document.getElementById("Arms").innerHTML = parseFloat((Math.ceil(((hp / ra) / pellets) - 1) * tbs).toFixed(2));
+              document.getElementById("Chest").innerHTML = parseFloat((Math.ceil(((hp / rc) / pellets) - 1) * tbs).toFixed(2));
+              document.getElementById("Stomach").innerHTML = parseFloat((Math.ceil(((hp / rs) / pellets) - 1) * tbs).toFixed(2));
+              document.getElementById("Legs").innerHTML = parseFloat((Math.ceil(((hp / rl) / pellets) - 1) * tbs).toFixed(2));
+            }
+          } else if (document.getElementById("MpBr2").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              document.getElementById("Head").innerHTML = parseFloat((rh * Helmet).toFixed(2));
+              document.getElementById("Arms").innerHTML = parseFloat((ra * Vest).toFixed(2));
+              document.getElementById("Chest").innerHTML = parseFloat((rc * Vest).toFixed(2));
+              document.getElementById("Stomach").innerHTML = parseFloat((rs * Vest).toFixed(2));
+              document.getElementById("Legs").innerHTML = parseFloat((rl * Vest).toFixed(2));
+            } else if (document.getElementById("Check4").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil(hp / (rh * Helmet));
+              document.getElementById("Arms").innerHTML = Math.ceil(hp / (ra * Vest));
+              document.getElementById("Chest").innerHTML = Math.ceil(hp / (rc * Vest));
+              document.getElementById("Stomach").innerHTML = Math.ceil(hp / (rs * Vest));
+              document.getElementById("Legs").innerHTML = Math.ceil(hp / ((rl * Vest) * Vest));
+            } else if (document.getElementById("Check3").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil((hp / (rh * Helmet)) / pellets);
+              document.getElementById("Arms").innerHTML = Math.ceil((hp / (ra * Vest)) / pellets);
+              document.getElementById("Chest").innerHTML = Math.ceil((hp / (rc * Vest)) / pellets);
+              document.getElementById("Stomach").innerHTML = Math.ceil((hp / (rs * Vest)) / pellets);
+              document.getElementById("Legs").innerHTML = Math.ceil((hp / (rl * Vest)) / pellets);
+            } else if (document.getElementById("Check2").checked == true) {
+              document.getElementById("Head").innerHTML = parseFloat((Math.ceil(((hp / (rh * Helmet)) / pellets) - 1) * tbs).toFixed(2));
+              document.getElementById("Arms").innerHTML = parseFloat((Math.ceil(((hp / (ra * Vest)) / pellets) - 1) * tbs).toFixed(2));
+              document.getElementById("Chest").innerHTML = parseFloat((Math.ceil(((hp / (rc * Vest)) / pellets) - 1) * tbs).toFixed(2));
+              document.getElementById("Stomach").innerHTML = parseFloat((Math.ceil(((hp / (rs * Vest)) / pellets) - 1) * tbs).toFixed(2));
+              document.getElementById("Legs").innerHTML = parseFloat((Math.ceil(((hp / (rl * Vest)) / pellets) - 1) * tbs).toFixed(2));
+            }
+          } else {
+            myError();
+          }
+        } else if (gun == 37) {
+          document.getElementById("dmg").innerHTML = " Damage per pellet";
+          document.getElementById("ttk").innerHTML = " Time to Kill (if all pellets hit)";
+          document.getElementById("ptk").style.display = "block";
+          ab = 1;
+          if (document.getElementById("MpBr1").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              document.getElementById("Head").innerHTML = rh;
+              document.getElementById("Arms").innerHTML = ra;
+              document.getElementById("Chest").innerHTML = rc;
+              document.getElementById("Stomach").innerHTML = rs;
+              document.getElementById("Legs").innerHTML = rl;
+            } else if (document.getElementById("Check4").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil(hp / rh);
+              document.getElementById("Arms").innerHTML = Math.ceil(hp / ra);
+              document.getElementById("Chest").innerHTML = Math.ceil(hp / rc);
+              document.getElementById("Stomach").innerHTML = Math.ceil(hp / rs);
+              document.getElementById("Legs").innerHTML = Math.ceil(hp / rl);
+            } else if (document.getElementById("Check3").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil((hp / rh) / pellets);
+              document.getElementById("Arms").innerHTML = Math.ceil((hp / ra) / pellets);
+              document.getElementById("Chest").innerHTML = Math.ceil((hp / rc) / pellets);
+              document.getElementById("Stomach").innerHTML = Math.ceil((hp / rs) / pellets);
+              document.getElementById("Legs").innerHTML = Math.ceil((hp / rl) / pellets);
+            } else if (document.getElementById("Check2").checked == true) {
+              if (slider1.value < 34) {
+                if ((Math.ceil((hp / rh) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / rh) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  document.getElementById("Head").innerHTML = parseFloat((cc).toFixed(2));
+                } else if (Math.ceil((hp / rh) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / rh) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / rh) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  document.getElementById("Head").innerHTML = parseFloat((cc).toFixed(2));
+                }
+                if ((Math.ceil((hp / ra) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / ra) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  document.getElementById("Arms").innerHTML = parseFloat((cc).toFixed(2));
+                } else if (Math.ceil((hp / ra) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / ra) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / ra) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                 nnerHTML = parseFloat((cc).toFixed(2));
+                }
+                if ((Math.ceil((hp / rc) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / rc) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  document.getElementById("Chest").innerHTML = parseFloat((cc).toFixed(2));
+                } else if (Math.ceil((hp / rc) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / rc) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / rc) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  document.getElementById("Chest").innerHTML = parseFloat((cc).toFixed(2));
+                }
+                if ((Math.ceil((hp / rs) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / rs) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  document.getElementById("Stomach").innerHTML = parseFloat((cc).toFixed(2));
+                } else if (Math.ceil((hp / rs) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / rs) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / rs) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  document.getElementById("Stomach").innerHTML = parseFloat((cc).toFixed(2));
+                }
+                if ((Math.ceil((hp / rl) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / rl) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  document.getElementById("Legs").innerHTML = parseFloat((cc).toFixed(2));
+                } else if (Math.ceil((hp / rl) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / rl) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / rl) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  document.getElementById("Legs").innerHTML = parseFloat((cc).toFixed(2));
+                }
+              } else {
+                document.getElementById("Head").innerHTML = "Infinity";
+                document.getElementById("Arms").innerHTML = "Infinity";
+                document.getElementById("Chest").innerHTML = "Infinity";
+                document.getElementById("Stomach").innerHTML = "Infinity";
+                document.getElementById("Legs").innerHTML = "Infinity";
+              }
+            }
+          } else if (document.getElementById("MpBr2").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              document.getElementById("Head").innerHTML = parseFloat((rh * Helmet).toFixed(2));
+              document.getElementById("Arms").innerHTML = parseFloat((ra * Vest).toFixed(2));
+              document.getElementById("Chest").innerHTML = parseFloat((rc * Vest).toFixed(2));
+              document.getElementById("Stomach").innerHTML = parseFloat((rs * Vest).toFixed(2));
+              document.getElementById("Legs").innerHTML = parseFloat((rl * Vest).toFixed(2));
+            } else if (document.getElementById("Check4").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil(hp / (rh * Helmet));
+              document.getElementById("Arms").innerHTML = Math.ceil(hp / (ra * Vest));
+              document.getElementById("Chest").innerHTML = Math.ceil(hp / (rc * Vest));
+              document.getElementById("Stomach").innerHTML = Math.ceil(hp / (rs * Vest));
+              document.getElementById("Legs").innerHTML = Math.ceil(hp / ((rl * Vest) * Vest));
+            } else if (document.getElementById("Check3").checked == true) {
+              document.getElementById("Head").innerHTML = Math.ceil((hp / (rh * Helmet)) / pellets);
+              document.getElementById("Arms").innerHTML = Math.ceil((hp / (ra * Vest)) / pellets);
+              document.getElementById("Chest").innerHTML = Math.ceil((hp / (rc * Vest)) / pellets);
+              document.getElementById("Stomach").innerHTML = Math.ceil((hp / (rs * Vest)) / pellets);
+              document.getElementById("Legs").innerHTML = Math.ceil((hp / (rl * Vest)) / pellets);
+            } else if (document.getElementById("Check2").checked == true) {
+              if ((Math.ceil((hp / (rh * Helmet)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (rh * Helmet)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Head").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil((hp / (rh * Helmet)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (rh * Helmet)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (rh * Helmet)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Head").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil((hp / (ra * Vest)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (ra * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Arms").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil((hp / (ra * Vest)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (ra * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (ra * Vest)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Arms").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil((hp / (rc * Vest)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (rc * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Chest").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil((hp / (rc * Vest)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (rc * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (rc * Vest)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Chest").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil((hp / (rs * Vest)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (rs * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Stomach").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil((hp / (rs * Vest)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (rs * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (rs * Vest)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Stomach").innerHTML = parseFloat((cc).toFixed(2));
+              }
+              if ((Math.ceil((hp / (rl * Vest)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (rl * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                document.getElementById("Legs").innerHTML = parseFloat((cc).toFixed(2));
+              } else if (Math.ceil((hp / (rl * Vest)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (rl * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (rl * Vest)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                document.getElementById("Legs").innerHTML = parseFloat((cc).toFixed(2));
+              }
+            }
+          } else {
+            myError();
+          }
+        }
+        if (document.getElementById("Check2").checked == true) {
+          if (document.getElementById("Head").innerHTML == "Infinity") {
+            document.getElementById("Head").innerHTML = "Never";
+          }
+          if (document.getElementById("Arms").innerHTML == "Infinity") {
+            document.getElementById("Arms").innerHTML = "Never";
+          }
+          if (document.getElementById("Chest").innerHTML == "Infinity") {
+            document.getElementById("Chest").innerHTML = "Never";
+          }
+          if (document.getElementById("Stomach").innerHTML == "Infinity") {
+            document.getElementById("Stomach").innerHTML = "Never";
+          }
+          if (document.getElementById("Legs").innerHTML == "Infinity") {
+            document.getElementById("Legs").innerHTML = "Never";
+          }
+        }
+        if (document.getElementById("Check3").checked == true||document.getElementById("Check3").checked == true) {
+          if (document.getElementById("Head").innerHTML == "Infinity") {
+            document.getElementById("Head").innerHTML = "Impossible";
+          }
+          if (document.getElementById("Arms").innerHTML == "Infinity") {
+            document.getElementById("Arms").innerHTML = "Impossible";
+          }
+          if (document.getElementById("Chest").innerHTML == "Infinity") {
+            document.getElementById("Chest").innerHTML = "Impossible";
+          }
+          if (document.getElementById("Stomach").innerHTML == "Infinity") {
+            document.getElementById("Stomach").innerHTML = "Impossible";
+          }
+          if (document.getElementById("Legs").innerHTML == "Infinity") {
+            document.getElementById("Legs").innerHTML = "Impossible";
+          }
+        }
+      }
+
+      function myType25() {
+        myFull1();
+        gun = 1;
+        document.getElementById("d").innerHTML = "Type 25";
+        my4range(10,16,30,24,22,18,16,1.085,1,1,1);
+        tbs = 75.70621469;
+        myText();
+      }
+
+      function myType25SP() {
+        myFull1();
+        gun = 2;
+        document.getElementById("d").innerHTML = "Type 25 with Stopping Power Mag";
+        my5range(10,16,20,30,25,23,20,19,16,1.085,1,1,1);
+        tbs = 75.70621469;
+        myText();
+      }
+
+      function myAK117() {
+        myFull1();
+        gun = 3;
+        document.getElementById("d").innerHTML = "AK117";
+        my3range(21,37,23,18,16,1.185,1,1,1);
+        tbs = 78.53107345;
+        myText();
+      }
+
+      function myM16() {
+        myFull1();
+        gun = 4;
+        document.getElementById("d").innerHTML = "M16<br><br>3 round bursts";
+        my3range(20,40,30,27,22,1.385,1.185,1.385,1);
+        tbs = 93.22033898;
+        tbb = 220.389831;
+        bib = 3;
+        myText();
+      }
+
+      function myAK47() {
+        myFull1();
+        gun = 5;
+        document.getElementById("d").innerHTML = "AK47";
+        my3range(28,35,33,25,24,1.185,1,1,1);
+        tbs = 107.3446328;
+        myText();
+      }
+
+      function myAK47La() {
+        myFull1();
+        gun = 55;
+        document.getElementById("d").innerHTML = "AK47 with Large Caliber Mag";
+        my4range(14,24,35,25,20,17,15,1.185,1,1,1);
+        tbs = (2.5/29)*1000;
+        myText();
+      }
+
+      function myASM10() {
+        tbs = 107.3446328;
+        myFull1();
+        gun = 6;
+        document.getElementById("d").innerHTML = "ASM10";
+        my3range(17,37,34,26,20,1.185,1,1,1);
+        myText();
+      }
+
+      function myM4() {
+        tbs = 87.00564972;
+        myFull1();
+        gun = 7;
+        document.getElementById("d").innerHTML = "M4";
+        my3range(15,35,24,20,19,1.18,1,1,1);
+        myText();
+      }
+
+      function myBK57() {
+        tbs = 89.10411622;
+        myFull1();
+        gun = 8;
+        document.getElementById("d").innerHTML = "BK57";
+        my3range(15,35,27,22,19,1.18,1,1,1);
+        myText();
+      }
+
+      function myBK57La() {
+        tbs = 89.10411622;
+        myFull1();
+        gun = 8;
+        document.getElementById("d").innerHTML = "BK57 with Large Magazine";
+        my3range(15,35,27,22,19,1.28,1,1,1);
+        myText();
+      }
+
+      function myLK24() {
+        tbs = 93.78531073;
+        myFull1();
+        gun = 9;
+        document.getElementById("d").innerHTML = "LK24";
+        my4range(20,30,39,26,22,20,18,1.185,1,1,1);
+        myText();
+      }
+
+      function myICR1() {
+        tbs = 97.74011299;
+        myFull1();
+        gun = 10;
+        document.getElementById("d").innerHTML = "ICR1";
+        my3range(16,40,25,22,19,1.184,1,1,1);
+        myText();
+      }
+
+      function myManowar() {
+        tbs = 115.2542373;
+        myFull1();
+        gun = 11;
+        document.getElementById("d").innerHTML = "Man-o-war";
+        my3range(23,43,34,28,24,1.085,1,1,1);
+        myText();
+      }
+
+      function myKN44() {
+        tbs = 94.35028249;
+        myFull1();
+        gun = 12;
+        document.getElementById("d").innerHTML = "KN44";
+        my3range(20,40,26,24,19,1.184,1,1,1);
+        myText();
+      }
+
+      function myHBRa3() {
+        tbs = 87.00564972;
+        myFull1();
+        gun = 13;
+        document.getElementById("d").innerHTML = "HBRa3";
+        my4range(11,25,36,26,22,17,16,1.085,1,1,1);
+        myText();
+      }
+
+      function myHVK30() {
+        tbs = 83.05084746;
+        myFull1();
+        gun = 14;
+        document.getElementById("d").innerHTML = "HVK30";
+        my3range(30,50,20,18,16,1.28,1,1,1);
+        myText();
+      }
+
+      function myDRH() {
+        tbs = 103.3898305;
+        myFull1();
+        gun = 15;
+        document.getElementById("d").innerHTML = "DRH";
+        my6range(7,13,18,25,35,32,31,28,25,24,19,1.184,1,1,1);
+        myText();
+      }
+
+      function myDRHOTM() {
+        tbs = 103.3898305;
+        myFull1();
+        gun = 16;
+        document.getElementById("d").innerHTML = "DR-H with OTM Mag";
+        my6range(7,13,18,25,35,32,31,28,25,24,19,1.184,1.184,1,1);
+        myText();
+      }
+
+      function myRus79U() {
+        tbs = 77.40112994;
+        myFull1();
+        gun = 17;
+        document.getElementById("d").innerHTML = "Rus79U";
+        my3range(20,40,24,18,15,1.08,1,1,0.88);
+        myText();
+      }
+
+      function myChicom() {
+        myFull1();
+        gun = 18;
+        document.getElementById("d").innerHTML = "Chicom<br><br>3 round bursts";
+        my4range(9,17,20,27,24,20,17,1.38,1,1.25,0.88);
+        tbs = 84.74576271;
+        tbb = 152.5423729;
+        bib = 3;
+        myText();
+      }
+
+      function myPDW57() {
+        tbs = 78.98305085;
+        myFull1();
+        gun = 19;
+        document.getElementById("d").innerHTML = "PDW57";
+        my5range(5,12,18,28,27,22,20,17,15,1.08,1,1,0.88);
+        myText();
+      }
+
+      function myRazorback() {
+        tbs = (2.85/29)*1000;
+        myFull();
+        gun = 20;
+        my3range(15,24,30,23,19,1.1,1,1,0.88);
+        if (slider.value == 1) {
+          document.getElementById("d").innerHTML = "Razorback";
+          rh = "33";
+          ra = "30";
+          rc = "30";
+          rs = "30";
+          rl = "27";
+        } else if (slider.value == 2) {
+          document.getElementById("d").innerHTML = "Razorback";//upto 15
+          rh = "33";
+          ra = "30";
+          rc = "30";
+          rs = "30";
+          rl = "27";
+        } else if (slider.value == 3) {
+          document.getElementById("d").innerHTML = "Razorback";//24 
+          rh = "25";
+          ra = "23";
+          rc = "23";
+          rs = "23";
+          rl = "20";
+        } else if (slider.value == 4) {
+          document.getElementById("d").innerHTML = "Razorback";
+          rh = "20";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "17";
+        } else if (slider.value == 5) {
+          document.getElementById("d").innerHTML = "Razorback";
+          rh = "20";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "17";
+        } else {
+
+          myError();
+
+
+
+
+
+        }
+        myText();
+      }
+
+      function myMSMC() {
+        tbs = 65.76271186;
+        myFull1();
+        gun = 21;
+        document.getElementById("d").innerHTML = "MSMC";
+        my4range(7,13,17,25,21,18,16,1.08,1,1,0.88);
+        myText();
+      }
+
+      function myCorodite() {
+        tbs = 74.57627119;
+        myFull1();
+        gun = 22;
+        document.getElementById("d").innerHTML = "Corodite";
+        my5range(8,19,26,33,24,22,19,18,16,1.184,1,1,0.88);
+        myText();
+      }
+
+      function myHG40() {
+        tbs = 87.92372881;
+        myFull1();
+        gun = 23;
+        document.getElementById("d").innerHTML = "HG40";
+        my3range(11,25,22,20,17,1.08,1,1,0.88); //hands 15 //hands 20 //hands 22
+        myText();
+      }
+
+      function myPharo() {
+        myFull1();
+        gun = 24;
+        document.getElementById("d").innerHTML = "Pharo<br><br>4 round bursts";
+        my5range(7,10,15,25,34,26,21,19,16,1.075,1,1,0.88);
+        tbs = (220.3389831 / 3);
+        tbb = 135.5932203;
+        bib = 4;
+        myText();
+      }
+
+      function myGKS() {
+        tbs = 98.98305085;
+        myFull1();
+        gun = 25;
+        document.getElementById("d").innerHTML = "GKS";
+        my3range(20,30,28,23,19,1.28,1,1,0.88);
+        myText();
+      }
+
+      function myQQ9() {
+        tbs = 71.18644068;
+        myFull1();
+        gun = 26;
+        document.getElementById("d").innerHTML = "QQ9";
+        my5range(7,12,19,27,25,23,19,17,15,1.075,0.88,1,0.88);
+        myText();
+      }
+
+      function myQQ910mm() {
+        tbs = 71.18644068;
+        myFull1();
+        gun = 27;
+        document.getElementById("d").innerHTML = "QQ9 with 10mm";
+        my5range(8,16,23,33,26,25,21,17,15,1.075,0.88,1,0.88);
+        myText();
+      }
+
+      function myFennec() {
+        tbs = ((1+(53/60))/34)*1000;//1096.956522  (60/((1+(17/29)/29))
+        myFull1();
+        gun = 52;
+        document.getElementById("d").innerHTML = "Fennec";
+        my5range(7,11,16,23,23,21,18,13,12,1.08,0.88,1,0.88);
+        myText();
+      }
+
+      function myJ358() {
+        tbs = 251.4124294;
+        myFull1();
+        gun = 28;
+        document.getElementById("d").innerHTML = "J358";
+        my4range(17,20,35,60,40,34,25,1.5,1,1,1);
+        myText();
+      }
+
+      function myJ358SP() {
+        tbs = 251.4124294;
+        myFull1();
+        gun = 29;
+        document.getElementById("d").innerHTML = "J358 with Stopping Power Mag";
+        my4range(24,29,46,70,50,44,35,1.5,1,1,1);
+        myText();
+      }
+
+      function myMW11() {
+        tbs = 187.8531073;
+        myFull1();
+        gun = 30;
+        document.getElementById("d").innerHTML = "MW11";
+        my4range(20,25,30,26,20,17,16,1.38,1,1,1);
+        myText();
+      }
+
+      function myS36() {
+        tbs = 79.3220339;
+        myFull1();
+        gun = 31;
+        document.getElementById("d").innerHTML = "S36";
+        my4range(10,25,40,25,23,18,16,1,1,1,1);
+        myText();
+      }
+
+      function myUL736() {
+        tbs = 94.91525424;
+        myFull1();
+        gun = 32;
+        document.getElementById("d").innerHTML = "UL736";
+        my3range(20,30,28,23,19,1.185,1,1,1);
+        myText();
+      }
+
+      function myRPD() {
+        tbs = 89.10411622;
+        myFull1();
+        gun = 33;
+        document.getElementById("d").innerHTML = "RPD";
+        my3range(25,35,26,21,20,1.185,1,1,1);
+        myText();
+      }
+
+      function myM4LMG() {
+        tbs = 30.31476587;
+        myFull1();
+        gun = 34;
+        document.getElementById("d").innerHTML = "M4LMG";
+        my4range(10,25,40,31,24,22,21,1.085,1,1,1);
+        myText();
+      }
+
+      function myChopper() {
+        tbs = 80.16949153;
+        myFull1();
+        gun = 35;
+        document.getElementById("d").innerHTML = "Chopper";
+        my3range(11,36,25,21,17,1.185,1,1,1);
+        myText();
+      }
+
+      function myBY15() {
+        tbs = 709.7457627;
+        pellets = 8;
+        myFull1();
+        gun = 36;
+        document.getElementById("d").innerHTML = "BY15<br><br>Pellets: 8";
+        my5range(7,13,17,41,35,27,24,16,0,1,1,1,1);
+        myText();
+      }
+
+      function myHS2126() {
+        pellets = 8;
+        tbs = 101.6949153;
+        tbb = 508.4745763;
+        bib = 4;
+        myFull1();
+        gun = 37;
+        document.getElementById("d").innerHTML = "HS2126<br><br>Pellets: 8<br><br>4 round bursts";
+        my3range(9,33,9,6,0,1,1,1,1);
+        myText();
+      }
+
+      function myHS0405() {
+        pellets = 10;
+        tbs = 1254.237288;
+        myFull1();
+        gun = 38;
+        document.getElementById("d").innerHTML = "HS0405<br><br>Pellets: 10";
+        my5range(9,13,19,44,39,28,16,10,0,1,1,1,1);
+        myText();
+      }
+
+      function myEcho() {
+        pellets = 8;
+        tbs = 264.8305085;
+        myFull1();
+        gun = 51;
+        document.getElementById("d").innerHTML = "Echo<br><br>Pellets: 8";
+        my4range(8,12,32,17,15,13,0,1,1,1,1);
+        myText();
+      }
+
+      function myStriker() {
+        pellets = 8;
+        tbs = 217.5141243;
+        myFull1();
+        gun = 39;
+        document.getElementById("d").innerHTML = "Striker<br><br>Pellets: 8";
+        my4range(4,9,33,12,10,7,0,1,1,1,1);
+        myText();
+      }
+
+      function myKRM262() {
+        pellets = 8;
+        tbs = 934.3220339;
+        myFull1();
+        gun = 40;
+        document.getElementById("d").innerHTML = "KRM262<br><br>Pellets: 8";
+        my5range(8,11,13,36,36,34,22,16,0,1,1,1,1);
+        myText();
+      }
+
+      function myLocus() {
+        tbs = 1033.898305;
+        myFull1();
+        gun = 41;
+        document.getElementById("d").innerHTML = "Locus";
+        my1range(95,1.5,1.5,1.5,1);
+        my1range(95,1.505,1.505,1.505,1);
+        myText();
+      }
+
+      function myXPR50SP() {
+        tbs = 252.1186441;
+        myFull1();
+        gun = 43;
+        document.getElementById("d").innerHTML = "XPR 50 with Stopping Power Mag";
+        my1range(55,2,1,2,1);
+        myText();
+      }
+
+      function myXPR50() {
+        tbs = 252.1186441;
+        myFull1();
+        gun = 42;
+        document.getElementById("d").innerHTML = "XPR 50";
+        if (slider1.value >= 63 && slider1.value <= 100) {
+          my1range(50,1.5,1,1,1);
+        } else if (slider1.value >= 0 && slider1.value <= 62) {
+          my1range(55,2,1,1,1);
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myArctic50() {
+        tbs = 443.0992736;
+        myFull1();
+        gun = 44;
+        document.getElementById("d").innerHTML = "Arctic 50";
+        my1range(90,1.6,1.4,1.4,1);
+        myText();
+      }
+
+      function myArctic50SP() {
+        tbs = 443.0992736;
+        myFull1();
+        gun = 50;
+        document.getElementById("d").innerHTML = "Arctic 50 with Stopping Power Mag";//hands 159
+        my1range(178,1.213,0.736,0.893,0.843);
+        myText();
+      }
+
+      function myM21EBR() {
+        tbs = 316.9491525;
+        myFull1();
+        gun = 45;
+        document.getElementById("d").innerHTML = "M21 EBR";
+        if (slider1.value >= 75 && slider1.value <= 100) {
+          my1range(55,1.491,1,1,1);
+        } else if (slider1.value >= 0 && slider1.value <= 74) {
+          my1range(60,1.7,1,1,1);
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myDLQ33() {
+        tbs = 1288.135593;
+        myFull1();
+        gun = 46;
+        document.getElementById("d").innerHTML = "DLQ33";
+        my1range(120,1,1,1,0.67);
+        my1range(120,1.22,1,1,0.67);
+        myText();
+      }
+
+      function myLocusSP() {
+        tbs = 1033.898305;
+        myFull1();
+        gun = 47;
+        document.getElementById("d").innerHTML = "Locus with Stopping Power Mag";
+        my1range(142,1,1,1,0.664);
+        my1range(143,1,1,1,0.664);
+        myText();
+      }
+
+      function myOutlaw() {
+        tbs = 949.1525424;
+        myFull1();
+        gun = 48;
+        document.getElementById("d").innerHTML = "Outlaw";
+        if (slider1.value >= 31 && slider1.value <= 100) {
+          my1range(75,1.5,1.2,1.5,1);
+        } else if (slider1.value >= 0 && slider1.value <= 30) {
+          my1range(90,1.5,1.2,1.5,1);
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myKar98() {
+        tbs = 932.2033898;
+        myFull1();
+        gun = 49;
+        document.getElementById("d").innerHTML = "Kar98";
+        if (slider1.value >= 42 && slider1.value <= 100) {//hands 96
+          my1range(80,1.5,1.3,1.3,1);
+        } else if (slider1.value >= 0 && slider1.value <= 41) {//hands 120
+          my1range(85,1.5,1.3,1.3,1);
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myKar98SP() {
+        tbs = 932.2033898;
+        myFull1();
+        gun = 56;
+        document.getElementById("d").innerHTML = "Kar98 with Stopping Power Mag";
+        if (slider1.value >= 51 && slider1.value <= 100) {//hands 120
+          my1range(120,1,0.867,0.867,0.6667);
+        } else if (slider1.value >= 0 && slider1.value <= 50) {//hands 127
+          my1range(127,1,0.867,0.867,0.6667);
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myNA45() {
+        tbs = 54.69678954;//1096.956522  (60/((1+(17/29)/29))
+        myFull1();
+        gun = 53;
+        document.getElementById("d").innerHTML = "NA45";
+        my1range(30,3.5,1,1.1,1);
+        myText();
+      }
+
+      function myGunsmith() {
+        if (gun == 0) {
+          alert("You need to select a weapon first!");
+        } else if (gun == 1) {
+          window.open("Redirected/index.html");
+        } else if (gun == 2) {
+          window.open("Redirected/index.html");
+        } else if (gun == 3) {
+          window.open("AK117/index.html");
+        } else if (gun == 4) {
+          window.open("Redirected/index.html");
+        } else if (gun == 5) {
+          window.open("Redirected/index.html");
+        } else if (gun == 6) {
+          window.open("Redirected/index.html");
+        } else if (gun == 7) {
+          window.open("Redirected/index.html");
+        } else if (gun == 8) {
+          window.open("Redirected/index.html");
+        } else if (gun == 9) {
+          window.open("Redirected/index.html");
+        } else if (gun == 10) {
+          window.open("Redirected/index.html");
+        } else if (gun == 11) {
+          window.open("Redirected/index.html");
+        } else if (gun == 12) {
+          window.open("Redirected/index.html");
+        } else if (gun == 13) {
+          window.open("Redirected/index.html");
+        } else if (gun == 14) {
+          window.open("Redirected/index.html");
+        } else if (gun == 15) {
+          window.open("Redirected/index.html");
+        } else if (gun == 16) {
+          window.open("Redirected/index.html");
+        } else if (gun == 17) {
+          window.open("Redirected/index.html");
+        } else if (gun == 18) {
+          window.open("Redirected/index.html");
+        } else if (gun == 19) {
+          window.open("Redirected/index.html");
+        } else if (gun == 20) {
+          window.open("Redirected/index.html");
+        } else if (gun == 21) {
+          window.open("Redirected/index.html");
+        } else if (gun == 22) {
+          window.open("Redirected/index.html");
+        } else if (gun == 23) {
+          window.open("Redirected/index.html");
+        } else if (gun == 24) {
+          window.open("Redirected/index.html");
+        } else if (gun == 25) {
+          window.open("Redirected/index.html");
+        } else if (gun == 26) {
+          window.open("Redirected/index.html");
+        } else if (gun == 27) {
+          window.open("Redirected/index.html");
+        } else if (gun == 28) {
+          window.open("Redirected/index.html");
+        } else if (gun == 29) {
+          window.open("Redirected/index.html");
+        } else if (gun == 30) {
+          window.open("Redirected/index.html");
+        } else if (gun == 31) {
+          window.open("Redirected/index.html");
+        } else if (gun == 32) {
+          window.open("Redirected/index.html");
+        } else if (gun == 33) {
+          window.open("Redirected/index.html");
+        } else if (gun == 34) {
+          window.open("Redirected/index.html");
+        } else if (gun == 35) {
+          window.open("Redirected/index.html");
+        } else if (gun == 36) {
+          window.open("Redirected/index.html");
+        } else if (gun == 37) {
+          window.open("Redirected/index.html");
+        } else if (gun == 38) {
+          window.open("Redirected/index.html");
+        } else if (gun == 39) {
+          window.open("Redirected/index.html");
+        } else if (gun == 40) {
+          window.open("Redirected/index.html");
+        } else if (gun == 41) {
+          window.open("Redirected/index.html");
+        } else if (gun == 42) {
+          window.open("Redirected/index.html");
+        } else if (gun == 43) {
+          window.open("Redirected/index.html");
+        } else if (gun == 44) {
+          window.open("Redirected/index.html");
+        } else if (gun == 45) {
+          window.open("Redirected/index.html");
+        } else if (gun == 46) {
+          window.open("Redirected/index.html");
+        } else if (gun == 47) {
+          window.open("Redirected/index.html");
+        } else if (gun == 48) {
+          window.open("Redirected/index.html");
+        } else if (gun == 49) {
+          window.open("Redirected/index.html");
+        } else if (gun == 50) {
+          window.open("Redirected/index.html");
+        } else if (gun == 51) {
+          window.open("Redirected/index.html");
+        } else if (gun == 52) {
+          window.open("Redirected/index.html");
+        } else if (gun == 53) {
+          window.open("Redirected/index.html");
+        } else if (gun == 54) {
+          window.open("Redirected/index.html");
+        } else if (gun == 55) {
+          window.open("Redirected/index.html");
+        } else if (gun == 56) {
+          window.open("Redirected/index.html");
+        } else {
+          alert("Error! This should never happen. If you know how to recreate this please contact the developer at atulpurna@gmail.com");
+        }
+      }
+
+      function shhpbar() {
+        if (document.getElementById("MpHp3").checked == true && document.getElementById("MpBr1").checked == true) {
+          document.getElementById("HPBar").style.display = "block";
+        } else if (document.getElementById("BrHp3").checked == true && document.getElementById("MpBr2").checked == true) {
+          document.getElementById("HPBar").style.display = "block";
+        } else {
+          document.getElementById("HPBar").style.display = "none";
+        }
+      }
+
+      function selectOnlyThis(id) {
+        for (var i = 1; i <= 4; i++) {
+          document.getElementById("Check" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        eef();
+      }
+
+      function selectOnlyThis1(id) {
+        for (var i = 1; i <= 2; i++) {
+          document.getElementById("MpBr" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        if (document.getElementById("MpBr1").checked == true) {
+          document.getElementById("mpmode").style.display = "block";
+          document.getElementById("brmode").style.display = "none";
+          document.getElementById("myRange2").max = 100;
+
+          if (document.getElementById("myRange2").value > 100) {
+            document.getElementById("myRange2").value = 100;
+          }
+          if (hp > 100) {
+            hp = 100;
+          }
+          for (var i = 1; i <= 2; i++) {
+            if (document.getElementById("MpHp" + i).checked == true) {
+              selectOnlyThis2("MpHp" + i);
+              hp = document.getElementById("MpHp" + i).value;
+            }
+          }
+          if (document.getElementById("MpHp3").checked == true) {
+            selectOnlyThis2("MpHp3");
+            hp = document.getElementById('myRange2').value;
+          }
+        } else if (document.getElementById("MpBr2").checked == true) {
+          document.getElementById("mpmode").style.display = "none";
+          document.getElementById("brmode").style.display = "block";
+          document.getElementById("myRange2").max = 150;
+          if (document.getElementById("myRange2").value == 100) {
+            document.getElementById("myRange2").value = 150;
+          }
+          for (var i = 1; i <= 2; i++) {
+            if (document.getElementById("BrHp" + i).checked == true) {
+              selectOnlyThis3("BrHp" + i);
+              hp = document.getElementById("BrHp" + i).value;
+            }
+          }
+          if (document.getElementById("BrHp3").checked == true) {
+            selectOnlyThis2("BrHp3");
+            hp = document.getElementById('myRange2').value;
+          }
+        }
+        document.getElementById("demo2").innerHTML = document.getElementById("myRange2").value;
+        shhpbar();
+        eef();
+      }
+
+      function selectOnlyThis2(id) {
+        for (var i = 1; i <= 3; i++) {
+          document.getElementById("MpHp" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        shhpbar();
+        eef();
+      }
+
+      function selectOnlyThis3(id) {
+        for (var i = 1; i <= 3; i++) {
+          document.getElementById("BrHp" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        shhpbar();
+        eef();
+      }
+
+      function selectOnlyThis4(id) {
+        for (var i = 0; i <= 3; i++) {
+          document.getElementById("Vest" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        eef();
+      }
+
+      function selectOnlyThis5(id) {
+        for (var i = 0; i <= 2; i++) {
+          document.getElementById("Wbv" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        eef();
+      }
+
+      function selectOnlyThis6(id) {
+        for (var i = 0; i <= 2; i++) {
+          document.getElementById("Wb" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        eef();
+      }
+      myResize();
+      myResize();
+
+    </script>
+  </body>
+
+</html>

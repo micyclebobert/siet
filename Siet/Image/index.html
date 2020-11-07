@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>CoD Mobile | Database</title>
+    <meta name="title" content="CoD Mobile | Preview as Image">
+
+    <link rel="icon" type="image/png" sizes="16×16" href="../Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+    <style>
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .container {
+        position: relative;
+        text-align: left;
+        color: white;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 11%;
+        left: 30px;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+      .top-center {
+        position: absolute;
+        top: 5%;
+        left: 150px;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 150px;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+      .btn {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Blue */
+      .info {
+        border-color: #2196F3;
+        color: dodgerblue;
+        position: absolute;
+        top: 750px;
+        left: 50px;
+      }
+
+      .info:hover {
+        background: #2196F3;
+        color: white;
+      }
+
+      .g {
+        position: absolute;
+        top: 850px;
+        left: 50px;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="k">
+      <div id="kkk" style="width:300px;background-color:white">
+        <div class="row">
+          <div class="container">
+            <img src="../H.png" id="Himg" style="width:300px" alt="Head" />
+            <div id="Head" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="../AC.png" id="ACimg" style="width:300px" alt="Arms and Chest" />
+            <div id="Arms" class="top-left">00</div>
+            <div id="Chest" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="../S.png" id="Simg" style="width:300px" alt="Stomach" />
+            <div id="Stomach" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="../L.png" id="Limg" style="width:300px" alt="Legs" />
+            <div id="Legs" class="top-center">00</div>
+          </div>
+        </div>
+      </div>
+      <div class="lla"><a id="a" class="btn info" href="#">Download</a></div>
+      <p id="g" class="g"></p>
+    </div>
+    <p id="kk" style="display: none">No data found. Please <a onClick="window.close();" href='https://www.codmdatabase.ml/' target='_blank'>close this tab and re-enter from the main site</a>.</p>
+
+    <script>
+      // Global variable 
+      var element = $("#kkk");
+
+      // Global variable 
+      var imgageData;
+      var newData;
+      var getCanvas;
+      var ste = "";
+      var imgname = "";
+
+      if (typeof(Storage) !== "undefined") {
+        // Retrieve
+        document.getElementById("Head").innerHTML = sessionStorage.getItem("d1");
+        document.getElementById("Arms").innerHTML = sessionStorage.getItem("d2");
+        document.getElementById("Chest").innerHTML = sessionStorage.getItem("d3");
+        document.getElementById("Stomach").innerHTML = sessionStorage.getItem("d4");
+        document.getElementById("Legs").innerHTML = sessionStorage.getItem("d5");
+        if (sessionStorage.getItem("d6") == "null") {
+          document.getElementById("k").style.display = "none";
+          document.getElementById("kk").style.display = "block";
+          throw new Error("No previous data found! Error code: 0x010255");
+        } else {
+          imgname = sessionStorage.getItem("d6");
+          document.getElementById("g").innerHTML = imgname;
+        }
+        sessionStorage.clear();
+      } else {
+        document.getElementById("k").innerHTML = "Sorry, your browser does not support the process";
+      }
+      $(document).ready(function() {
+
+        html2canvas(element, {
+          onrendered: function(canvas) {
+            $("#kkk").html(canvas);
+            getCanvas = canvas;
+          }
+        });
+
+
+        $("#a").on('click', function() {
+          imgageData = getCanvas.toDataURL("image/png");
+
+          // Now browser starts downloading  
+          // it instead of just showing it 
+          newData = imgageData.replace(
+            /^data:image\/png/, "data:application/octet-stream");
+
+          $("#a").attr(
+            "download", imgname + ".png").attr(
+            "href", newData);
+        });
+      });
+
+    </script>
+
+  </body>
+
+</html>

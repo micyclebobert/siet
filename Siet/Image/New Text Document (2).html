@@ -1,0 +1,167 @@
+<!DOCTYPE html> 
+<html> 
+
+<head>
+    <!-- Primary Meta Tags -->
+    <title>CoD Mobile | Database</title>
+    <meta name="title" content="CoD Mobile | Preview as Image">
+
+    <link rel="icon" type="image/png" sizes="16×16" href="../Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="https://files.codepedia.info/files/uploads/iScripts/html2canvas.js"></script>
+    <style>
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .row {
+        background-color: white;
+      }
+
+      .container {
+        position: relative;
+        text-align: left;
+        color: white;
+      }
+
+      .top-left {
+        position: absolute;
+
+        top: 11%;
+        left: 30px;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+      .top-center {
+        position: absolute;
+        top: 5%;
+        left: 150px;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 150px;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+      .btn {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Blue */
+      .info {
+        border-color: #2196F3;
+        color: dodgerblue;
+      }
+
+      .info:hover {
+        background: #2196F3;
+        color: white;
+      }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+    </style>
+  </head> 
+
+<body> 
+	
+	<div id="html-content-holder" style="width:300px"> 
+
+      <div class="row">
+        <div class="container">
+          <img src="../H.png" id="Himg" style="width:300px" alt="Head" />
+          <div id="Head" class="centered">00</div>
+        </div>
+        <div class="container">
+          <img src="../AC.png" id="ACimg" style="width:300px" alt="Arms and Chest" />
+          <div id="Arms" class="top-left">00</div>
+          <div id="Chest" class="centered">00</div>
+        </div>
+        <div class="container">
+          <img src="../S.png" id="Simg" style="width:300px" alt="Stomach" />
+          <div id="Stomach" class="centered">00</div>
+        </div>
+        <div class="container">
+          <img src="../L.png" id="Limg" style="width:300px" alt="Legs" />
+          <div id="Legs" class="top-center">00</div>
+        </div>
+      </div> 
+	</div> 
+
+	<input id="btn-Preview-Image" type="button"
+				value="Preview" /> 
+		
+    <a id="btn-Convert-Html2Image" class="btn info" href="#">Download</a>
+
+
+	<br/> 
+	
+	<h3>Preview :</h3> 
+	
+	<div id="previewImage"></div> 
+	
+	<script> 
+        if (typeof(Storage) !== "undefined") {
+          // Retrieve
+          var ste = sessionStorage.getItem("d0");
+          document.getElementById("Head").innerHTML = sessionStorage.getItem("d1");
+          document.getElementById("Arms").innerHTML = sessionStorage.getItem("d2");
+          document.getElementById("Chest").innerHTML = sessionStorage.getItem("d3");
+          document.getElementById("Stomach").innerHTML = sessionStorage.getItem("d4");
+          document.getElementById("Legs").innerHTML = sessionStorage.getItem("d5");
+          var imgname = sessionStorage.getItem("d6");
+        } else {
+          document.getElementById("tooltip").innerHTML = "Sorry, your browser does not support the process";
+        }
+		$(document).ready(function() { 
+		
+			// Global variable 
+			var element = $("#html-content-holder"); 
+		
+			// Global variable 
+			var getCanvas; 
+ 
+				html2canvas(element, { 
+					onrendered: function(canvas) { 
+						$("#html-content-holder").html(canvas); 
+						getCanvas = canvas; 
+					} 
+				}); 
+
+			$("#btn-Convert-Html2Image").on('click', function() { 
+				var imgageData = 
+					getCanvas.toDataURL("image/png"); 
+			
+				// Now browser starts downloading 
+				// it instead of just showing it 
+				var newData = imgageData.replace( 
+				/^data:image\/png/, "data:application/octet-stream"); 
+			
+				$("#btn-Convert-Html2Image").attr( 
+				"download", "GeeksForGeeks.png").attr( 
+				"href", newData); 
+			}); 
+		}); 
+	</script> 
+	</center> 
+</body> 
+
+</html>					 

@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon"  type="image/png" sizes="16×16" href="../Logo.png">
+	<title>CoD Mobile | Type 25 Gunsmith stats and data</title>
+<meta name="Description" content="CoD Mobile data. Get Type 25 gunsmith data like damage, ads time, movement speed ams, etc.">
+
+<meta name="KeyWords" content="CoD Mobile, Type 25, Type 25 tips and trick, Season 9, Damage, Ads time, Movement Speed, Call of Duty Mobile, Time to Kill, Shots to Kill, Strafing">
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+ <br> -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+ <br> -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+ <br> -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #00BCFF;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+}
+	
+</style>
+	
+	<style>
+		
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #00D3FF;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width : 704px ){
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+.page-header {
+    background: #00a3ef;
+    background: -moz-linear-gradient(top, #00a3ef 0%, #0b4182 100%);
+    background: -webkit-linear-gradient(top, #00a3ef 0%,#0b4182 100%);
+    background: linear-gradient(to bottom, #00a3ef 0%,#0b4182 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3ef', endColorstr='#0b4182',GradientType=0 );
+}
+	</style>
+	
+</head>
+<body>
+	
+	
+<div class="header">
+	<div class="page-header">
+  <a href="../index.html" class="logo">CoDM Database</a>
+  <div class="header-right">
+    <a href="../index.html">MP stats</a>
+    <a href="../BR.html">BR</a>
+    <a href="../Maps.html">Maps</a>
+    <a href="../Stuff.html">Stuff</a>
+    <a href="../Contact.html">Contact</a>
+    <a href="../About.html">About</a>
+  </div>
+</div>
+	</div>
+	
+<h1 style="padding-left:10px">Type 25 Gunsmith Page</h1>
+	<p style="padding-left:20px">Good fast-firing weapon for close range and fair at mid range. It has fast close-range time to kill with reasonable range. Not recommended for long or very long range due to the recoil. Try to tap/single or 2-3 rounds burst fire at long range. Recoil pattern is hard to remember but is quite constant across shots. Medium recoil pattern deviation constant across shots except when near the recoil pattern edges where recoil pattern deviation becomes higher. Medium aim shake with no attachments.</p>
+<h4 style="padding-left:15px">Choose Muzzle:</h4>
+<div style="padding-left:20px">
+<input type="checkbox" id="Muzzle1" value="Value1" onclick="selectOnlyThis1(this.id)" checked/> None
+<input type="checkbox" id="Muzzle2" value="Value1" onclick="selectOnlyThis1(this.id)" /> OWC Light Suppressor
+<input type="checkbox" id="Muzzle3" value="Value1" onclick="selectOnlyThis1(this.id)" /> OWC Light Compensator
+<input type="checkbox" id="Muzzle4" value="Value1" onclick="selectOnlyThis1(this.id)" /> RTC Light Muzzle Break
+<input type="checkbox" id="Muzzle5" value="Value1" onclick="selectOnlyThis1(this.id)" /> Tactical Suppressor
+<input type="checkbox" id="Muzzle6" value="Value1" onclick="selectOnlyThis1(this.id)" /> MIP Light Flash Guard
+<input type="checkbox" id="Muzzle7" value="Value1" onclick="selectOnlyThis1(this.id)" /> Monolithic Suppressor
+</div>
+<h4 style="padding-left:15px">Choose Barrel:</h4>
+	<div style="padding-left:20px">
+<input type="checkbox" id="Barrel1" value="Value2" onclick="selectOnlyThis2(this.id)"  checked/> None
+<input type="checkbox" id="Barrel2" value="Value2" onclick="selectOnlyThis2(this.id)" /> MIP Light Barrel (Short)
+<input type="checkbox" id="Barrel3" value="Value2" onclick="selectOnlyThis2(this.id)" /> MIP Extended Light Barrel
+<input type="checkbox" id="Barrel4" value="Value2" onclick="selectOnlyThis2(this.id)" /> MIP Light
+</div>
+<h4 style="padding-left:15px">Choose Scope:</h4>
+	<div style="padding-left:20px">
+<input type="checkbox" id="Scope1" value="Value3" onclick="selectOnlyThis3(this.id)"  checked/> None (Iron Sights)
+<input type="checkbox" id="Scope2" value="Value3" onclick="selectOnlyThis3(this.id)" /> Red Dot, Holo Sights
+<input type="checkbox" id="Scope3" value="Value3" onclick="selectOnlyThis3(this.id)" /> Tactical Scope
+<input type="checkbox" id="Scope4" value="Value3" onclick="selectOnlyThis3(this.id)" /> 3x
+<input type="checkbox" id="Scope5" value="Value3" onclick="selectOnlyThis3(this.id)" /> 4.4x
+</div>
+<h4 style="padding-left:15px">Choose Stock:</h4>
+	<div style="padding-left:20px">
+<input type="checkbox" id="Stock1" value="Value4" onclick="selectOnlyThis4(this.id)"  checked/> None
+<input type="checkbox" id="Stock2" value="Value4" onclick="selectOnlyThis4(this.id)" /> YKM Light Stock
+<input type="checkbox" id="Stock3" value="Value4" onclick="selectOnlyThis4(this.id)" /> RTC Steady Stock
+<input type="checkbox" id="Stock4" value="Value4" onclick="selectOnlyThis4(this.id)" /> YKM Combat Stock
+</div>
+<h4 style="padding-left:15px">Choose Laser:</h4>
+	<div style="padding-left:20px">
+<input type="checkbox" id="Laser1" value="Value5" onclick="selectOnlyThis5(this.id)"  checked/> None
+<input type="checkbox" id="Laser2" value="Value5" onclick="selectOnlyThis5(this.id)" /> RTC Laser 1mW
+<input type="checkbox" id="Laser3" value="Value5" onclick="selectOnlyThis5(this.id)" /> MIP Laser 5mW
+<input type="checkbox" id="Laser4" value="Value5" onclick="selectOnlyThis5(this.id)" /> OWC Laser - Tactical
+</div>
+<h4 style="padding-left:15px">Choose Underbarrel:</h4>
+	<div style="padding-left:20px">
+<input type="checkbox" id="Underbarrel1" value="Value6" onclick="selectOnlyThis6(this.id)"  checked/> None
+<input type="checkbox" id="Underbarrel2" value="Value6" onclick="selectOnlyThis6(this.id)" /> Strike Foregrip
+<input type="checkbox" id="Underbarrel3" value="Value6" onclick="selectOnlyThis6(this.id)" /> Merc Foregrip
+<input type="checkbox" id="Underbarrel4" value="Value6" onclick="selectOnlyThis6(this.id)" /> Operator Foregrip
+<input type="checkbox" id="Underbarrel5" value="Value6" onclick="selectOnlyThis6(this.id)" /> Range Foregrip
+<input type="checkbox" id="Underbarrel6" value="Value6" onclick="selectOnlyThis6(this.id)" /> Tactical Foregrip A
+</div>
+<h4 style="padding-left:15px">Choose Rear Grip:</h4>
+	<div style="padding-left:20px">
+<input type="checkbox" id="RearGrip1" value="Value7" onclick="selectOnlyThis7(this.id)"  checked/> None
+<input type="checkbox" id="RearGrip2" value="Value7" onclick="selectOnlyThis7(this.id)" /> Stippled Grip Tape
+<input type="checkbox" id="RearGrip3" value="Value7" onclick="selectOnlyThis7(this.id)" /> Granulated Grip Tape
+<input type="checkbox" id="RearGrip4" value="Value7" onclick="selectOnlyThis7(this.id)" /> Rubberized  Grip Tape
+</div>
+<h4 style="padding-left:15px">Choose Ammunition:</h4>
+	<div style="padding-left:20px">
+<input type="checkbox" id="Ammunition1" value="Value8" onclick="selectOnlyThis8(this.id)"  checked/> None
+<input type="checkbox" id="Ammunition2" value="Value8" onclick="selectOnlyThis8(this.id)" /> Stopping Power Reload
+<input type="checkbox" id="Ammunition3" value="Value8" onclick="selectOnlyThis8(this.id)" /> 38 Round Extended Mag
+<input type="checkbox" id="Ammunition4" value="Value8" onclick="selectOnlyThis8(this.id)" /> Fast Reload
+<input type="checkbox" id="Ammunition5" value="Value8" onclick="selectOnlyThis8(this.id)" /> 46 Round Extended Mag
+<input type="checkbox" id="Ammunition6" value="Value8" onclick="selectOnlyThis8(this.id)" /> 42 Round Fast Reload
+		</div>
+<h4 style="padding-left:15px">Choose Perk:</h4>
+	<div style="padding-left:20px">
+<input type="checkbox" id="Perk1" value="Value9" onclick="selectOnlyThis9(this.id)"  checked/> None
+<input type="checkbox" id="Perk2" value="Value9" onclick="selectOnlyThis9(this.id)" /> Wounding
+<input type="checkbox" id="Perk3" value="Value9" onclick="selectOnlyThis9(this.id)" /> FMJ
+<input type="checkbox" id="Perk4" value="Value9" onclick="selectOnlyThis9(this.id)" /> Tough
+<input type="checkbox" id="Perk5" value="Value9" onclick="selectOnlyThis9(this.id)" /> Long Shot
+<input type="checkbox" id="Perk6" value="Value9" onclick="selectOnlyThis9(this.id)" /> Melee Master
+<input type="checkbox" id="Perk7" value="Value9" onclick="selectOnlyThis9(this.id)" /> Sleight of Hand
+<input type="checkbox" id="Perk8" value="Value9" onclick="selectOnlyThis9(this.id)" /> Full Ammo
+<input type="checkbox" id="Perk9" value="Value9" onclick="selectOnlyThis9(this.id)" /> Disable
+		</div>
+	<div> </div>
+	<br>
+<div style="padding-left:30px">
+	
+<style>
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+/* Red */
+.danger {
+  border-color: #ed0000;
+  color: red
+}
+
+.danger:hover {
+  background: #ed0000;
+  color: white;
+}
+/* Green */
+.success {
+  border-color: #1fc916;
+  color: #1fc916;
+}
+
+.success:hover {
+  background-color: #1fc916;
+  color: white;
+}
+	</style>
+	
+<button onclick="myResult()" class="btn info">Generate Result</button>
+	
+<button onclick="cleanattach()" class="btn danger">Clear All Attachments</button>
+	
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  padding-bottom: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+/* The Close Button */
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #1fc916;
+  color: white;
+}
+
+
+</style>
+<button id="myBtn"class="btn success">Help/Guide</button>
+	</div>
+	
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="width:90%; height:98%;">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Explainations</h2>
+    </div>
+	  <object style="width:100%; height:85%;" type="text/html" data="../Help.html" ></object>
+  </div>
+
+</div>
+	</div>
+	<br>
+	
+<div>
+		<p style="color:green;" id="A1"></p>
+		<p style="color:green;" id="A2"></p>
+		<p style="color:green;" id="A3"></p>
+		<p style="color:green;" id="A4"></p>
+		<p style="color:green;" id="A5"></p>
+		<p style="color:green;" id="A6"></p>
+		<p style="color:green;" id="A7"></p>
+		<p style="color:green;" id="A8"></p>
+		<p style="color:green;" id="A9"></p>
+	<br>
+		<p style="color:red;" id="B1"></p>
+		<p style="color:red;" id="B2"></p>
+		<p style="color:red;" id="B3"></p>
+		<p style="color:red;" id="B4"></p>
+		<p style="color:red;" id="B5"></p>
+		<p style="color:red;" id="B6"></p>
+		<p style="color:red;" id="B7"></p>
+		<p style="color:red;" id="B8"></p>
+		<p style="color:red;" id="B9"></p>
+		<p style="color:blue;" id="Q"></p>
+		<p style="color:blue;" id="QQ"></p>
+</div>
+<br>
+
+	<p id="ex"></p>
+	
+<table cellspacing="0" border="0">
+	<colgroup width="142"></colgroup>
+	<colgroup span="2" width="135"></colgroup>
+	<tr>
+		<td height="22" align="center" valign="bottom"><font color="#000000"><br></font></td>
+		<td style="border-bottom: 1px solid #000000" align="center" valign="bottom"><font color="#000000">No attachments</font></td>
+		<td style="border-bottom: 1px solid #000000" align="center" valign="bottom"><font color="#000000">Your build</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" height="21" align="right" valign="bottom"><font color="#000000">Ads Time&nbsp;</font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000">0.175 s</font></td>
+		<td style="border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000"><span id ="as">0.175</span> s</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" height="20" align="right" valign="bottom"><font color="#000000">Ads Movement Speed&nbsp;</font></td>
+		<td style="border-top: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000">2.1841 m/s</font></td>
+		<td style="border-top: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000"><span id ="ams">2.1841</span> m/s</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" height="20" align="right" valign="bottom"><font color="#000000">Movement Speed&nbsp;</font></td>
+		<td style="border-top: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000">6.5728 m/s</font></td>
+		<td style="border-top: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000"><span id ="ms">6.5728</span> m/s</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" height="20" align="right" valign="bottom"><font color="#000000">Sprint to Fire Speed&nbsp;</font></td>
+		<td style="border-top: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000">Under Investigation</font></td>
+		<td style=" border-top: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000">Under Investigation</font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" height="20" align="right" valign="bottom"><font color="#000000">Ammo Count&nbsp;</font></td>
+		<td style="border-bottom: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom" sdval="30" sdnum="1033;"><font color="#000000">30</font></td>
+		<td style="border-bottom: 1px solid #000000; border-top: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom" sdval="30" sdnum="1033;"><font color="#000000"><span id ="ac">30</span></font></td>
+	</tr>
+	<tr>
+		<td style="border-right: 1px solid #000000" height="21" align="right" valign="bottom"><font color="#000000">Reload Time&nbsp;</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000">2.0 s</font></td>
+		<td style="border-bottom: 1px solid #000000; border-right: 1px solid #000000" align="center" valign="bottom"><font color="#000000"><span id ="rs">2.0</span> s</font></td>
+	</tr>
+</table>
+	<br>
+	<div>
+	  <p style="padding-left:15px" id="Timebs">Time between shots: </p>
+	  <p style="padding-left:15px" id="RPM">Rounds per minute: </p>
+	  <p style="padding-left:15px" id="RPS">Rounds per second: </p>
+	  <p style="padding-left:15px" id="TFYS">Time to fire <span id="HMB"></span> shots: </p>
+		<br>
+	  <p style="padding-left:25px">Your build section and avantages-disadvantages section is based on data provided by 'path.exe'.</p>
+    </div>
+	<br>
+	<br>
+<p style="padding-left:15px" id="d">Type 25</p>
+<br>
+	<br>
+<div style="padding-left:15px">
+	<input type="checkbox" id="Check1" value="Value10" onclick="selectOnlyThis(this.id)" checked/> Damage
+<input type="checkbox" id="Check2" value="Value10" onclick="selectOnlyThis(this.id)" /> Shots to Kill
+<input type="checkbox" id="Check3" value="Value10" onclick="selectOnlyThis(this.id)" /> Time to Kill
+	</div>
+	<br>
+	<br>
+	
+<h2 style="padding-left:15px">Select distance</h2>
+<p style="padding-left:20px">Drag the slider to change the enemy distance</p>
+	
+	<br>
+	<br>
+<div class="slidecontainer" style="padding-left:15px; padding-right:15px">
+  <input type="range" min="1" max="32" value="6" class="slider" id="myRange">
+  <p>Range: <span id="demo"></span>m</p>
+</div>
+	
+  <div style="position: relative; left: 0; top: 0;">
+	<img src="../Frame.png" width="555" height="578" class="fishes" alt="" id="frame"/> 
+	<img src="../Dummy.png" width="239" height="469" alt="" class="fish" id="dummy"/>
+    <img src="Reekoil.png" width="97" height="269" alt="" class="fis" id="reekoil"/>
+  </div>
+	<p id="rex"></p>
+<script>
+	//var o = 1
+	//if (o=1){
+	//changedummy();
+	//o=2;
+	//}
+	var kw;
+	var kh;
+	var kt;
+	var kl;
+	var fw=555;
+	var fh=578;
+	var ft=0;
+	var fl=0;
+	var dw=239;
+	var dh=119;
+	var dt=109;
+	var dl=158;
+	var amo = 0;
+	var weapon = 11;
+	var gun = 1;
+	var as;
+	var ms;
+	var rs;
+	var ac;
+	var ams;
+  var rh = 26;
+  var re = 24;
+  var C1 = 0;
+  var C2 = 0;
+  var C3 = 0;
+  var C4 = 0;
+  var C5 = 0;
+  var C6 = 0;
+  var C7 = 0;
+  var C8 = 0;
+  var C9 = 0;
+  var C;
+		  
+  var tbs=57.67;
+	
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = 6;
+
+slider.oninput = function() {
+	mag();
+	changedummy();
+}
+slider.onmouseup = function() {
+	mag();
+	changedummy();
+	
+}
+slider.ontouchend = function() {
+	mag();
+	changedummy();
+}
+function mag(){
+	
+	if (amo==0){
+	if (slider.value == 32) {
+output.innerHTML = "31+ ";
+		rh="17";
+		re="16";
+} else if (slider.value == 31) {
+output.innerHTML = "31";
+		rh="17";
+		re="16";
+} else if (slider.value > 17 && slider.value < 31) {
+output.innerHTML = slider.value;
+		rh="20";
+		re="18";
+} else if (slider.value > 10 && slider.value < 18) {
+output.innerHTML = slider.value;
+		rh="24";
+		re="22";
+} else if (slider.value > 0 && slider.value < 11) {
+output.innerHTML = slider.value;
+		rh="26";
+		re="24";
+} else{
+  alert("Error! This should never happen. If you know how to recreate this please contact the developer at atulpurna@gmail.com");
+output.innerHTML = "Error!";
+		rh=0;
+		re=0;
+}
+myvalue();
+}
+	else if (amo==1){
+	if (slider.value == 32) {
+output.innerHTML = "31+ ";
+		rh=17;
+		re=16;
+} else if (slider.value == 31) {
+output.innerHTML = 31;
+		rh=17;
+		re=16;
+} else if (slider.value > 20 && slider.value < 31) {
+output.innerHTML = slider.value;
+		rh=20;
+		re=19;
+} else if (slider.value > 16 && slider.value < 21) {
+output.innerHTML = slider.value;
+		rh=22;
+		re=20;
+} else if (slider.value > 9 && slider.value < 17) {
+output.innerHTML = slider.value;
+		rh=25;
+		re=23;
+} else if (slider.value > 0 && slider.value < 10) {
+output.innerHTML = slider.value;
+		rh=27;
+		re=25;
+} else{
+  alert("Error! This should never happen. If you know how to recreate this please contact the developer at atulpurna@gmail.com");
+output.innerHTML = "Error!";
+		rh=0;
+		re=0;
+}
+myvalue();
+}
+else{
+  alert("Error! This should never happen. If you know how to recreate this please contact the developer at atulpurna@gmail.com");
+output.innerHTML = "Error!";
+		document.getElementById("d").innerHTML = "Error!!!";
+		document.getElementById("Head").innerHTML = "Error!!!";
+		document.getElementById("Arms").innerHTML = "Error!!!";
+		document.getElementById("Chest").innerHTML = "Error!!!";
+		document.getElementById("Stomach").innerHTML = "Error!!!";		
+		document.getElementById("Legs").innerHTML = "Error!!!";
+}
+}
+function myvalue(){
+	
+	if (document.getElementById("Check1").checked==true){
+		document.getElementById("Head").innerHTML = rh;
+		document.getElementById("Arms").innerHTML = re;
+		document.getElementById("Chest").innerHTML = re;
+		document.getElementById("Stomach").innerHTML = re;		
+		document.getElementById("Legs").innerHTML = re;
+	}
+	else if (document.getElementById("Check2").checked==true){
+		document.getElementById("Head").innerHTML = Math.ceil(100/rh);
+		document.getElementById("Arms").innerHTML = Math.ceil(100/re);
+		document.getElementById("Chest").innerHTML = Math.ceil(100/re);
+		document.getElementById("Stomach").innerHTML = Math.ceil(100/re);	
+		document.getElementById("Legs").innerHTML = Math.ceil(100/re);
+	}
+	else if (document.getElementById("Check3").checked==true){
+		document.getElementById("Head").innerHTML = (Math.ceil(100/rh)-1)*tbs;
+		document.getElementById("Arms").innerHTML = (Math.ceil(100/re)-1)*tbs;
+		document.getElementById("Chest").innerHTML = (Math.ceil(100/re)-1)*tbs;
+		document.getElementById("Stomach").innerHTML = (Math.ceil(100/re)-1)*tbs;	
+		document.getElementById("Legs").innerHTML = (Math.ceil(100/re)-1)*tbs;
+	}
+}
+var muzzle;
+var barrel;
+var scope;
+var stock;
+var laser;
+var underbarrel;
+var reargrip;
+var ammunition;
+var perk;
+function selectOnlyThis(id) {
+for (var i = 1;i <= 3; i++)
+    {
+        document.getElementById("Check" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	myvalue();
+}	
+function selectOnlyThis1(id) {
+    for (var i = 1;i <= 7; i++)
+    {
+        document.getElementById("Muzzle" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("Muzzle1").checked == true){
+		C1=0;
+	}
+	else if (document.getElementById("Muzzle1").checked == false) {
+		C1=1;	
+  }
+	
+	
+
+}
+function selectOnlyThis2(id) {
+    for (var i = 1;i <= 4; i++)
+    {
+        document.getElementById("Barrel" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("Barrel1").checked == true){
+		C2=0;
+	}
+	else if (document.getElementById("Barrel1").checked == false){
+		C2=1;
+	}
+}
+function selectOnlyThis3(id) {
+    for (var i = 1;i <= 5; i++)
+    {
+        document.getElementById("Scope" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("Scope1").checked == true){
+		C3=0;
+	}
+	else if (document.getElementById("Scope1").checked == false){
+		C3=1;
+	}
+}
+function selectOnlyThis4(id) {
+    for (var i = 1;i <= 4; i++)
+    {
+        document.getElementById("Stock" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("Stock1").checked == true){
+		C4=0;
+	}
+	else if (document.getElementById("Stock1").checked == false){
+		C4=1;
+	}
+}
+function selectOnlyThis5(id) {
+    for (var i = 1;i <= 4; i++)
+    {
+        document.getElementById("Laser" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("Laser1").checked == true){
+		C5=0;
+	}
+	else if (document.getElementById("Laser1").checked == false){
+		C5=1;
+	}
+}
+function selectOnlyThis6(id) {
+    for (var i = 1;i <= 6; i++)
+    {
+        document.getElementById("Underbarrel" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("Underbarrel1").checked == true){
+		C6=0;
+	}
+	else if (document.getElementById("Underbarrel1").checked == false){
+		C6=1;
+	}
+}
+function selectOnlyThis7(id) {
+    for (var i = 1;i <= 4; i++)
+    {
+        document.getElementById("RearGrip" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("RearGrip1").checked == true){
+		C7=0;
+	}
+	else if (document.getElementById("RearGrip1").checked == false){
+		C7=1;
+	}
+}
+function selectOnlyThis8(id) {
+    for (var i = 1;i <= 6; i++)
+    {
+        document.getElementById("Ammunition" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("Ammunition1").checked == true){
+		C8=0;
+	}
+	else if (document.getElementById("Ammunition1").checked == false){
+		C8=1;
+	}
+}
+function selectOnlyThis9(id) {
+    for (var i = 1;i <= 9; i++)
+    {
+        document.getElementById("Perk" + i).checked = false;
+    }
+    document.getElementById(id).checked = true;
+	if (document.getElementById("Perk1").checked == true){
+		C9=0;
+	}
+	else if (document.getElementById("Perk1").checked == false){
+		C9=1;
+	}
+}
+function myResult(){
+	C=C1+C2+C3+C4+C5+C6+C7+C8+C9;
+	if (C<6){
+		
+	as=0.1750;
+	ms=6.5728;
+	rs=2.0;
+	ac=30;
+	ams=2.1841;
+	document.getElementById("ex").innerHTML="";
+		
+		kw=97;
+		kh=269;
+		kt=155;
+		kl=229;
+		
+  myMuzzle();
+  myBarrel();
+  myScope();
+  myStock();
+  myLaser();
+  myUnderbarrel();
+  myRearGrip();
+  myAmmunition();
+  myPerk();
+		
+  ams=ams.toFixed(4);
+  document.getElementById("ams").innerHTML=ams;
+  ms=ms.toFixed(4);
+  document.getElementById("ms").innerHTML=ms;
+  as=as.toFixed(4);
+  document.getElementById("as").innerHTML=as;
+  ac=ac.toFixed(0);
+  document.getElementById("ac").innerHTML=ac;
+  rs=rs.toFixed(1);
+  document.getElementById("rs").innerHTML=rs;
+		
+		pmas();
+		pmams();
+		pmms();
+		pmrs();
+		pmrk();
+		
+		changereekoil();
+		
+		mag();
+		
+}
+	else{
+  alert("Please select only a maximum of 5 attachments at a time! Click None to disselect attachment or click the clean all attachment to disselect all attachments!");
+	}
+}
+	
+	function pmas(){
+		if (muzzle==3 || muzzle==4 || barrel==3 || scope==3 || scope==4 || scope==5 || ammunition==2 || ammunition==5 || ammunition==6){
+			document.getElementById("as").innerHTML=document.getElementById("as").innerHTML+"+x";
+			document.getElementById("ex").innerHTML="+x or -x means there is a missing variable. Sorry for the incovenience! It will be fixed soon";
+		}
+		else if (barrel==2 || barrel==4){
+			document.getElementById("as").innerHTML=document.getElementById("as").innerHTML+"-x";
+			document.getElementById("ex").innerHTML="+x or -x means there is a missing variable. Sorry for the incovenience! It will be fixed soon";
+		}
+	}
+	function pmams(){
+		if (muzzle==5){
+			document.getElementById("ams").innerHTML=document.getElementById("ams").innerHTML+"-x";
+			document.getElementById("ex").innerHTML="+x or -x means there is a missing variable. Sorry for the incovenience! It will be fixed soon";
+		}
+	}
+	function pmms(){
+		if (barrel==2){
+			document.getElementById("ms").innerHTML=document.getElementById("ms").innerHTML+"+x";
+			document.getElementById("ex").innerHTML="+x or -x means there is a missing variable. Sorry for the incovenience! It will be fixed soon";
+		}
+		else if (ammunition==3 || ammunition==5 || ammunition==6){
+			document.getElementById("ms").innerHTML=document.getElementById("ms").innerHTML+"-x";
+			document.getElementById("ex").innerHTML="+x or -x means there is a missing variable. Sorry for the incovenience! It will be fixed soon";
+		}
+	}
+	function pmrs(){
+		if (ammunition==2 || ammunition==3 || ammunition==5){
+			document.getElementById("rs").innerHTML=document.getElementById("rs").innerHTML+"+x";
+			document.getElementById("ex").innerHTML="+x or -x means there is a missing variable. Sorry for the incovenience! It will be fixed soon";
+		}
+		else if (ammunition==4 || ammunition==6){
+			document.getElementById("rs").innerHTML=document.getElementById("rs").innerHTML+"-x";
+			document.getElementById("ex").innerHTML="+x or -x means there is a missing variable. Sorry for the incovenience! It will be fixed soon";
+		}
+	}
+	function pmrk(){
+		if (barrel==2){
+			document.getElementById("rex").innerHTML='Recoil data for "MIP Light Barrel (Short)" is missing and is not shown in the above image. It increases recoil. Sorry for the incovenience! It will be fixed soon';
+		}
+		else{
+			document.getElementById("rex").innerHTML="";
+		}
+	}
+function myMuzzle(){
+		if (document.getElementById("Muzzle1").checked == true){
+  document.getElementById("A1").innerHTML = "";
+  document.getElementById("B1").innerHTML = "";
+  muzzle=0;
+	}
+     else if (document.getElementById("Muzzle2").checked == true){
+  document.getElementById("A1").innerHTML = "+Silenced <br> +Muzzle Flash Hidden";
+  document.getElementById("B1").innerHTML = "-20% Damage Range";
+  muzzle=0;
+	}
+     else if (document.getElementById("Muzzle3").checked == true){
+  document.getElementById("A1").innerHTML = "-7% Vertical Recoil <br> -7% Horizontal Recoil";
+  document.getElementById("B1").innerHTML = "+Ads Time <br> +Aim Shake";
+		 kw=(kw*93)/100;
+		 kh=(kh*93)/100;
+  muzzle=3;
+	}
+     else if (document.getElementById("Muzzle4").checked == true){
+  document.getElementById("A1").innerHTML = "-10% Horizontal Recoil <br> -4% Vertical Recoil";
+  document.getElementById("B1").innerHTML = "+Ads Time <br> +Aim Shake";
+		 kw=(kw*90)/100;
+		 kh=(kh*96)/100;
+  muzzle=4;
+	}
+     else if (document.getElementById("Muzzle5").checked == true){
+  document.getElementById("A1").innerHTML = "+Silenced <br> +Muzzle Flash Hidden";
+  document.getElementById("B1").innerHTML = "+16.6 ms Ads Time <br> -Ads Movement Speed";
+  muzzle=5;
+  as=as+0.0166;
+	}
+     else if (document.getElementById("Muzzle6").checked == true){
+  document.getElementById("A1").innerHTML = "+Muzzle Flash Hidden <br> -Aim Shake <br> -8.5% Hip Fire Spread";
+  document.getElementById("B1").innerHTML = "+16.6 ms Ads Time";
+  muzzle=0;
+  as=as+0.0166;
+	}
+     else if (document.getElementById("Muzzle7").checked == true){
+  document.getElementById("A1").innerHTML = "+Silenced <br> +Muzzle Flash Hidden <br> +Damage Range";
+  document.getElementById("B1").innerHTML = "+33.3 ms Ads Time <br> +Aim Shake <br> -1.5% Ads movement Speed";
+  as=as+0.0333;
+  ams=(ams*101.5)/100;
+  muzzle=0;
+	}
+  
+}
+function myBarrel(){
+		if (document.getElementById("Barrel1").checked == true){
+  document.getElementById("A2").innerHTML = "";
+  document.getElementById("B2").innerHTML = "";
+  barrel=0;
+	}
+     else if (document.getElementById("Barrel2").checked == true){
+  document.getElementById("A2").innerHTML = "-Ads Time <br> +Movement Speed";
+  document.getElementById("B2").innerHTML = "+Aim Shake <br> +Vertical Recoil";
+  barrel=2;
+	}
+     else if (document.getElementById("Barrel3").checked == true){
+  document.getElementById("A2").innerHTML = "-Aim Shake <br> +Damage Range";
+  document.getElementById("B2").innerHTML = "+Ads Time";
+  barrel=3;
+	}
+     else if (document.getElementById("Barrel4").checked == true){
+  document.getElementById("A2").innerHTML = "-Ads Time";
+  document.getElementById("B2").innerHTML = "+Aim Shake";
+  barrel=4;
+	}
+}
+function myScope(){
+		if (document.getElementById("Scope1").checked == true){
+  document.getElementById("A3").innerHTML = "";
+  document.getElementById("B3").innerHTML = "";
+  scope=0;
+	}
+     else if (document.getElementById("Scope2").checked == true){
+  document.getElementById("A3").innerHTML = "+Precision Sight";
+  document.getElementById("B3").innerHTML = "";
+  scope=0;
+	}
+     else if (document.getElementById("Scope3").checked == true){
+  document.getElementById("A3").innerHTML = "+Precision Sight";
+  document.getElementById("B3").innerHTML = "+Ads Time";
+  scope=3;
+	}
+     else if (document.getElementById("Scope4").checked == true){
+  document.getElementById("A3").innerHTML = "+Precision Sight";
+  document.getElementById("B3").innerHTML = "+Ads Time";
+  scope=4;
+	}
+     else if (document.getElementById("Scope5").checked == true){
+  document.getElementById("A3").innerHTML = "+Precision Sight";
+  document.getElementById("B3").innerHTML = "+Ads Time";
+  scope=5;
+	}
+}
+function myStock(){
+		if (document.getElementById("Stock1").checked == true){
+  document.getElementById("A4").innerHTML = "";
+  document.getElementById("B4").innerHTML = "";
+  stock=0;
+	}
+	 else if (document.getElementById("Stock2").checked == true){
+  document.getElementById("A4").innerHTML = "+7.5% Ads Movement Speed";
+  document.getElementById("B4").innerHTML = "+Aim Shake";
+  stock=0;
+  ams=(ams*107.5)/100;
+	}
+     else if (document.getElementById("Stock3").checked == true){
+  document.getElementById("A4").innerHTML = "-Aim Shake <br> +10% Flinch Stability <br> -10% Lateral Recoil";
+  document.getElementById("B4").innerHTML = "-3.5% Ads movement Speed";
+		 kw=(kw*90)/100;
+  stock=0;
+  ams=(ams*97.5)/100;
+	}
+     else if (document.getElementById("Stock4").checked == true){
+  document.getElementById("A4").innerHTML = "-16.6 ms Ads Time";
+  document.getElementById("B4").innerHTML = "+Aim Shake <br> -Flinch Stability <br> +7% Vertical Recoil";
+		 kh=(kh*107)/100;
+  stock=0;
+  as=as-0.0166;
+	}
+  
+}
+function myLaser(){
+		if (document.getElementById("Laser1").checked == true){
+  document.getElementById("A5").innerHTML = "";
+  document.getElementById("B5").innerHTML = "";
+  laser=0;
+	}
+     else if (document.getElementById("Laser2").checked == true){
+  document.getElementById("A5").innerHTML = "-21.5% Hip Fire Spread";
+  document.getElementById("B5").innerHTML = "";
+  laser=0;
+	}
+     else if (document.getElementById("Laser3").checked == true){
+  document.getElementById("A5").innerHTML = "-26.5% Hip Fire Spread <br> +33.3 ms Sprint to Fire Speed";
+  document.getElementById("B5").innerHTML = "+Laser Visible to Enemies when NOT Ads-ing";
+  laser=0;
+	}
+     else if (document.getElementById("Laser4").checked == true){
+  document.getElementById("A5").innerHTML = "-33.3 ms Ads Time <br> -Aim Shake";
+  document.getElementById("B5").innerHTML = "+Laser Visible to Enemies when Ads-ing";
+  laser=0;
+  as=as-0.0333;
+	}
+}
+function myUnderbarrel(){
+		if (document.getElementById("Underbarrel1").checked == true){
+  document.getElementById("A6").innerHTML = "";
+  document.getElementById("B6").innerHTML = "";
+  underbarrel=0;
+	}
+     else if (document.getElementById("Underbarrel2").checked == true){
+  document.getElementById("A6").innerHTML = "-7% Vertical Recoil <br> -Aim Shake";
+  document.getElementById("B6").innerHTML = "-1% Movement Speed";
+		 kh=(kh*93)/100;
+  underbarrel=0;
+  ms=(ms*99)/100;
+	}
+     else if (document.getElementById("Underbarrel3").checked == true){
+  document.getElementById("A6").innerHTML = "-7% Vertical Recoil <br> -26.2% Hip Fire Spread";
+  document.getElementById("B6").innerHTML = "-3% Ads Movement Speed <br> +16.6 ms Ads Time";
+		 kh=(kh*93)/100;
+  underbarrel=0;
+  as=as+0.0166;
+  ams=(ams*97)/100;
+	}
+     else if (document.getElementById("Underbarrel4").checked == true){
+  document.getElementById("A6").innerHTML = "-14% Vertical Recoil";
+  document.getElementById("B6").innerHTML = "+16.6 ms Ads Time";
+		 kh=(kh*86)/100;
+  underbarrel=0;
+  as=as+0.0166;
+	}
+     else if (document.getElementById("Underbarrel5").checked == true){
+  document.getElementById("A6").innerHTML = "-17% Vertical Recoil <br> -Aim Shake";
+  document.getElementById("B6").innerHTML = "+33.3 ms Ads Time <br> -3% Ads Movement Speed";
+		 kh=(kh*83)/100;
+  underbarrel=0;
+  as=as+0.0333;
+  ams=(ams*97)/100;
+	}
+     else if (document.getElementById("Underbarrel6").checked == true){
+  document.getElementById("A6").innerHTML = "-Aim Shake";
+  document.getElementById("B6").innerHTML = "-0.5% Movement Speed";
+  underbarrel=0;
+  ms=(ms*99.5)/100;
+	}
+  
+}
+function myRearGrip(){
+		if (document.getElementById("RearGrip1").checked == true){
+  document.getElementById("A7").innerHTML = "";
+  document.getElementById("B7").innerHTML = "";
+  reargrip=0;
+	}
+     else if (document.getElementById("RearGrip2").checked == true){
+  document.getElementById("A7").innerHTML = "-16.6 ms Ads Time <br> -16.6 ms Sprint to Fire Speed";
+  document.getElementById("B7").innerHTML = "+Aim Shake";
+  reargrip=0;
+  as=as-0.0166;
+	}
+     else if (document.getElementById("RearGrip3").checked == true){
+  document.getElementById("A7").innerHTML = "-Aim Shake";
+  document.getElementById("B7").innerHTML = "-1% Ads Movement Speed";
+  reargrip=0;
+  ams=(ams*99)/100;
+	}
+     else if (document.getElementById("RearGrip4").checked == true){
+  document.getElementById("A7").innerHTML = "-14% Vertical Recoil";
+  document.getElementById("B7").innerHTML = "+Aim Shake";
+  reargrip=0;
+		 kh=(kh*86)/100;
+	}
+  
+}
+function myAmmunition(){
+		if (document.getElementById("Ammunition1").checked == true){
+  document.getElementById("A8").innerHTML = "";
+  document.getElementById("B8").innerHTML = "";
+  ammunition=0;
+			amo=0;
+  ac=30;
+	}
+     else if (document.getElementById("Ammunition2").checked == true){
+  document.getElementById("A8").innerHTML = "+Damage Range <br> +Damage";
+  document.getElementById("B8").innerHTML = "+Vertical Recoil <br> +Reload Time <br> -Ads Speed";
+  ammunition=2;
+			amo=1;
+  ac=30;
+  kh=(kh*104.1841004)/100;
+	}
+     else if (document.getElementById("Ammunition3").checked == true){
+  document.getElementById("A8").innerHTML = "+Magazine Capacity";
+  document.getElementById("B8").innerHTML = "-Movement Speed <br> +Reload Time";
+  ammunition=3;
+			amo=0;
+  ac=38;
+	}
+     else if (document.getElementById("Ammunition4").checked == true){
+  document.getElementById("A8").innerHTML = "-Reload Time";
+  document.getElementById("B8").innerHTML = "";
+  ammunition=4;
+			amo=0;
+  ac=30;
+	}
+     else if (document.getElementById("Ammunition5").checked == true){
+  document.getElementById("A8").innerHTML = "+Magazine Capacity";
+  document.getElementById("B8").innerHTML = "-Movement Speed <br> +Reload Time <br> +Ads Time";
+  ammunition=5;
+			amo=0;
+  ac=46;
+	}
+     else if (document.getElementById("Ammunition6").checked == true){
+  document.getElementById("A8").innerHTML = "+Magazine Capacity <br> -Reload Time";
+  document.getElementById("B8").innerHTML = "-Movement Speed <br> +Ads Time";
+  ammunition=6;
+			amo=0;
+  ac=42;
+	}
+}
+function myPerk(){
+		if (document.getElementById("Perk1").checked == true){
+  document.getElementById("A9").innerHTML = "";
+  document.getElementById("B9").innerHTML = "";
+	 }
+     else if (document.getElementById("Perk2").checked == true){
+  document.getElementById("A9").innerHTML = "+Enemy takes longer time to heal";
+  document.getElementById("B9").innerHTML = "";
+	 }
+     else if (document.getElementById("Perk3").checked == true){
+  document.getElementById("A9").innerHTML = "+More damage from wallbangs";
+  document.getElementById("B9").innerHTML = "";
+	 }
+     else if (document.getElementById("Perk4").checked == true){
+  document.getElementById("A9").innerHTML = "+Speed boost after respawning";
+  document.getElementById("B9").innerHTML = "";
+	 }
+     else if (document.getElementById("Perk5").checked == true){
+  document.getElementById("A9").innerHTML = "+Damage Range";
+  document.getElementById("B9").innerHTML = "";
+	 }
+     else if (document.getElementById("Perk6").checked == true){
+  document.getElementById("A9").innerHTML = "+Recover few bullets after killing someone within 9.5 meters";
+  document.getElementById("B9").innerHTML = "";
+	 }
+     else if (document.getElementById("Perk7").checked == true){
+  document.getElementById("A9").innerHTML = "-Reload Speed";
+  document.getElementById("B9").innerHTML = "";
+	 }
+     else if (document.getElementById("Perk8").checked == true){
+  document.getElementById("A9").innerHTML = "+You spawn with double the deafault bullets";
+  document.getElementById("B9").innerHTML = "";
+	 }
+     else if (document.getElementById("Perk9").checked == true){
+  document.getElementById("A9").innerHTML = "+Slows enemy down after you shoot them";
+  document.getElementById("B9").innerHTML = "";
+	 }
+}
+	function cleanattach(){
+		document.getElementById("Muzzle1").checked = true;
+		selectOnlyThis1("Muzzle1");
+		document.getElementById("Barrel1").checked = true;
+		selectOnlyThis2("Barrel1");
+		document.getElementById("Scope1").checked = true;
+		selectOnlyThis3("Scope1");
+		document.getElementById("Stock1").checked = true;
+		selectOnlyThis4("Stock1");
+		document.getElementById("Laser1").checked = true;
+		selectOnlyThis5("Laser1");
+		document.getElementById("Underbarrel1").checked = true;
+		selectOnlyThis6("Underbarrel1");
+		document.getElementById("RearGrip1").checked = true;
+		selectOnlyThis7("RearGrip1");
+		document.getElementById("Ammunition1").checked = true;
+		selectOnlyThis8("Ammunition1");
+		document.getElementById("Perk1").checked = true;
+		selectOnlyThis9("Perk1");
+		myResult();
+		mag();
+	}
+	
+		  function changereekoil(){
+			  
+    document.getElementById('reekoil').width=kw;
+    document.getElementById('reekoil').height=kh;
+			  kt=(fh-kh)/2;
+			  kt=kt.toFixed(0);		  
+			  kl=(fw-kw)/2;
+			  kl=kl.toFixed(0);
+			  document.getElementById('reekoil').style.top=kt+"px";
+			  document.getElementById('reekoil').style.left=kl+"px";
+			  
+		  }
+	function changedummy(){
+		var sv=slider.value-1;
+		if (sv > 5 && sv < 31) {
+			dwpsv=sv/3.050625;
+			dwp=Math.pow(dwpsv, 1.405914);
+			dw=16.5582 + ((854.1811 - 16.5582)/(1 + dwp));
+			dw=dw.toFixed(0);
+			dhpsc=sv/1.860625;
+			dhp=Math.pow(dhpsc,1.28254);
+			dh=26.00521 + ((2589.355 - 26.00521)/(1 + dhp));
+			dh=dh.toFixed(0);
+			dt=fh-dh;
+			dt=dt.toFixed(0);
+			dl=(fw-dw)/2;
+			dl=dl.toFixed(0);
+    		document.getElementById('dummy').width=dw;
+    		document.getElementById('dummy').height=dh;
+  //document.getElementById("b").innerHTML = dw;
+  //document.getElementById("e").innerHTML = dh;
+			document.getElementById('dummy').style.top=dt+"px";
+			document.getElementById('dummy').style.left=dl+"px";
+		}
+		else if (sv == 31) {
+			dwpsv=50/3.050625;
+			dwp=Math.pow(dwpsv, 1.405914);
+			dw=16.5582 + ((854.1811 - 16.5582)/(1 + dwp));
+			dw=dw.toFixed(0);
+			dhpsc=50/1.860625;
+			dhp=Math.pow(dhpsc,1.28254);
+			dh=26.00521 + ((2589.355 - 26.00521)/(1 + dhp));
+			dh=dh.toFixed(0);
+			dt=fh-dh;
+			dt=dt.toFixed(0);
+			dl=(fw-dw)/2;
+			dl=dl.toFixed(0);
+    		document.getElementById('dummy').width=dw;
+    		document.getElementById('dummy').height=dh;
+  //document.getElementById("b").innerHTML = dw;
+  //document.getElementById("e").innerHTML = dh;
+			document.getElementById('dummy').style.top=dt+"px";
+			document.getElementById('dummy').style.left=dl+"px";
+		}
+		else{
+			dwpsv=5/3.050625;
+			dwp=Math.pow(dwpsv, 1.405914);
+			dw=16.5582 + ((854.1811 - 16.5582)/(1 + dwp));
+			dw=dw.toFixed(0);
+			dhpsc=5/1.860625;
+			dhp=Math.pow(dhpsc,1.28254);
+			dh=26.00521 + ((2589.355 - 26.00521)/(1 + dhp));
+			dh=dh.toFixed(0);
+			dt=fh-dh;
+			dt=dt.toFixed(0);
+			dl=(fw-dw)/2;
+			dl=dl.toFixed(0);
+    		document.getElementById('dummy').width=dw;
+    		document.getElementById('dummy').height=dh;
+			document.getElementById('dummy').style.top=dt+"px";
+			document.getElementById('dummy').style.left=dl+"px";
+		}
+	}
+function shots(){
+	document.getElementById("Timebs").innerHTML = document.getElementById("Timebs").innerHTML + tbs + " ms";
+	document.getElementById("RPM").innerHTML = document.getElementById("RPM").innerHTML + ((60000/(tbs)).toFixed(4));
+	document.getElementById("RPS").innerHTML = document.getElementById("RPS").innerHTML + ((1000/(tbs)).toFixed(4));
+	document.getElementById("TFYS").innerHTML = document.getElementById("TFYS").innerHTML + (((ac*tbs)/1000).toFixed(4)) + " s";
+	document.getElementById("HMB").innerHTML = ac;
+}
+function ready(){
+	myResult();
+	changedummy();
+	shots();
+	//changereekoil();
+}
+	document.addEventListener("DOMContentLoaded", ready);
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 1px;
+}
+
+/* Create two equal columns that floats next to each other */
+
+.column img {
+  margin-top: 1px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 11%;
+  left: 35%;
+  color: Black;
+}
+
+.top-center {
+  position: absolute;
+  top: 5%;
+  right: 50%;
+  color: Black;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: Black;
+}
+</style>
+	
+<div class="row"> 
+<div class="container">
+	<img src="../H.png" style="width:34%" alt="Head"/>
+  <div id="Head" class="centered">26</div>
+</div>
+<div class="container">
+	<img src="../AC.png" style="width:34%" alt="Arms and Chest"/>
+  <div id="Arms" class="top-left">24</div>
+  <div id="Chest" class="centered">24</div>
+</div>
+<div class="container">
+	<img src="../S.png" style="width:34%" alt="Stomach"/>
+  <div id="Stomach" class="centered">24</div>
+</div>
+<div class="container">
+	<img src="../L.png" style="width:34%" alt="Legs"/>
+  <div id="Legs" class="top-center">24</div>
+</div>
+	</div>
+  <p style="padding-left:15px">*Damage range changes due to attachments, except stopping power magazine, is NOT yet represented in this image</p>
+<style>
+    .fishes
+    {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+    .fish
+    {
+      position: absolute;
+      top: 109px;
+      left: 158px;
+    }
+    .fis
+    {
+      position: absolute;
+      top: 155px;
+      left: 229px;
+    }
+    </style>
+	<p id="b"></p>
+	<p id="e"></p>
+</body>
+</html>

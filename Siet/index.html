@@ -1,0 +1,4232 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- Primary Meta Tags -->
+    <title>CoD Mobile | Database</title>
+    <meta name="title" content="CoD Mobile | Database">
+    <meta name="description" content="CoD Mobile actual weapon data. Efficiently designed Season 11 Gunsmithing software with brilliant and exotic features. First and Fastest of it's kind.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codmdatabase.ml/">
+    <meta property="og:title" content="CoD Mobile | Database">
+    <meta property="og:description" content="CoD Mobile actual weapon data. Efficiently designed Season 11 Gunsmithing software with brilliant and exotic features. First and Fastest of it's kind.">
+    <meta property="og:image" content="https://codmdatabase.ml/Display.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codmdatabase.ml/">
+    <meta property="twitter:title" content="CoD Mobile | Database">
+    <meta property="twitter:description" content="CoD Mobile actual weapon data. Efficiently designed Season 11 Gunsmithing software with brilliant and exotic features. First and Fastest of it's kind.">
+    <meta property="twitter:image" content="https://codmdatabase.ml/Display.png">
+
+    <meta name="KeyWords" content="CoD Mobile, Damage, Ads time, Movement Speed, Call of Duty Mobile, Database, Season 11 Gunsmithing, Time to kill, Shots to kill, Damage Range, Type 25, AK117, M16, KN44, AK47, ASM10, M4, BK57, LK24, ICR-1, MAN-O-WAR, HBRa3, DR-H, Rus79U, Chicom, PDW57, Razorback, MSMC, HG40, Pharo, GKS, Corodite, QQ9, DLQ33, Arctic .50, XPR 50, Locus, Outlaw, M21 EBR, Kilo Bolt Action Rifle, BY15, HS2126, HS0405, KRM262, Striker, MW11, J358, Assault Rifle, Sub-Machine Guns, Sniper Rifle, Shotgun, Marksman Rifle, Pistols, Sniper, AR, SMG, Operator Skills, MP, BR">
+    
+    <!--<script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      new Crate({
+        server: '768807986339512350', // CoD Mobile Database
+        channel: '768808479619809280' // #questions
+      })
+    </script>-->
+
+
+    <link rel="icon" type="image/png" sizes="16×16" href="Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+        animation: fadein 2s;
+        -moz-animation: fadein 2s;
+        /* Firefox */
+        -webkit-animation: fadein 0.1s;
+        /* Safari and Chrome */
+        -o-animation: fadein 2s;
+        /* Opera */
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-moz-keyframes fadein {
+
+        /* Firefox */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-webkit-keyframes fadein {
+
+        /* Safari and Chrome */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @-o-keyframes fadein {
+
+        /* Opera */
+        from {
+          opacity: 0;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        overflow: hidden;
+        background-color: #f1f1f1;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      @media screen and (max-width : 704px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .header-right {
+          float: none;
+        }
+      }
+
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+
+      .slider:hover {
+        opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #00BCFF;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .header {
+        overflow: hidden;
+        background-color: #00D3FF;
+        padding: 20px 10px;
+      }
+
+      .header a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 25px;
+        border-radius: 4px;
+      }
+
+      .header a.logo {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .header a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      .header a.active {
+        background-color: dodgerblue;
+        color: white;
+      }
+
+      .header-right {
+        float: right;
+      }
+
+      @media screen and (max-width : 704px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+
+        .header-right {
+          float: none;
+        }
+      }
+
+      .page-header {
+        background: #00A2FF;
+        background: -moz-linear-gradient(top, #00a3ef 0%, #0b4182 100%);
+        background: -webkit-linear-gradient(top, #00a3ef 0%, #0b4182 100%);
+        background: linear-gradient(to bottom, #00a3ef 0%, #0b4182 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00A2FF', endColorstr='#0b4182', GradientType=0);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two unequal columns that floats next to each other */
+      .column {
+        float: left;
+        padding: 10px;
+      }
+
+      .left {
+        width: 150px;
+      }
+
+      .left1 {
+        width: 200px;
+      }
+
+      .right {}
+
+      .pa {
+        width: 25%;
+      }
+
+      .pb {
+        width: 75%;
+        max-height: 600px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .header {
+        text-align: center;
+        padding: 1px;
+      }
+
+      /* Create two equal columns that floats next to each other */
+
+      .column img {
+        margin-top: 1px;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+      .top-left {
+        position: absolute;
+
+        top: 11%;
+        color: Black;
+      }
+
+      .bottom-left {
+        position: absolute;
+        left: 10%;
+        top: 91%;
+        color: Black;
+      }
+
+      .iii {
+        left: 10%;
+      }
+
+      .top-center {
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: Black;
+      }
+
+      .dropbtn {
+        background-color: #00BCFF;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .dropbtn1 {
+        border: none;
+        cursor: pointer;
+        min-width: 160px;
+      }
+
+      .dropbtn2 {
+        border: none;
+        cursor: pointer;
+        min-width: 160px;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        right: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropdown-content a:hover {
+        background-color: #808080;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+
+      .dropdown:hover .dropbtn {
+        background-color: #00A2FF;
+      }
+
+      .dropup {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropup-content {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropup-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropup-content a:hover {
+        background-color: #808080;
+      }
+
+      .dropup:hover .dropup-content {
+        display: block;
+      }
+
+      .dropup:hover .dropbtn1 {
+        background-color: #00A2FF;
+      }
+
+      .dropupl {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropupl-content {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+      .dropupl-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+
+      .dropupl-content a:hover {
+        background-color: #808080;
+      }
+
+      .dropupl:hover .dropupl-content {
+        display: block;
+      }
+
+      .dropupl:hover .dropbtn2 {
+        background-color: #00A2FF;
+      }
+
+      .btn {
+        border: 2px solid black;
+        background-color: white;
+        border-radius: 5px;
+        color: black;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      /* Blue */
+      .info {
+        border-color: #2196F3;
+        color: dodgerblue;
+      }
+
+      .info:hover {
+        background: #2196F3;
+        color: white;
+      }
+
+      /* The holder */
+      .holder {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 17px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      /* Hide the browser's default checkbox */
+      .holder input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+      }
+
+      /* Create a custom checkbox */
+      .cb {
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        height: 15px;
+        width: 15px;
+        background-color: #fff;
+        border: 1px solid #0075F0;
+      }
+
+      /* On mouse-over, add a grey background color */
+      .holder:hover input~.cb {
+        background-color: dodgerblue;
+      }
+
+      /* When the checkbox is checked, add a blue background */
+      .holder input:checked~.cb {
+        background-color: white;
+      }
+
+      /* Create the cb/indicator (hidden when not checked) */
+      .cb:after {
+        content: "";
+        position: absolute;
+        display: none;
+      }
+
+      /* Show the cb when checked */
+      .holder input:checked~.cb:after {
+        display: block;
+      }
+
+      /* Style the cb/indicator */
+      .holder .cb:after {
+        left: 30%;
+        top: 15%;
+        width: 20%;
+        height: 40%;
+        border: solid #2196F3;
+        border-width: 0 2.5px 2.5px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      #context-menu {
+        position: fixed;
+        z-index: 10000;
+        width: 350px;
+        background: #1b1a1a;
+        border-radius: 5px;
+        transform: scale(0);
+        transform-origin: top left;
+      }
+
+      #context-menu.active {
+        transform: scale(1);
+        transition: transform 300ms ease-in-out;
+      }
+
+      #context-menu .item {
+        padding: 8px 10px;
+        font-size: 15px;
+        color: #eee;
+      }
+
+      #context-menu .item:hover {
+        background: #555;
+      }
+
+      #context-menu .item i {
+        display: inline-block;
+        margin-right: 5px;
+      }
+
+      #context-menu hr {
+        margin: 2px 0px;
+        border-color: #555;
+      }
+
+      .no-close .ui-dialog-titlebar-close {
+        display: none;
+      }
+
+    </style>
+  </head>
+
+  <body onResize="myResize()">
+    <div class="header">
+      <div class="page-header">
+        <a href="index.html" class="logo">CoDM Database</a>
+        <div class="header-right">
+          <a class="active">Stats</a>
+          <a href="MP/index.html">MP</a>
+          <a href="BR/index.html">BR</a>
+          <a href="Stuff/index.html">Stuff</a>
+          <a href="Contact/index.html">Contact</a>
+          <a href="About/index.html">About</a>
+        </div>
+      </div>
+    </div>
+    <h2 style="padding-left:20px">Select distance</h2>
+    <p style="padding-left:25px">Drag the slider to change the enemy distance</p>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <h2 style="padding-left:20px">Choose the weapon</h2>
+    <p id="d" style="padding-left:25px;">Click on the weapon type and select from the dropdown list.</p><p id="egstra" style="padding-left:25px;"></p>
+    <p> </p>
+    <p id="de"> </p>
+    <p id="ye">&nbsp;</p>
+    <div style="padding-left:30px;">
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">ARs</button>
+        <div class="dropdown-content" style="left:0;">
+          <div class="dropup">
+            <a href="javascript:type=1;mode=1;myType25();" class="dropbtn1">Type 25<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=1;mode=1;myType25();">None</a>
+              <a href="javascript:type=1;mode=1;myType25SP();">Stopping Power</a>
+            </div>
+          </div>
+          <a href="javascript:type=1;mode=1;myAK117();">AK117</a>
+          <a href="javascript:type=1;mode=2;myM16();">M16</a>
+          <a href="javascript:type=1;mode=1;myKN44();">KN44</a>
+          <div class="dropup">
+            <a href="javascript:type=1;mode=1;myAK47();" class="dropbtn1">AK47<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=1;mode=1;myAK47();">None</a>
+              <a href="javascript:type=1;mode=1;myAK47La();">5.45 Caliber Mag</a>
+            </div>
+          </div>
+          <a href="javascript:type=1;mode=1;myASM10();">ASM10</a>
+          <a href="javascript:type=1;mode=1;myM4();">M4</a>
+          <a href="javascript:type=1;mode=1;myLK24();">LK24</a>
+          <div class="dropup">
+            <a href="javascript:type=1;mode=1;myBK57();" class="dropbtn1">BK57<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=1;mode=1;myBK57();">None</a>
+              <a href="javascript:type=1;mode=1;myBK57La();">Large Mag</a>
+            </div>
+          </div>
+          <a href="javascript:type=1;mode=1;myICR1();">ICR-1</a>
+          <a href="javascript:type=1;mode=1;myManowar();">MAN-O-WAR</a>
+          <a href="javascript:type=1;mode=1;myHBRa3();">HBRa3</a>
+          <div class="dropup">
+            <a href="javascript:type=1;mode=1;myDRH();" class="dropbtn1">DR-H<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=1;mode=1;myDRH();">None</a>
+              <a href="javascript:type=1;mode=1;myDRHOTM();">OTM Mag</a>
+            </div>
+          </div>
+          <a href="javascript:type=1;mode=1;myHVK30();">HVK30</a>
+        </div>
+      </div>
+
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">SMGs</button>
+        <div class="dropdown-content" style="left:0;">
+          <div class="dropup">
+            <a href="javascript:type=2;mode=1;myFennec();" class="dropbtn1">Fennec<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=2;mode=1;myFennec();">None</a>
+              <a href="javascript:type=2;mode=2;myFennecAkim();">Akimbo</a>
+            </div>
+          </div>
+          <a href="javascript:type=2;mode=1;mode=1;myRus79U();">Rus79U</a>
+          <a href="javascript:type=2;mode=2;myChicom();">Chicom</a>
+          <a href="javascript:type=2;mode=1;myPDW57();">PDW57</a>
+          <a href="javascript:type=2;mode=1;myRazorback();">Razorback</a>
+          <a href="javascript:type=2;mode=1;myMSMC();">MSMC</a>
+          <a href="javascript:type=2;mode=1;myHG40();">HG40</a>
+          <a href="javascript:type=2;mode=2;myPharo();">Pharo</a>
+          <a href="javascript:type=2;mode=1;myGKS();">GKS</a>
+          <a href="javascript:type=2;mode=1;myCorodite();">Corodite</a>
+          <div class="dropup">
+            <a href="javascript:type=2;mode=1;myQQ9();" class="dropbtn1">QQ9<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=2;mode=1;myQQ9();">None</a>
+              <a href="javascript:type=2;mode=1;myQQ910mm();">10 mm Mag</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">Snipers</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=3;mode=1;myDLQ33();">DLQ33</a>
+          <div class="dropup">
+            <a href="javascript:type=3;mode=1;myArctic50();" class="dropbtn1">Arctic .50<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=3;mode=1;myArctic50();">None</a>
+              <a href="javascript:type=3;mode=1;myArctic50SP();">Stopping Power</a>
+            </div>
+          </div>
+          <a href="javascript:type=3;mode=1;myOutlaw();">Outlaw</a>
+          <div class="dropup">
+            <a href="javascript:type=3;mode=1;myXPR50();" class="dropbtn1">XPR .50<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=3;mode=1;myXPR50();">None</a>
+              <a href="javascript:type=3;mode=1;myXPR50SP();">Stopping Power</a>
+            </div>
+          </div>
+          <a href="javascript:type=3;mode=1;myM21EBR();">M21 EBR</a>
+          <div class="dropup">
+            <a href="javascript:type=3;mode=1;myLocus();" class="dropbtn1">Locus<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=3;mode=1;myLocus();">None</a>
+              <a href="javascript:type=3;mode=1;myLocusSP();">Stopping Power</a>
+            </div>
+          </div>
+          <a href="javascript:type=3;mode=1;myNA45();">NA45</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">LMGs</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=4;mode=1;myM4LMG();">M4LMG</a>
+          <a href="javascript:type=4;mode=1;myRPD();">RPD</a>
+          <a href="javascript:type=4;mode=1;myChopper();">Chopper</a>
+          <a href="javascript:type=4;mode=1;myUL736();">UL736</a>
+          <a href="javascript:type=4;mode=1;myS36();">S36</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">Marksman Rifle</button>
+        <div class="dropdown-content" style="left:0;">
+          <div class="dropup">
+            <a href="javascript:type=5;mode=1;myKar98();" class="dropbtn1">Kilo Bolt-Action<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=5;mode=1;myKar98();">None</a>
+              <a href="javascript:type=5;mode=1;myKar98SP();">Stopping Power</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:5px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">Shotguns</button>
+        <div class="dropdown-content" style="left:0;">
+          <a href="javascript:type=7;mode=3;myBY15();">BY15</a>
+          <a href="javascript:type=7;mode=23;myHS2126();">HS2126</a>
+          <a href="javascript:type=7;mode=3;myHS0405();">HS0405</a>
+          <a href="javascript:type=7;mode=3;myKRM262();">KRM262</a>
+          <a href="javascript:type=7;mode=3;myStriker();">Striker</a>
+          <a href="javascript:type=7;mode=3;myEcho();">Echo</a>
+        </div>
+      </div>
+      <div class="dropdown" style="float:left;padding-left:10px;padding-top:5px;padding-bottom:15px;">
+        <button class="dropbtn" style="border: 1px solid #00A9E5">Pistols</button>
+        <div class="dropdown-content" id="pislist" style="left:0;">
+          <div class="dropup">
+            <a href="javascript:type=6;mode=1;tbs=201.5151;myMW11();" class="dropbtn1">MW11<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=6;mode=1;tbs=201.5151;myMW11();">None</a>
+              <a href="javascript:type=6;mode=1;tbs=160.6060;myMW11();">Lightweight</a>
+              <a href="javascript:type=6;mode=1;tbs=242.4242;myMW11();">Heavy Duty</a>
+              <a href="javascript:type=6;mode=1;tbs=180.3030;myMW11();">Match Grade</a>
+            </div>
+          </div><!--
+          <div class="dropup">
+            <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358();" class="dropbtn1">J358<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358();">None</a>
+              <a href="javascript:type=6;mode=1;tbs=240.0000;myJ358();">Lightweight</a>
+              <a href="javascript:type=6;mode=1;tbs=360.0000;myJ358();">Heavy Duty</a>
+              <a href="javascript:type=6;mode=1;tbs=270.0000;myJ358();">Match Grade</a>
+            </div>
+          </div>
+          <div class="dropup">
+            <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358SP();" class="dropbtn1">J358 SP<span style="float:right;color:dodgerblue">&#x25B6;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358SP();">None</a>
+              <a href="javascript:type=6;mode=1;tbs=240.0000;myJ358SP();">Lightweight</a>
+              <a href="javascript:type=6;mode=1;tbs=360.0000;myJ358SP();">Heavy Duty</a>
+              <a href="javascript:type=6;mode=1;tbs=270.0000;myJ358SP();">Match Grade</a>
+            </div>
+          </div>-->
+          <div class="dropup">
+            <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358();" class="dropbtn1">J358<span style="float:right;color:dodgerblue">&#9654;</span></a>
+            <div class="dropup-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+              <div class="dropupl">
+                <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358();" class="dropbtn2">None<span style="float:right;color:dodgerblue">&#x25B6;</span></a>
+                <div class="dropupl-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+                  <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358();">None</a>
+                  <a href="javascript:type=6;mode=1;tbs=240.0000;myJ358();">Lightweight</a>
+                  <a href="javascript:type=6;mode=1;tbs=360.0000;myJ358();">Heavy Duty</a>
+                  <a href="javascript:type=6;mode=1;tbs=270.0000;myJ358();">Match Grade</a>
+                </div>
+              </div>
+              <div class="dropupl">
+                <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358SP();" class="dropbtn2">Stopping Power<span style="float:right;color:dodgerblue">&#x25B6;</span></a>
+                <div class="dropupl-content" onmouseover="this.parentElement.style.backgroundColor = '#808080';" onmouseout="this.parentElement.style.backgroundColor = '#fff';">
+                  <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358SP();">None</a>
+                  <a href="javascript:type=6;mode=1;tbs=240.0000;myJ358SP();">Lightweight</a>
+                  <a href="javascript:type=6;mode=1;tbs=360.0000;myJ358SP();">Heavy Duty</a>
+                  <a href="javascript:type=6;mode=1;tbs=270.0000;myJ358SP();">Match Grade</a>
+                </div>
+              </div>
+              <!--<a href="javascript:type=6;mode=1;tbs=303.3333;myJ358();">None</a>
+              <a href="javascript:type=6;mode=1;tbs=303.3333;myJ358SP();">Stopping Power</a>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <p>&nbsp;</p>
+    <div class="slidecontainer" style="padding-left:20px;padding-right:20px;display: none;" id="sn">
+      <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+      <p style="padding-left:13px">Distance: <span id="demo"></span>m</p>
+    </div>
+    <div class="slidecontainer" style="padding-left:20px;padding-right:20px;" id="s100">
+      <input type="range" min="1" max="100" value="1" class="slider" id="myRange1">
+      <p style="padding-left:13px">Distance: <span id="demo1"></span>m</p>
+    </div>
+
+    <div class="row" oncontextmenu="myrightclick(event)">
+      <div id="parta">
+        <div style="padding-left:35px;">
+        </div>
+        <div style="padding-left:35px;">
+          <div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Check1" value="Value2" onclick="selectOnlyThis(this.id)" checked /><span class="cb"></span><span id="dmg"> Damage</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Check2" value="Value2" onclick="selectOnlyThis(this.id)" /><span class="cb"></span><span id="ttk"> Time to Kill</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Check3" value="Value2" onclick="selectOnlyThis(this.id)" /><span class="cb"></span><span id="stk"> Shots to Kill</span></label></nobr>
+            </div>
+            <div id="ptk" style="display: none;">
+              <nobr><label class="holder"><input type="checkbox" id="Check4" value="Value2" onclick="selectOnlyThis(this.id)" /><span class="cb"></span><span> Pellets to Kill</span></label></nobr>
+            </div>
+          </div>
+          <p></p>
+          <div style="padding-left:15px;padding-top:15px;">
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Wbv0" value="1" onclick="selectOnlyThis5(this.id);document.getElementById('Wb').style.display = 'none';" checked /><span class="cb"></span><span> No Wall/Corner Bang</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Wbv1" value="1" onclick="selectOnlyThis5(this.id);document.getElementById('Wb').style.display = 'block';" /><span class="cb"></span><span> Wall/Corner Bang without FMJ</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Wbv2" value="1" onclick="selectOnlyThis5(this.id);document.getElementById('Wb').style.display = 'block';" /><span class="cb"></span><span> Wall/Corner Bang with FMJ</span></label></nobr>
+            </div>
+            <p></p>
+            <div style="padding-left:15px;padding-top:15px;display: none;" id="Wb">
+              <div>
+                <nobr><label class="holder"><input type="checkbox" id="Wb0" value="1" onclick="selectOnlyThis6(this.id);" checked /><span class="cb"></span><span> Thin</span></label></nobr>
+              </div>
+              <div>
+                <nobr><label class="holder"><input type="checkbox" id="Wb1" value="1" onclick="selectOnlyThis6(this.id);" /><span class="cb"></span><span> Medium</span></label></nobr>
+              </div>
+              <div>
+                <nobr><label class="holder"><input type="checkbox" id="Wb2" value="1" onclick="selectOnlyThis6(this.id);" /><span class="cb"></span><span> Thick</span></label></nobr>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <p>&nbsp;</p>
+        <div style="padding-left:35px;">
+          <div style="display: flex;padding-left:10px;">
+            <div style="width: 150px;">
+              <nobr><label class="holder"><input type="checkbox" id="MpBr1" value="Value3" onclick="selectOnlyThis1(this.id)" checked /><span class="cb"></span><span> MP</span></label></nobr>
+            </div>
+            <div style="flex-grow: 1;">
+              <nobr><label class="holder"><input type="checkbox" id="MpBr2" value="Value3" onclick="selectOnlyThis1(this.id)" /><span class="cb"></span><span> BR</span></label></nobr>
+            </div>
+          </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <div style="padding-left:45px;" id="mpmode">
+          <div>
+            <nobr><label class="holder"><input type="checkbox" id="MpHp1" value="100" onclick="hp = 100;selectOnlyThis2(this.id);" checked /><span class="cb"></span><span> 100</span></label></nobr>
+          </div>
+          <div>
+            <nobr><label class="holder"><input type="checkbox" id="MpHp2" value="30" onclick="hp = 30;selectOnlyThis2(this.id);" /><span class="cb"></span><span> 30</span></label></nobr>
+          </div>
+          <div>
+            <nobr><label class="holder"><input type="checkbox" id="MpHp3" value="Value4" onclick="hp = document.getElementById('myRange2').value;selectOnlyThis2(this.id);" /><span class="cb"></span><span> Select HP</span></label></nobr>
+          </div>
+        </div>
+
+
+
+        <div style="padding-left:35px;display: none;" class="row" id="brmode">
+          <span class="column left">
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="BrHp1" value="100" onclick="hp = 100;selectOnlyThis3(this.id);" checked /><span class="cb"></span><span> 100</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="BrHp2" value="150" onclick="hp = 150;selectOnlyThis3(this.id);" /><span class="cb"></span><span> 150</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="BrHp3" value="Value1" onclick="hp = document.getElementById('myRange2').value;selectOnlyThis3(this.id);" /><span class="cb"></span><span> Select HP</span></label></nobr>
+            </div>
+          </span>
+          <p></p>
+          <span class="column right">
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Vest0" value="1" onclick="Vest = 1;Helmet = 1;selectOnlyThis4(this.id);" checked /><span class="cb"></span><span> No Vest</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Vest1" value="1.25" onclick="Vest = 0.75;Helmet = 1;selectOnlyThis4(this.id);" /><span class="cb"></span><span> Vest Level 1</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Vest2" value="1.35" onclick="Vest = 0.65;Helmet = 1;selectOnlyThis4(this.id);" /><span class="cb"></span><span> Vest Level 2</span></label></nobr>
+            </div>
+            <div>
+              <nobr><label class="holder"><input type="checkbox" id="Vest3" value="1.45" onclick="Vest = 0.55;Helmet = 0.55;selectOnlyThis4(this.id);" /><span class="cb"></span><span> Vest Level 3</span></label></nobr>
+            </div>
+          </span>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <!--<div class="slidecontainer" style="padding-left:20px;padding-right:20px;display: none;" id="HPBar">
+  <input type="range" min="1" max="100" value="100" class="slider" id="myRange2">
+  <p style="padding-left:13px">HP: <span id="demo2">100</span></p>
+</div>
+	-->
+        <div class="slidecontainer" style="padding-left:20px;padding-right:20px;display: none;" id="HPBar">
+          <input type="range" min="1" max="100" value="100" class="slider" id="myRange2">
+          <p style="padding-left:13px">HP: <span id="demo2"></span></p>
+        </div>
+        <div style="padding-left:25px">
+
+          <button onclick="myGunsmith()" class="btn info">Gunsmith</button>
+        </div>
+      </div>
+      <div id="partb">
+        <div id="kkk" class="row">
+          <div class="container" onClick="te=0;myrightclick(event)" style="padding-top:10px;padding-left:10px;width:50px;height:50px;">
+            <div style="position:absolute;background-color:dodgerblue;top:15px;left:15px;border-radius:5px;border:1px solid black;cursor:pointer;">&#9776;</div>
+          </div>
+          <div class="container">
+            <img src="H.png" id="Himg" style="width:50%" alt="Head" />
+            <div id="Head" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="AC.png" id="ACimg" style="width:50%" alt="Arms and Chest" />
+            <div id="Arms" class="top-left iii">00</div>
+            <div id="Chest" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="S.png" id="Simg" style="width:50%" alt="Stomach" />
+            <div id="Stomach" class="centered">00</div>
+          </div>
+          <div class="container">
+            <img src="L.png" id="Limg" style="width:50%" alt="Legs" />
+            <div id="Legs" class="top-center">00</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p style="padding-left: 10px;">This text will turn red after new update arrives or the site has not been updated in 15 days. Currently optimised for Season-11</p>
+
+          <div id="context-menu">
+            <div class="item" onClick="copyalittle()">
+              <i></i> <span>Copy current range &amp; set</span>
+            </div>
+            <div class="item" onClick="copyalot()">
+              <i></i> <span>Copy all sets of current range</span>
+            </div>
+            <div class="item" onClick="rangecopy()">
+              <i></i> <span>Copy all range for current set</span>
+            </div>
+            <!--
+  <div class="item">
+    <i></i> <span onClick="copyalot()">Copy all data</span>
+  </div>-->
+            <hr>
+            <div class="item" onClick="coimg();">
+              <i></i> <span>Preview as image</span>
+            </div>
+            <hr>
+            <div class="item" onClick="myResize();eef();">
+              <i></i> <span>Re-calculate</span>
+            </div>
+            <div class="item" onClick="window.location.reload();">
+              <i></i> <span>Reload</span>
+            </div>
+          </div>
+
+          <div style="display:none;" id="dialog-message" title="Error!!!">
+            <p id="errmes"></p>
+          </div>
+
+    <script>
+      function myResize() {
+        var w = window.innerWidth;
+        if (w >= 725) {
+          document.getElementById("parta").classList.add("column");
+          document.getElementById("parta").classList.add("pa");
+          document.getElementById("partb").classList.add("column");
+          document.getElementById("partb").classList.add("pb");
+          //document.getElementById("Arms").style.left = ((((document.getElementById("partb").clientWidth - document.getElementById("ACimg").clientWidth) / 2) - 18) + document.getElementById("parta").clientWidth) + "px";
+
+          document.getElementById("Himg").style.width = "237px";
+          document.getElementById("ACimg").style.width = "237px";
+          document.getElementById("Simg").style.width = "237px";
+          document.getElementById("Limg").style.width = "237px";
+          document.getElementById("Arms").style.left = (((document.getElementById("partb").clientWidth - document.getElementById("ACimg").clientWidth) / 2) - 18) + "px";
+        } else {
+          document.getElementById("Arms").style.left = "10%";
+          document.getElementById("parta").classList.remove("column");
+          document.getElementById("parta").classList.remove("pa");
+          document.getElementById("partb").classList.remove("column");
+          document.getElementById("partb").classList.remove("pb");
+          document.getElementById("Himg").style.width = "85%";
+          document.getElementById("ACimg").style.width = "85%";
+          document.getElementById("Simg").style.width = "85%";
+          document.getElementById("Limg").style.width = "85%";
+          if (w >= 450) {
+            document.getElementById("Himg").style.width = "75%";
+            document.getElementById("ACimg").style.width = "75%";
+            document.getElementById("Simg").style.width = "75%";
+            document.getElementById("Limg").style.width = "75%";
+            if (w >= 650) {
+              document.getElementById("Himg").style.width = "65%";
+              document.getElementById("ACimg").style.width = "65%";
+              document.getElementById("Simg").style.width = "65%";
+              document.getElementById("Limg").style.width = "65%";
+              document.getElementById("Arms").style.left = (((document.getElementById("partb").clientWidth - document.getElementById("ACimg").clientWidth) / 2) - 18) + "px";
+            }
+            document.getElementById("Arms").style.left = (((document.getElementById("partb").clientWidth - document.getElementById("ACimg").clientWidth) / 2) - 18) + "px";
+          }
+        }
+      }
+      //
+
+      //var gun = 1;
+      var slider = document.getElementById("myRange");
+      var output = document.getElementById("demo");
+      output.innerHTML = 6;
+
+      slider.oninput = function() {
+        if (slider.value == 1) {
+          output.innerHTML = 6;
+
+          eef();
+        } else if (slider.value == 2) {
+          output.innerHTML = 11;
+
+          eef();
+        } else if (slider.value == 3) {
+          output.innerHTML = 21;
+
+          eef();
+        } else if (slider.value == 4) {
+          output.innerHTML = 31;
+
+          eef();
+        } else {
+          output.innerHTML = 41;
+          eef();
+        }
+      }
+      var slider1 = document.getElementById("myRange1");
+      var output1 = document.getElementById("demo1");
+      output1.innerHTML = slider1.value;
+
+      slider1.oninput = function() {
+        eef();
+        if (slider1.value == 100) {
+          output1.innerHTML = "99+ ";
+        } else {
+          output1.innerHTML = slider1.value;
+        }
+      }
+      document.getElementById("demo2").innerHTML = 100;
+
+      document.getElementById("myRange2").oninput = function() {
+        document.getElementById("demo2").innerHTML = document.getElementById("myRange2").value;
+        hp = document.getElementById("myRange2").value;
+
+        myText();
+      }
+
+      function eef() {
+        if (gun == 0) {
+        } else if (gun == 1) {
+          myType25();
+        } else if (gun == 2) {
+          myType25SP();
+        } else if (gun == 3) {
+          myAK117();
+        } else if (gun == 4) {
+          myM16();
+        } else if (gun == 5) {
+          myAK47();
+        } else if (gun == 6) {
+          myASM10();
+        } else if (gun == 7) {
+          myM4();
+        } else if (gun == 8) {
+          myBK57();
+        } else if (gun == 9) {
+          myLK24();
+        } else if (gun == 10) {
+          myICR1();
+        } else if (gun == 11) {
+          myManowar();
+        } else if (gun == 12) {
+          myKN44();
+        } else if (gun == 13) {
+          myHBRa3();
+        } else if (gun == 14) {
+          myHVK30();
+        } else if (gun == 15) {
+          myDRH();
+        } else if (gun == 16) {
+          myDRHOTM();
+        } else if (gun == 17) {
+          myRus79U();
+        } else if (gun == 18) {
+          myChicom();
+        } else if (gun == 19) {
+          myPDW57();
+        } else if (gun == 20) {
+          myRazorback();
+        } else if (gun == 21) {
+          myMSMC();
+        } else if (gun == 22) {
+          myCorodite();
+        } else if (gun == 23) {
+          myHG40();
+        } else if (gun == 24) {
+          myPharo();
+        } else if (gun == 25) {
+          myGKS();
+        } else if (gun == 26) {
+          myQQ9();
+        } else if (gun == 27) {
+          myQQ910mm();
+        } else if (gun == 28) {
+          myJ358();
+        } else if (gun == 29) {
+          myJ358SP();
+        } else if (gun == 30) {
+          myMW11();
+        } else if (gun == 31) {
+          myS36();
+        } else if (gun == 32) {
+          myUL736();
+        } else if (gun == 33) {
+          myRPD();
+        } else if (gun == 34) {
+          myM4LMG();
+        } else if (gun == 35) {
+          myChopper();
+        } else if (gun == 36) {
+          myBY15();
+        } else if (gun == 37) {
+          myHS2126();
+        } else if (gun == 38) {
+          myHS0405();
+        } else if (gun == 39) {
+          myStriker();
+        } else if (gun == 40) {
+          myKRM262();
+        } else if (gun == 41) {
+          myLocus();
+        } else if (gun == 42) {
+          myXPR50();
+        } else if (gun == 43) {
+          myXPR50SP();
+        } else if (gun == 44) {
+          myArctic50();
+        } else if (gun == 45) {
+          myM21EBR();
+        } else if (gun == 46) {
+          myDLQ33();
+        } else if (gun == 47) {
+          myLocusSP();
+        } else if (gun == 48) {
+          myOutlaw();
+        } else if (gun == 49) {
+          myKar98();
+        } else if (gun == 50) {
+          myArctic50SP();
+        } else if (gun == 51) {
+          myEcho();
+        } else if (gun == 52) {
+          myFennec();
+        } else if (gun == 53) {
+          myNA45();
+        } else if (gun == 54) {
+          myBK57La();
+        } else if (gun == 55) {
+          myAK47La();
+        } else if (gun == 56) {
+          myKar98SP();
+        } else if (gun == 57) {
+          myFennecAkim();
+        } else {
+          myError();
+        }
+      }
+      var weapon = 11;
+      var gun = 0;
+      var el = 0;
+      var type = 0;
+      var mode = 0;
+      var hp = 100;
+      var Vest = 1;
+      var Helmet = 1;
+      var wbv = 1;
+      var tbs;
+      var tbb;
+      var bib;
+      var pellets;
+      var rh;
+      var ra;
+      var rc;
+      var rs;
+      var rl;
+      var ab;
+      var gn;
+      var cl;
+      var cs;
+      var cs1;
+      var cs2;
+      var cs3;
+      var cs4;
+      var cs5;
+      var cs6;
+      var range=[0];
+      var d = document.getElementById("d");
+      var Head = document.getElementById("Head");
+      var Arms = document.getElementById("Arms");
+      var Chest = document.getElementById("Chest");
+      var Stomach = document.getElementById("Stomach");
+      var Legs = document.getElementById("Legs");
+      var egstra = document.getElementById("egstra");
+      var errmes = document.getElementById("errmes");
+      var idkerr = 0;
+      var idkerr1 = 0;
+      //Chopper & S36 & UL 25-18-16-13 rpd 26-18-17-14 M4lmg 31-22-20-16 = 1-0.7123970223-0.6438014888-0.5229181141
+      //xpr 55-39-37-29 outlaw 108-77-72-58 M21 60-43-40-32 DL 120-86-80-64 arctic50 126-90-85-68 = 1-0.7139345839-0.6694660895-0.5341317941
+      //hvk 20-11-10 type25 24-13-12 HBr 26-14-13 M16 36-20-18 DRH 32-17-16 M4 24-13-12 ICR 25-14-13 BK57 27-15-14 AK47 33-18-17 AK117 23-12-12 = 1-0.5441349658795310969224012702273571838789230093577919664876186615317050099658795-0.5
+      //Chicom 35-12 QQ9 & Corodite & PDW 22-10 Rus 24-11 HG40 & GKS 28-13 = 1-0.4419140383426097711811997526283240568954854669140383426097711811997526283240569)
+      //J358 60-28 J358_SP 70-33 MW11 26-12 = 1-0.4665445665445665445665445665445665445665445665445665445665445665445665445665446
+      //k9 102-57-53
+      function myFull() {
+        document.getElementById("sn").style.display = "block";
+        document.getElementById("s100").style.display = "none";
+      }
+
+      function myFull1() {
+        document.getElementById("sn").style.display = "none";
+        document.getElementById("s100").style.display = "block";
+      }
+
+      function myError() {
+        if(el==1){
+          idkerr = 1;
+          output.innerHTML = "Error!";
+          output1.innerHTML = "Error!";
+          d.innerHTML = "Error!!!";
+          Head.innerHTML = "Error!!!";
+          Arms.innerHTML = "Error!!!";
+          Chest.innerHTML = "Error!!!";
+          Stomach.innerHTML = "Error!!!";
+          Legs.innerHTML = "Error!!!";
+          errmes.innerHTML = "Something went badly wrong! Error code: 0x" + gun + "9" + slider1.value + "5" + slider.value + "a" + type + "8" + mode;
+          $( function() {
+            $( "#dialog-message" ).dialog({
+              dialogClass: "no-close",
+              modal: true,
+              buttons: {
+                Reload: function() {
+                  $( this ).dialog( "close" );
+                  location.reload();
+                }, 
+                Ignore: function() {
+                  $( this ).dialog( "close" );
+                }
+              }
+            });
+          throw new Error("Something went badly wrong! Error code: 0x" + gun + "9" + slider1.value + "5" + slider.value + "a" + type + "8" + mode);
+          } );
+        } else{
+          var timerId = setInterval(function(){
+            if(idkerr == 1) {
+              clearInterval(timerId);
+              return;
+            }
+            myError();
+          }, 500);
+        }
+      }
+
+      function myErrwai() {
+						}
+
+      function hC4() {
+        document.getElementById("ptk").style.display = "none";
+        document.getElementById("dmg").innerHTML = " Damage";
+        document.getElementById("ttk").innerHTML = " Time to Kill";
+        document.getElementById("stk").innerHTML = " Shots to Kill";
+        if (document.getElementById("Check4").checked == true) {
+          selectOnlyThis("Check3");
+        }
+      }
+
+      function myBang() {
+        if (document.getElementById("Wbv0").checked == true) {
+          wbv = 1;
+        } else if (document.getElementById("Wbv1").checked == true) {
+          if (type == 0 || type == 7) { //None||Shotgun
+            wbv = 0;
+          } else if (type == 1) { //AR
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.5470507322;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0.507650395;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0;
+            } else {
+              myError();
+            }
+          } else if (type == 2) { //SMG
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.4635200393;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0;
+            } else {
+              myError();
+            }
+          } else if (type == 3) { //Sniper
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.7149427412;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0.6718141888;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0.5373077737;
+            } else {
+              myError();
+            }
+          } else if (type == 4) { //LMG
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.7123970223;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0.6438014888;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0.5229181141;
+            } else {
+              myError();
+            }
+          } else if (type == 5) { //Marksman
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.5588235294;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0.5196078431;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0;
+            } else {
+              myError();
+            }
+          } else if (type == 6) { //Pistol
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.4665445665;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0;
+            } else {
+              myError();
+            }
+          } else {
+            myError();
+          }
+        } else if (document.getElementById("Wbv2").checked == true) {
+          if (type == 0 || type == 7) { //None||Shotgun
+            wbv = 1;
+          } else if (type == 1) { //AR
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.8063762583;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0.7949379858;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0;
+            } else {
+              myError();
+            }
+          } else if (type == 2) { //SMG
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.7777530066;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0;
+            } else {
+              myError();
+            }
+          } else if (type == 3) { //Sniper
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.8816657288;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0.8635328446;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0.8090090573;
+            } else {
+              myError();
+            }
+          } else if (type == 4) { //LMG
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.8791166253;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0.8409727047;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0.8028287841;
+            } else {
+              myError();
+            }
+          } else if (type == 5) { //Marksman
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.8235294118;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0.8039215686;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0;
+            } else {
+              myError();
+            }
+          } else if (type == 6) { //Pistol
+            if (document.getElementById("Wb0").checked == true) {
+              wbv = 0.7794261294;
+            } else if (document.getElementById("Wb1").checked == true) {
+              wbv = 0;
+            } else if (document.getElementById("Wb2").checked == true) {
+              wbv = 0;
+            } else {
+              myError();
+            }
+          } else {
+            myError();
+          }
+        }
+
+        rh = rh * wbv;
+        ra = ra * wbv;
+        rc = rc * wbv;
+        rs = rs * wbv;
+        rl = rl * wbv;
+      }
+
+      function myText() {
+        myBang();
+        if (mode == 0) {
+          ab = 0;
+          Head.innerHTML = "00";
+          Arms.innerHTML = "00";
+          Chest.innerHTML = "00";
+          Stomach.innerHTML = "00";
+          Legs.innerHTML = "00";
+          hC4();
+        } else if (mode == 1) {
+          egstra.innerHTML = "RoF: " + parseFloat((((60/tbs)*1000)).toFixed(2)) + "<br>Time Between Shots: " + parseFloat((tbs).toFixed(2)) + "ms";
+          ab = 0;
+          if (document.getElementById("MpBr1").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              Head.innerHTML = rh;
+              Arms.innerHTML = ra;
+              Chest.innerHTML = rc;
+              Stomach.innerHTML = rs;
+              Legs.innerHTML = rl;
+            } else if (document.getElementById("Check3").checked == true) {
+              Head.innerHTML = Math.ceil(hp / rh);
+              Arms.innerHTML = Math.ceil(hp / ra);
+              Chest.innerHTML = Math.ceil(hp / rc);
+              Stomach.innerHTML = Math.ceil(hp / rs);
+              Legs.innerHTML = Math.ceil(hp / rl);
+            } else if (document.getElementById("Check2").checked == true) {
+              Head.innerHTML = Math.ceil((hp / rh) - 1) * tbs;
+              Arms.innerHTML = Math.ceil((hp / ra) - 1) * tbs;
+              Chest.innerHTML = Math.ceil((hp / rc) - 1) * tbs;
+              Stomach.innerHTML = Math.ceil((hp / rs) - 1) * tbs;
+              Legs.innerHTML = Math.ceil((hp / rl) - 1) * tbs;
+            }
+          } else if (document.getElementById("MpBr2").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              Head.innerHTML = rh * Helmet;
+              Arms.innerHTML = ra * Vest;
+              Chest.innerHTML = rc * Vest;
+              Stomach.innerHTML = rs * Vest;
+              Legs.innerHTML = rl * Vest;
+            } else if (document.getElementById("Check3").checked == true) {
+              Head.innerHTML = Math.ceil(hp / (rh * Helmet));
+              Arms.innerHTML = Math.ceil(hp / (ra * Vest));
+              Chest.innerHTML = Math.ceil(hp / (rc * Vest));
+              Stomach.innerHTML = Math.ceil(hp / (rs * Vest));
+              Legs.innerHTML = Math.ceil(hp / (rl * Vest));
+            } else if (document.getElementById("Check2").checked == true) {
+              Head.innerHTML = Math.ceil((hp / (rh * Helmet)) - 1) * tbs;
+              Arms.innerHTML = Math.ceil((hp / (ra * Vest)) - 1) * tbs;
+              Chest.innerHTML = Math.ceil((hp / (rc * Vest)) - 1) * tbs;
+              Stomach.innerHTML = Math.ceil((hp / (rs * Vest)) - 1) * tbs;
+              Legs.innerHTML = Math.ceil((hp / (rl * Vest)) - 1) * tbs;
+            }
+          } else {
+            myError();
+          }
+          hC4();
+        } else if (mode == 2) {
+          egstra.innerHTML = "RoF: " + parseFloat(((60/((tbs+tbb)/bib))*1000).toFixed(2)) + "<br>Time Between Shots: " + parseFloat((tbs).toFixed(2)) + "ms" + "<br>Time Between Burst: " + parseFloat((tbb).toFixed(2)) + "ms";
+          ab = 0;
+          if (document.getElementById("MpBr1").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              Head.innerHTML = rh;
+              Arms.innerHTML = ra;
+              Chest.innerHTML = rc;
+              Stomach.innerHTML = rs;
+              Legs.innerHTML = rl;
+            } else if (document.getElementById("Check3").checked == true) {
+              Head.innerHTML = Math.ceil(hp / rh);
+              Arms.innerHTML = Math.ceil(hp / ra);
+              Chest.innerHTML = Math.ceil(hp / rc);
+              Stomach.innerHTML = Math.ceil(hp / rs);
+              Legs.innerHTML = Math.ceil(hp / rl);
+            } else if (document.getElementById("Check2").checked == true) {
+              if ((Math.ceil(hp / rh)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / rh)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Head.innerHTML = cc;
+              } else if (Math.ceil(hp / rh) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / rh)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / rh)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Head.innerHTML = cc;
+              }
+              if ((Math.ceil(hp / ra)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / ra)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Arms.innerHTML = cc;
+              } else if (Math.ceil(hp / ra) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / ra)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / ra)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Arms.innerHTML = cc;
+              }
+              if ((Math.ceil(hp / rc)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / rc)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Chest.innerHTML = cc;
+              } else if (Math.ceil(hp / rc) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / rc)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / rc)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Chest.innerHTML = cc;
+              }
+              if ((Math.ceil(hp / rs)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / rs)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Stomach.innerHTML = cc;
+              } else if (Math.ceil(hp / rs) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / rs)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / rs)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Stomach.innerHTML = cc;
+              }
+              if ((Math.ceil(hp / rl)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / rl)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Legs.innerHTML = cc;
+              } else if (Math.ceil(hp / rl) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / rl)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / rl)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Legs.innerHTML = cc;
+              }
+            }
+          } else if (document.getElementById("MpBr2").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              Head.innerHTML = rh * Helmet;
+              Arms.innerHTML = ra * Vest;
+              Chest.innerHTML = rc * Vest;
+              Stomach.innerHTML = rs * Vest;
+              Legs.innerHTML = rl * Vest;
+            } else if (document.getElementById("Check3").checked == true) {
+              Head.innerHTML = Math.ceil(hp / (rh * Helmet));
+              Arms.innerHTML = Math.ceil(hp / (ra * Vest));
+              Chest.innerHTML = Math.ceil(hp / (rc * Vest));
+              Stomach.innerHTML = Math.ceil(hp / (rs * Vest));
+              Legs.innerHTML = Math.ceil(hp / (rl * Vest));
+            } else if (document.getElementById("Check2").checked == true) {
+              if ((Math.ceil(hp / (rh * Helmet))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (rh * Helmet))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Head.innerHTML = cc;
+              } else if (Math.ceil(hp / (rh * Helmet)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (rh * Helmet))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (rh * Helmet))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Head.innerHTML = cc;
+              }
+              if ((Math.ceil(hp / (ra * Vest))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (ra * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Arms.innerHTML = cc;
+              } else if (Math.ceil(hp / (ra * Vest)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (ra * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (ra * Vest))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Arms.innerHTML = cc;
+              }
+              if ((Math.ceil(hp / (rc * Vest))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (rc * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Chest.innerHTML = cc;
+              } else if (Math.ceil(hp / (rc * Vest)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (rc * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (rc * Vest))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Chest.innerHTML = cc;
+              }
+              if ((Math.ceil(hp / (rs * Vest))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (rs * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Stomach.innerHTML = cc;
+              } else if (Math.ceil(hp / (rs * Vest)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (rs * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (rs * Vest))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Stomach.innerHTML = cc;
+              }
+              if ((Math.ceil(hp / (rl * Vest))) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil(hp / (rl * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Legs.innerHTML = cc;
+              } else if (Math.ceil(hp / (rl * Vest)) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil(hp / (rl * Vest))) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil(hp / (rl * Vest))) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Legs.innerHTML = cc;
+              }
+            }
+          } else {
+            myError();
+          }
+          hC4();
+        } else if (mode == 3) {
+          egstra.innerHTML = "RoF: " + parseFloat((((60/tbs)*1000)).toFixed(2)) + "<br>Time Between Shots: " + parseFloat((tbs).toFixed(2)) + "ms";
+          document.getElementById("ttk").innerHTML = " Time to Kill (if all pellets hit)";
+          document.getElementById("dmg").innerHTML = " Damage per pellet";
+          document.getElementById("ptk").style.display = "block";
+          ab = 1;
+          if (document.getElementById("MpBr1").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              Head.innerHTML = rh;
+              Arms.innerHTML = ra;
+              Chest.innerHTML = rc;
+              Stomach.innerHTML = rs;
+              Legs.innerHTML = rl;
+            } else if (document.getElementById("Check4").checked == true) {
+              Head.innerHTML = Math.ceil(hp / rh);
+              Arms.innerHTML = Math.ceil(hp / ra);
+              Chest.innerHTML = Math.ceil(hp / rc);
+              Stomach.innerHTML = Math.ceil(hp / rs);
+              Legs.innerHTML = Math.ceil(hp / rl);
+            } else if (document.getElementById("Check3").checked == true) {
+              Head.innerHTML = Math.ceil((hp / rh) / pellets);
+              Arms.innerHTML = Math.ceil((hp / ra) / pellets);
+              Chest.innerHTML = Math.ceil((hp / rc) / pellets);
+              Stomach.innerHTML = Math.ceil((hp / rs) / pellets);
+              Legs.innerHTML = Math.ceil((hp / rl) / pellets);
+            } else if (document.getElementById("Check2").checked == true) {
+              Head.innerHTML = Math.ceil(((hp / rh) / pellets) - 1) * tbs;
+              Arms.innerHTML = Math.ceil(((hp / ra) / pellets) - 1) * tbs;
+              Chest.innerHTML = Math.ceil(((hp / rc) / pellets) - 1) * tbs;
+              Stomach.innerHTML = Math.ceil(((hp / rs) / pellets) - 1) * tbs;
+              Legs.innerHTML = Math.ceil(((hp / rl) / pellets) - 1) * tbs;
+            }
+          } else if (document.getElementById("MpBr2").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              Head.innerHTML = rh * Helmet;
+              Arms.innerHTML = ra * Vest;
+              Chest.innerHTML = rc * Vest;
+              Stomach.innerHTML = rs * Vest;
+              Legs.innerHTML = rl * Vest;
+            } else if (document.getElementById("Check4").checked == true) {
+              Head.innerHTML = Math.ceil(hp / (rh * Helmet));
+              Arms.innerHTML = Math.ceil(hp / (ra * Vest));
+              Chest.innerHTML = Math.ceil(hp / (rc * Vest));
+              Stomach.innerHTML = Math.ceil(hp / (rs * Vest));
+              Legs.innerHTML = Math.ceil(hp / ((rl * Vest) * Vest));
+            } else if (document.getElementById("Check3").checked == true) {
+              Head.innerHTML = Math.ceil((hp / (rh * Helmet)) / pellets);
+              Arms.innerHTML = Math.ceil((hp / (ra * Vest)) / pellets);
+              Chest.innerHTML = Math.ceil((hp / (rc * Vest)) / pellets);
+              Stomach.innerHTML = Math.ceil((hp / (rs * Vest)) / pellets);
+              Legs.innerHTML = Math.ceil((hp / (rl * Vest)) / pellets);
+            } else if (document.getElementById("Check2").checked == true) {
+              Head.innerHTML = Math.ceil(((hp / (rh * Helmet)) / pellets) - 1) * tbs;
+              Arms.innerHTML = Math.ceil(((hp / (ra * Vest)) / pellets) - 1) * tbs;
+              Chest.innerHTML = Math.ceil(((hp / (rc * Vest)) / pellets) - 1) * tbs;
+              Stomach.innerHTML = Math.ceil(((hp / (rs * Vest)) / pellets) - 1) * tbs;
+              Legs.innerHTML = Math.ceil(((hp / (rl * Vest)) / pellets) - 1) * tbs;
+            }
+          } else {
+            myError();
+          }
+        } else if (mode == 23) {
+          egstra.innerHTML = "RoF: " + parseFloat(((60/((tbs+tbb)/bib))*1000).toFixed(2)) + "<br>Time Between Shots: " + parseFloat((tbs).toFixed(2)) + "ms" + "<br>Time Between Burst: " + parseFloat((tbb).toFixed(2)) + "ms";
+          document.getElementById("dmg").innerHTML = " Damage per pellet";
+          document.getElementById("ttk").innerHTML = " Time to Kill (if all pellets hit)";
+          document.getElementById("ptk").style.display = "block";
+          ab = 1;
+          if (document.getElementById("MpBr1").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              Head.innerHTML = rh;
+              Arms.innerHTML = ra;
+              Chest.innerHTML = rc;
+              Stomach.innerHTML = rs;
+              Legs.innerHTML = rl;
+            } else if (document.getElementById("Check4").checked == true) {
+              Head.innerHTML = Math.ceil(hp / rh);
+              Arms.innerHTML = Math.ceil(hp / ra);
+              Chest.innerHTML = Math.ceil(hp / rc);
+              Stomach.innerHTML = Math.ceil(hp / rs);
+              Legs.innerHTML = Math.ceil(hp / rl);
+            } else if (document.getElementById("Check3").checked == true) {
+              Head.innerHTML = Math.ceil((hp / rh) / pellets);
+              Arms.innerHTML = Math.ceil((hp / ra) / pellets);
+              Chest.innerHTML = Math.ceil((hp / rc) / pellets);
+              Stomach.innerHTML = Math.ceil((hp / rs) / pellets);
+              Legs.innerHTML = Math.ceil((hp / rl) / pellets);
+            } else if (document.getElementById("Check2").checked == true) {
+              if (slider1.value < 34) {
+                if ((Math.ceil((hp / rh) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / rh) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  Head.innerHTML = cc;
+                } else if (Math.ceil((hp / rh) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / rh) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / rh) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  Head.innerHTML = cc;
+                }
+                if ((Math.ceil((hp / ra) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / ra) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  Arms.innerHTML = cc;
+                } else if (Math.ceil((hp / ra) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / ra) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / ra) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  nnerHTML = cc;
+                }
+                if ((Math.ceil((hp / rc) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / rc) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  Chest.innerHTML = cc;
+                } else if (Math.ceil((hp / rc) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / rc) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / rc) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  Chest.innerHTML = cc;
+                }
+                if ((Math.ceil((hp / rs) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / rs) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  Stomach.innerHTML = cc;
+                } else if (Math.ceil((hp / rs) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / rs) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / rs) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  Stomach.innerHTML = cc;
+                }
+                if ((Math.ceil((hp / rl) / pellets)) % bib == 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i < ((Math.floor((Math.ceil((hp / rl) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  cc = cc + bb;
+                  Legs.innerHTML = cc;
+                } else if (Math.ceil((hp / rl) / pellets) % bib != 0) {
+                  var bb = tbs * (bib - 1);
+                  var cc = 0;
+                  for (var i = 0; i <= ((Math.floor((Math.ceil((hp / rl) / pellets)) / bib)) - 1); i++) {
+                    cc = cc + (bb + tbb);
+                  }
+                  for (var i = 0; i < (((Math.ceil((hp / rl) / pellets)) % bib) - 1); i++) {
+                    cc = cc + tbs;
+                  }
+                  Legs.innerHTML = cc;
+                }
+              } else {
+                Head.innerHTML = "Infinity";
+                Arms.innerHTML = "Infinity";
+                Chest.innerHTML = "Infinity";
+                Stomach.innerHTML = "Infinity";
+                Legs.innerHTML = "Infinity";
+              }
+            }
+          } else if (document.getElementById("MpBr2").checked == true) {
+            if (document.getElementById("Check1").checked == true) {
+              Head.innerHTML = rh * Helmet;
+              Arms.innerHTML = ra * Vest;
+              Chest.innerHTML = rc * Vest;
+              Stomach.innerHTML = rs * Vest;
+              Legs.innerHTML = rl * Vest;
+            } else if (document.getElementById("Check4").checked == true) {
+              Head.innerHTML = Math.ceil(hp / (rh * Helmet));
+              Arms.innerHTML = Math.ceil(hp / (ra * Vest));
+              Chest.innerHTML = Math.ceil(hp / (rc * Vest));
+              Stomach.innerHTML = Math.ceil(hp / (rs * Vest));
+              Legs.innerHTML = Math.ceil(hp / ((rl * Vest) * Vest));
+            } else if (document.getElementById("Check3").checked == true) {
+              Head.innerHTML = Math.ceil((hp / (rh * Helmet)) / pellets);
+              Arms.innerHTML = Math.ceil((hp / (ra * Vest)) / pellets);
+              Chest.innerHTML = Math.ceil((hp / (rc * Vest)) / pellets);
+              Stomach.innerHTML = Math.ceil((hp / (rs * Vest)) / pellets);
+              Legs.innerHTML = Math.ceil((hp / (rl * Vest)) / pellets);
+            } else if (document.getElementById("Check2").checked == true) {
+              if ((Math.ceil((hp / (rh * Helmet)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (rh * Helmet)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Head.innerHTML = cc;
+              } else if (Math.ceil((hp / (rh * Helmet)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (rh * Helmet)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (rh * Helmet)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Head.innerHTML = cc;
+              }
+              if ((Math.ceil((hp / (ra * Vest)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (ra * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Arms.innerHTML = cc;
+              } else if (Math.ceil((hp / (ra * Vest)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (ra * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (ra * Vest)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Arms.innerHTML = cc;
+              }
+              if ((Math.ceil((hp / (rc * Vest)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (rc * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Chest.innerHTML = cc;
+              } else if (Math.ceil((hp / (rc * Vest)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (rc * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (rc * Vest)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Chest.innerHTML = cc;
+              }
+              if ((Math.ceil((hp / (rs * Vest)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (rs * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Stomach.innerHTML = cc;
+              } else if (Math.ceil((hp / (rs * Vest)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (rs * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (rs * Vest)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Stomach.innerHTML = cc;
+              }
+              if ((Math.ceil((hp / (rl * Vest)) / pellets)) % bib == 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i < ((Math.floor((Math.ceil((hp / (rl * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                cc = cc + bb;
+                Legs.innerHTML = cc;
+              } else if (Math.ceil((hp / (rl * Vest)) / pellets) % bib != 0) {
+                var bb = tbs * (bib - 1);
+                var cc = 0;
+                for (var i = 0; i <= ((Math.floor((Math.ceil((hp / (rl * Vest)) / pellets)) / bib)) - 1); i++) {
+                  cc = cc + (bb + tbb);
+                }
+                for (var i = 0; i < (((Math.ceil((hp / (rl * Vest)) / pellets)) % bib) - 1); i++) {
+                  cc = cc + tbs;
+                }
+                Legs.innerHTML = cc;
+              }
+            }
+          } else {
+            myError();
+          }
+        }
+        if (Head.innerHTML == "Infinity" && Arms.innerHTML == "Infinity" && Chest.innerHTML == "Infinity" && Stomach.innerHTML == "Infinity" && Legs.innerHTML == "Infinity") {
+          if (document.getElementById("Check2").checked == true) {
+            Head.innerHTML = "Never";
+            Arms.innerHTML = "Never";
+            Chest.innerHTML = "Never";
+            Stomach.innerHTML = "Never";
+            Legs.innerHTML = "Never";
+          } else if (document.getElementById("Check3").checked == true || document.getElementById("Check4").checked == true) {
+            Head.innerHTML = "Impossible";
+            Arms.innerHTML = "Impossible";
+            Chest.innerHTML = "Impossible";
+            Stomach.innerHTML = "Impossible";
+            Legs.innerHTML = "Impossible";
+          }
+        } else if (((Head.innerHTML == "NaN" || Arms.innerHTML == "NaN" || Chest.innerHTML == "NaN" || Stomach.innerHTML == "NaN" || Legs.innerHTML == "NaN") || (Head.innerHTML == "Infinity" || Arms.innerHTML == "Infinity" || Chest.innerHTML == "Infinity" || Stomach.innerHTML == "Infinity" || Legs.innerHTML == "Infinity")) && (Head.innerHTML != Arms.innerHTML || Arms.innerHTML != Chest.innerHTML || Chest.innerHTML != Stomach.innerHTML || Stomach.innerHTML != Legs.innerHTML)) {
+          myError();
+        } else {
+          Head.innerHTML = parseFloat(parseFloat(Head.innerHTML).toFixed(2));
+          Arms.innerHTML = parseFloat(parseFloat(Arms.innerHTML).toFixed(2));
+          Chest.innerHTML = parseFloat(parseFloat(Chest.innerHTML).toFixed(2));
+          Stomach.innerHTML = parseFloat(parseFloat(Stomach.innerHTML).toFixed(2));
+          Legs.innerHTML = parseFloat(parseFloat(Legs.innerHTML).toFixed(2));
+        }
+        if (((Head.innerHTML == "NaN" || Arms.innerHTML == "NaN" || Chest.innerHTML == "NaN" || Stomach.innerHTML == "NaN" || Legs.innerHTML == "NaN") || (Head.innerHTML == "Infinity" || Arms.innerHTML == "Infinity" || Chest.innerHTML == "Infinity" || Stomach.innerHTML == "Infinity" || Legs.innerHTML == "Infinity")) && (Head.innerHTML != Arms.innerHTML || Arms.innerHTML != Chest.innerHTML || Chest.innerHTML != Stomach.innerHTML || Stomach.innerHTML != Legs.innerHTML)) {
+          myError();
+        }
+      }
+
+      function myType25() {
+        myFull1();
+        gun = 1;
+        d.innerHTML = "Type 25";
+        if (slider1.value >= 31 && slider1.value <= 100) {
+          rh = "17";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 17 && slider1.value <= 30) {
+          rh = "20";
+          ra = "18";
+          rc = "18";
+          rs = "18";
+          rl = "18";
+        } else if (slider1.value >= 11 && slider1.value <= 16) {
+          rh = "24";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 0 && slider1.value <= 10) {
+          rh = "26";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "24";
+        } else {
+          myError();
+        }
+        tbs = 75.70621469;
+        myText();
+      }
+
+      function myType25SP() {
+        myFull1();
+        gun = 2;
+        d.innerHTML = "Type 25 with Stopping Power Mag";
+        if (slider1.value >= 31 && slider1.value <= 100) {
+          rh = "17";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value > 20 && slider1.value < 31) {
+          rh = "20";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value > 16 && slider1.value < 21) {
+          rh = "22";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else if (slider1.value > 9 && slider1.value < 17) {
+          rh = "25";
+          ra = "23";
+          rc = "23";
+          rs = "23";
+          rl = "23";
+        } else if (slider1.value > 0 && slider1.value < 10) {
+          rh = "27";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else {
+          myError();
+        }
+        tbs = 75.70621469;
+        myText();
+      }
+
+      function myAK117() {
+        myFull1();
+        gun = 3;
+        d.innerHTML = "AK117";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "19";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 20 && slider1.value <= 37) {
+          rh = "21";
+          ra = "18";
+          rc = "18";
+          rs = "18";
+          rl = "18";
+        } else if (slider1.value >= 0 && slider1.value <= 21) {
+          rh = "27";
+          ra = "23";
+          rc = "23";
+          rs = "23";
+          rl = "23";
+        } else {
+          myError();
+        }
+        tbs = 78.53107345;
+        myText();
+      }
+
+      function myM16() {
+        myFull1();
+        gun = 4;
+        d.innerHTML = "M16<br><br>3 round bursts";
+        if (slider1.value >= 41 && slider1.value <= 100) {
+          rh = "30";
+          ra = "26";
+          rc = "30";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 21 && slider1.value <= 40) {
+          rh = "37";
+          ra = "32";
+          rc = "37";
+          rs = "27";
+          rl = "27";
+        } else if (slider1.value >= 0 && slider1.value <= 20) {
+          rh = "42";
+          ra = "36";
+          rc = "42";
+          rs = "30";
+          rl = "30";
+        } else {
+          myError();
+        }
+        tbs = 93.22033898;
+        tbb = 220.389831;
+        bib = 3;
+        myText();
+      }
+
+      function myAK47() {
+        myFull1();
+        gun = 5;
+        d.innerHTML = "AK47";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "28";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "24";
+        } else if (slider1.value >= 29 && slider1.value <= 35) {
+          rh = "30";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else if (slider1.value >= 0 && slider1.value <= 28) {
+          rh = "39";
+          ra = "33";
+          rc = "33";
+          rs = "33";
+          rl = "33";
+        } else {
+          myError();
+        }
+        tbs = 107.3446328;
+        myText();
+      }
+
+      function myAK47La() {
+        myFull1();
+        gun = 55;
+        d.innerHTML = "AK47 with Large Caliber Mag";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "18";
+          ra = "15";
+          rc = "15";
+          rs = "15";
+          rl = "15";
+        } else if (slider1.value >= 25 && slider1.value <= 35) {
+          rh = "20";
+          ra = "17";
+          rc = "17";
+          rs = "17";
+          rl = "17";
+        } else if (slider1.value >= 15 && slider1.value <= 24) {
+          rh = "24";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else if (slider1.value >= 0 && slider1.value <= 14) {
+          rh = "30";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else {
+          myError();
+        }
+        tbs = (2.5 / 29) * 1000;
+        myText();
+      }
+
+      function myASM10() {
+        tbs = 107.3446328;
+        myFull1();
+        gun = 6;
+        d.innerHTML = "ASM10";
+        if (slider1.value >= 38 && slider1.value <= 100) {
+          rh = "24";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else if (slider1.value >= 18 && slider1.value <= 37) {
+          rh = "31";
+          ra = "26";
+          rc = "26";
+          rs = "26";
+          rl = "26";
+        } else if (slider1.value >= 0 && slider1.value <= 17) {
+          rh = "40";
+          ra = "34";
+          rc = "34";
+          rs = "34";
+          rl = "34";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myM4() {
+        tbs = 87.00564972;
+        myFull1();
+        gun = 7;
+        d.innerHTML = "M4";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "22";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value >= 16 && slider1.value <= 35) {
+          rh = "24";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else if (slider1.value >= 0 && slider1.value <= 15) {
+          rh = "28";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "24";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myBK57() {
+        tbs = 89.10411622;
+        myFull1();
+        gun = 8;
+        d.innerHTML = "BK57";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "22";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value >= 16 && slider1.value <= 35) {
+          rh = "26";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 0 && slider1.value <= 15) {
+          rh = "32";
+          ra = "27";
+          rc = "27";
+          rs = "27";
+          rl = "27";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myBK57La() {
+        tbs = 89.10411622;
+        myFull1();
+        gun = 54;
+        d.innerHTML = "BK57 with Large Magazine";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "24";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value >= 16 && slider1.value <= 35) {
+          rh = "28";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 0 && slider1.value <= 15) {
+          rh = "35";
+          ra = "27";
+          rc = "27";
+          rs = "27";
+          rl = "27";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myLK24() {
+        tbs = 93.78531073;
+        myFull1();
+        gun = 9;
+        d.innerHTML = "LK24";
+        if (slider1.value >= 40 && slider1.value <= 100) {
+          rh = "21";
+          ra = "18";
+          rc = "18";
+          rs = "18";
+          rl = "18";
+        } else if (slider1.value >= 31 && slider1.value <= 39) {
+          rh = "24";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else if (slider1.value >= 21 && slider1.value <= 30) {
+          rh = "26";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 0 && slider1.value <= 20) {
+          rh = "31";
+          ra = "26";
+          rc = "26";
+          rs = "26";
+          rl = "26";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myICR1() {
+        tbs = 97.74011299;
+        myFull1();
+        gun = 10;
+        d.innerHTML = "ICR1";
+        if (slider1.value >= 41 && slider1.value <= 100) {
+          rh = "22";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value >= 17 && slider1.value <= 40) {
+          rh = "26";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 0 && slider1.value <= 16) {
+          rh = "30";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myManowar() {
+        tbs = 115.2542373;
+        myFull1();
+        gun = 11;
+        d.innerHTML = "Man-o-war";
+        if (slider1.value >= 44 && slider1.value <= 100) {
+          rh = "26";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "24";
+        } else if (slider1.value >= 24 && slider1.value <= 43) {
+          rh = "30";
+          ra = "28";
+          rc = "28";
+          rs = "28";
+          rl = "28";
+        } else if (slider1.value >= 0 && slider1.value <= 23) {
+          rh = "37";
+          ra = "34";
+          rc = "34";
+          rs = "34";
+          rl = "34";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myKN44() {
+        tbs = 94.35028249;
+        myFull1();
+        gun = 12;
+        d.innerHTML = "KN44";
+        if (slider1.value >= 41 && slider1.value <= 100) {
+          rh = "22";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value >= 21 && slider1.value <= 40) {
+          rh = "28";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "24";
+        } else if (slider1.value >= 0 && slider1.value <= 20) {
+          rh = "31";
+          ra = "26";
+          rc = "26";
+          rs = "26";
+          rl = "26";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myHBRa3() {
+        tbs = 87.00564972;
+        myFull1();
+        gun = 13;
+        d.innerHTML = "HBRa3";
+        if (slider1.value >= 37 && slider1.value <= 100) {
+          rh = "17";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 26 && slider1.value <= 36) {
+          rh = "18";
+          ra = "17";
+          rc = "17";
+          rs = "17";
+          rl = "17";
+        } else if (slider1.value >= 12 && slider1.value <= 25) {
+          rh = "24";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 0 && slider1.value <= 11) {
+          rh = "28";
+          ra = "26";
+          rc = "26";
+          rs = "26";
+          rl = "26";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myHVK30() {
+        tbs = 83.05084746;
+        myFull1();
+        gun = 14;
+        d.innerHTML = "HVK30";
+        if (slider1.value >= 51 && slider1.value <= 100) {
+          rh = "20";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 31 && slider1.value <= 50) {
+          rh = "23";
+          ra = "18";
+          rc = "18";
+          rs = "18";
+          rl = "18";
+        } else if (slider1.value >= 0 && slider1.value <= 30) {
+          rh = "26";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myDRH() {
+        tbs = 103.3898305;
+        myFull1();
+        gun = 15;
+        d.innerHTML = "DRH";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "22";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value >= 26 && slider1.value <= 35) {
+          rh = "28";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "24";
+        } else if (slider1.value >= 19 && slider1.value <= 25) {
+          rh = "30";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else if (slider1.value >= 14 && slider1.value <= 18) {
+          rh = "33";
+          ra = "28";
+          rc = "28";
+          rs = "28";
+          rl = "28";
+        } else if (slider1.value >= 8 && slider1.value <= 13) {
+          rh = "37";
+          ra = "31";
+          rc = "31";
+          rs = "31";
+          rl = "31";
+        } else if (slider1.value >= 0 && slider1.value <= 7) {
+          rh = "38";
+          ra = "32";
+          rc = "32";
+          rs = "32";
+          rl = "32";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myDRHOTM() {
+        tbs = 103.3898305;
+        myFull1();
+        gun = 16;
+        d.innerHTML = "DR-H with OTM Mag";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "22";
+          ra = "19";
+          rc = "22";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value >= 26 && slider1.value <= 35) {
+          rh = "28";
+          ra = "24";
+          rc = "28";
+          rs = "24";
+          rl = "24";
+        } else if (slider1.value >= 19 && slider1.value <= 25) {
+          rh = "30";
+          ra = "25";
+          rc = "30";
+          rs = "25";
+          rl = "25";
+        } else if (slider1.value >= 14 && slider1.value <= 18) {
+          rh = "33";
+          ra = "28";
+          rc = "33";
+          rs = "28";
+          rl = "28";
+        } else if (slider1.value >= 8 && slider1.value <= 13) {
+          rh = "37";
+          ra = "31";
+          rc = "37";
+          rs = "31";
+          rl = "31";
+        } else if (slider1.value >= 0 && slider1.value <= 7) {
+          rh = "38";
+          ra = "32";
+          rc = "38";
+          rs = "32";
+          rl = "32";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myRus79U() {
+        tbs = 77.40112994;
+        myFull1();
+        gun = 17;
+        d.innerHTML = "Rus79U";
+        if (slider1.value >= 41 && slider1.value <= 100) {
+          rh = "16";
+          ra = "15";
+          rc = "15";
+          rs = "15";
+          rl = "13";
+        } else if (slider1.value >= 21 && slider1.value <= 40) {
+          rh = "19";
+          ra = "18";
+          rc = "18";
+          rs = "18";
+          rl = "16";
+        } else if (slider1.value >= 4 && slider1.value <= 20) {
+          rh = "26";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "21";
+        } else if (slider1.value >= 0 && slider1.value <= 3) {
+          rh = "31";
+          ra = "28";
+          rc = "28";
+          rs = "28";
+          rl = "25";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myChicom() {
+        myFull1();
+        gun = 18;
+        d.innerHTML = "Chicom<br><br>3 round bursts";
+        if (slider1.value >= 21 && slider1.value <= 100) {
+          rh = "23";
+          ra = "17";
+          rc = "22";
+          rs = "17";
+          rl = "15";
+        } else if (slider1.value >= 18 && slider1.value <= 20) {
+          rh = "28";
+          ra = "20";
+          rc = "26";
+          rs = "20";
+          rl = "18";
+        } else if (slider1.value >= 10 && slider1.value <= 17) {
+          rh = "33";
+          ra = "24";
+          rc = "31";
+          rs = "24";
+          rl = "21";
+        } else if (slider1.value >= 0 && slider1.value <= 9) {
+          rh = "37";
+          ra = "27";
+          rc = "35";
+          rs = "27";
+          rl = "24";
+        } else {
+          myError();
+        }
+        tbs = 84.74576271;
+        tbb = 152.5423729;
+        bib = 3;
+        myText();
+      }
+
+      function myPDW57() {
+        tbs = 78.98305085;
+        myFull1();
+        gun = 19;
+        d.innerHTML = "PDW57";
+        if (slider1.value >= 29 && slider1.value <= 100) {
+          rh = "16";
+          ra = "15";
+          rc = "15";
+          rs = "15";
+          rl = "13";
+        } else if (slider1.value >= 19 && slider1.value <= 28) {
+          rh = "18";
+          ra = "17";
+          rc = "17";
+          rs = "17";
+          rl = "15";
+        } else if (slider1.value >= 13 && slider1.value <= 18) {
+          rh = "22";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "18";
+        } else if (slider1.value >= 6 && slider1.value <= 12) {
+          rh = "24";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "19";
+        } else if (slider1.value >= 0 && slider1.value <= 5) {
+          rh = "30";
+          ra = "27";
+          rc = "27";
+          rs = "27";
+          rl = "24";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myRazorback() {
+        tbs = (2.85 / 29) * 1000;
+        myFull1();
+        gun = 20;
+        d.innerHTML = "Razorback";
+        if (slider1.value >= 25 && slider1.value <= 100) {
+          rh = "20";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "17";
+        } else if (slider1.value >= 16 && slider1.value <= 24) {
+          rh = "25";
+          ra = "23";
+          rc = "23";
+          rs = "23";
+          rl = "20";
+        } else if (slider1.value >= 0 && slider1.value <= 15) {
+          rh = "33";
+          ra = "30";
+          rc = "30";
+          rs = "30";
+          rl = "27";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myMSMC() {
+        tbs = 65.76271186;
+        myFull1();
+        gun = 21;
+        d.innerHTML = "MSMC";
+        if (slider1.value >= 18 && slider1.value <= 100) {
+          rh = "17";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "14";
+        } else if (slider1.value >= 14 && slider1.value <= 17) {
+          rh = "19";
+          ra = "18";
+          rc = "18";
+          rs = "18";
+          rl = "16";
+        } else if (slider1.value >= 8 && slider1.value <= 13) {
+          rh = "23";
+          ra = "21";
+          rc = "21";
+          rs = "21";
+          rl = "18";
+        } else if (slider1.value >= 0 && slider1.value <= 7) {
+          rh = "27";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "22";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myCorodite() {
+        tbs = 74.57627119;
+        myFull1();
+        gun = 22;
+        d.innerHTML = "Corodite";
+        if (slider1.value >= 34 && slider1.value <= 100) {
+          rh = "19";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "14";
+        } else if (slider1.value >= 27 && slider1.value <= 33) {
+          rh = "21";
+          ra = "18";
+          rc = "18";
+          rs = "18";
+          rl = "16";
+        } else if (slider1.value >= 20 && slider1.value <= 26) {
+          rh = "22";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "17";
+        } else if (slider1.value >= 9 && slider1.value <= 19) {
+          rh = "26";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "19";
+        } else if (slider1.value >= 0 && slider1.value <= 8) {
+          rh = "28";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "21";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myHG40() {
+        tbs = 87.92372881;
+        myFull1();
+        gun = 23;
+        d.innerHTML = "HG40";
+        if (slider1.value >= 26 && slider1.value <= 100) { //hands 15
+          rh = "18";
+          ra = "17";
+          rc = "17";
+          rs = "17";
+          rl = "15";
+        } else if (slider1.value >= 12 && slider1.value <= 25) { //hands 20
+          rh = "25";
+          ra = "23";
+          rc = "23";
+          rs = "23";
+          rl = "20";
+        } else if (slider1.value >= 0 && slider1.value <= 11) { //hands 22
+          rh = "27";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "22";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myPharo() {
+        myFull1();
+        gun = 24;
+        d.innerHTML = "Pharo<br><br>4 round bursts";
+        if (slider1.value >= 26 && slider1.value <= 100) {
+          rh = "17";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "14";
+        } else if (slider1.value >= 16 && slider1.value <= 25) {
+          rh = "20";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "17";
+        } else if (slider1.value >= 11 && slider1.value <= 15) {
+          rh = "23";
+          ra = "21";
+          rc = "21";
+          rs = "21";
+          rl = "18";
+        } else if (slider1.value >= 8 && slider1.value <= 10) {
+          rh = "28";
+          ra = "26";
+          rc = "26";
+          rs = "26";
+          rl = "23";
+        } else if (slider1.value >= 0 && slider1.value <= 7) {
+          rh = "37";
+          ra = "34";
+          rc = "34";
+          rs = "34";
+          rl = "30";
+        } else {
+          myError();
+        }
+        tbs = (220.3389831 / 3);
+        tbb = 135.5932203;
+        bib = 4;
+        myText();
+      }
+
+      function myGKS() {
+        tbs = 98.98305085;
+        myFull1();
+        gun = 25;
+        d.innerHTML = "GKS";
+        if (slider1.value >= 31 && slider1.value <= 100) {
+          rh = "24";
+          ra = "19";
+          rc = "19";
+          rs = "19";
+          rl = "19";
+        } else if (slider1.value >= 21 && slider1.value <= 30) {
+          rh = "29";
+          ra = "23";
+          rc = "23";
+          rs = "23";
+          rl = "23";
+        } else if (slider1.value >= 0 && slider1.value <= 20) {
+          rh = "36";
+          ra = "28";
+          rc = "28";
+          rs = "28";
+          rl = "28";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myQQ9() {
+        tbs = 71.18644068;
+        myFull1();
+        gun = 26;
+        d.innerHTML = "QQ9";
+        if (slider1.value >= 28 && slider1.value <= 100) {
+          rh = "16";
+          ra = "13";
+          rc = "15";
+          rs = "15";
+          rl = "13";
+        } else if (slider1.value >= 20 && slider1.value <= 27) {
+          rh = "18";
+          ra = "15";
+          rc = "17";
+          rs = "17";
+          rl = "15";
+        } else if (slider1.value >= 13 && slider1.value <= 19) {
+          rh = "20";
+          ra = "17";
+          rc = "19";
+          rs = "19";
+          rl = "17";
+        } else if (slider1.value >= 8 && slider1.value <= 12) {
+          rh = "25";
+          ra = "20";
+          rc = "23";
+          rs = "23";
+          rl = "20";
+        } else if (slider1.value >= 0 && slider1.value <= 7) {
+          rh = "27";
+          ra = "22";
+          rc = "25";
+          rs = "25";
+          rl = "22";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myQQ910mm() {
+        tbs = 71.18644068;
+        myFull1();
+        gun = 27;
+        d.innerHTML = "QQ9 with 10mm";
+        if (slider1.value >= 34 && slider1.value <= 100) {
+          rh = "16";
+          ra = "13";
+          rc = "15";
+          rs = "15";
+          rl = "13";
+        } else if (slider1.value >= 24 && slider1.value <= 33) {
+          rh = "18";
+          ra = "15";
+          rc = "17";
+          rs = "17";
+          rl = "15";
+        } else if (slider1.value >= 17 && slider1.value <= 23) {
+          rh = "23";
+          ra = "18";
+          rc = "21";
+          rs = "21";
+          rl = "18";
+        } else if (slider1.value >= 9 && slider1.value <= 16) {
+          rh = "27";
+          ra = "22";
+          rc = "25";
+          rs = "25";
+          rl = "22";
+        } else if (slider1.value >= 0 && slider1.value <= 8) {
+          rh = "28";
+          ra = "23";
+          rc = "26";
+          rs = "26";
+          rl = "23";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myFennec() {
+        tbs = ((1 + (52 / 60)) / 34) * 1000; //1096.956522  (60/((1+(17/29)/29))
+        myFull1();
+        gun = 52;
+        d.innerHTML = "Fennec";
+        if (slider1.value >= 24 && slider1.value <= 100) {
+          rh = "13";
+          ra = "10";
+          rc = "12";
+          rs = "12";
+          rl = "10";
+        } else if (slider1.value >= 17 && slider1.value <= 23) {
+          rh = "14";
+          ra = "11";
+          rc = "13";
+          rs = "13";
+          rl = "11";
+        } else if (slider1.value >= 12 && slider1.value <= 16) {
+          rh = "19";
+          ra = "16";
+          rc = "18";
+          rs = "18";
+          rl = "16";
+        } else if (slider1.value >= 8 && slider1.value <= 11) {
+          rh = "23";
+          ra = "18";
+          rc = "21";
+          rs = "21";
+          rl = "18";
+        } else if (slider1.value >= 0 && slider1.value <= 7) {
+          rh = "25";
+          ra = "20";
+          rc = "23";
+          rs = "23";
+          rl = "20";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myFennecAkim() {
+        tbs = ((1 + (52 / 60)) / 34) * 1000; //2181.818182  (60/((1 + (3 / 30)) / 40))
+        tbb = 0;
+        bib = 2;
+        myFull1();
+        gun = 57;
+        d.innerHTML = "Fennec with Akimbo. Shoots two bullet in the same duration regular Fennec would";
+        if (slider1.value >= 24 && slider1.value <= 100) {
+          rh = "9";
+          ra = "8";
+          rc = "9";
+          rs = "9";
+          rl = "8";
+        } else if (slider1.value >= 17 && slider1.value <= 23) {
+          rh = "11";
+          ra = "9";
+          rc = "10";
+          rs = "10";
+          rl = "9";
+        } else if (slider1.value >= 12 && slider1.value <= 16) {
+          rh = "13";
+          ra = "10";
+          rc = "12";
+          rs = "12";
+          rl = "10";
+        } else if (slider1.value >= 8 && slider1.value <= 11) {
+          rh = "17";
+          ra = "14";
+          rc = "16";
+          rs = "16";
+          rl = "14";
+        } else if (slider1.value >= 0 && slider1.value <= 7) {
+          rh = "19";
+          ra = "16";
+          rc = "18";
+          rs = "18";
+          rl = "16";
+        } else {
+          myError();
+        }
+        myText();
+        document.getElementById("dmg").innerHTML = " Damage of each bullet";
+        document.getElementById("stk").innerHTML = " Total Shots to Kill";
+      }
+
+      function myJ358() {
+        myFull1();
+        gun = 28;
+        d.innerHTML = "J358";//no=1 31=303.3333//lw=1 12=240//hw=1 48=360//mg=1 21=270
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "37";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else if (slider1.value >= 18 && slider1.value <= 35) {
+          rh = "51";
+          ra = "34";
+          rc = "34";
+          rs = "34";
+          rl = "34";
+        } else if (slider1.value >= 10 && slider1.value <= 20) {
+          rh = "60";
+          ra = "40";
+          rc = "40";
+          rs = "40";
+          rl = "40";
+        } else if (slider1.value >= 0 && slider1.value <= 17) {
+          rh = "90";
+          ra = "60";
+          rc = "60";
+          rs = "60";
+          rl = "60";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myJ358SP() {
+        myFull1();
+        gun = 29;
+        d.innerHTML = "J358 with Stopping Power Mag";
+        if (slider1.value >= 47 && slider1.value <= 100) {
+          rh = "52";
+          ra = "35";
+          rc = "35";
+          rs = "35";
+          rl = "35";
+        } else if (slider1.value >= 30 && slider1.value <= 46) {
+          rh = "66";
+          ra = "44";
+          rc = "44";
+          rs = "44";
+          rl = "44";
+        } else if (slider1.value >= 25 && slider1.value <= 29) {
+          rh = "75";
+          ra = "50";
+          rc = "50";
+          rs = "50";
+          rl = "50";
+        } else if (slider1.value >= 0 && slider1.value <= 24) {
+          rh = "105";
+          ra = "70";
+          rc = "70";
+          rs = "70";
+          rl = "70";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myMW11() {
+        myFull1();
+        gun = 30;
+        d.innerHTML = "MW11";//no=2 13=201.5151//lw=1 46=160.6060//hw=2 40=242.4242//mg=1 59=180.3030
+        if (slider1.value >= 31 && slider1.value <= 100) {
+          rh = "22";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 26 && slider1.value <= 30) {
+          rh = "23";
+          ra = "17";
+          rc = "17";
+          rs = "17";
+          rl = "17";
+        } else if (slider1.value >= 21 && slider1.value <= 25) {
+          rh = "28";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else if (slider1.value >= 0 && slider1.value <= 20) {
+          rh = "36";
+          ra = "26";
+          rc = "26";
+          rs = "26";
+          rl = "26";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myS36() {
+        tbs = 79.3220339;
+        myFull1();
+        gun = 31;
+        d.innerHTML = "S36";
+        if (slider1.value >= 41 && slider1.value <= 100) {
+          rh = "16";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 26 && slider1.value <= 40) {
+          rh = "18";
+          ra = "18";
+          rc = "18";
+          rs = "18";
+          rl = "18";
+        } else if (slider1.value >= 11 && slider1.value <= 25) {
+          rh = "23";
+          ra = "23";
+          rc = "23";
+          rs = "23";
+          rl = "23";
+        } else if (slider1.value >= 0 && slider1.value <= 10) {
+          rh = "25";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myUL736() {
+        tbs = 94.91525424;
+        myFull1();
+        gun = 32;
+        d.innerHTML = "UL736";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "24";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else if (slider1.value >= 26 && slider1.value <= 35) {
+          rh = "26";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 0 && slider1.value <= 25) {
+          rh = "30";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myRPD() {
+        tbs = 89.10411622;
+        myFull1();
+        gun = 33;
+        d.innerHTML = "RPD";
+        if (slider1.value >= 36 && slider1.value <= 100) {
+          rh = "24";
+          ra = "20";
+          rc = "20";
+          rs = "20";
+          rl = "20";
+        } else if (slider1.value >= 26 && slider1.value <= 35) {
+          rh = "25";
+          ra = "21";
+          rc = "21";
+          rs = "21";
+          rl = "21";
+        } else if (slider1.value >= 0 && slider1.value <= 25) {
+          rh = "31";
+          ra = "26";
+          rc = "26";
+          rs = "26";
+          rl = "26";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myM4LMG() {
+        tbs = 30.31476587;
+        myFull1();
+        gun = 34;
+        d.innerHTML = "M4LMG";
+        if (slider1.value >= 41 && slider1.value <= 100) {
+          rh = "23";
+          ra = "21";
+          rc = "21";
+          rs = "21";
+          rl = "21";
+        } else if (slider1.value >= 26 && slider1.value <= 40) {
+          rh = "24";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 11 && slider1.value <= 25) {
+          rh = "26";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "24";
+        } else if (slider1.value >= 0 && slider1.value <= 10) {
+          rh = "34";
+          ra = "31";
+          rc = "31";
+          rs = "31";
+          rl = "31";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myChopper() {
+        tbs = 80.16949153;
+        myFull1();
+        gun = 35;
+        d.innerHTML = "Chopper";
+        if (slider1.value >= 37 && slider1.value <= 100) {
+          rh = "20";
+          ra = "17";
+          rc = "17";
+          rs = "17";
+          rl = "17";
+        } else if (slider1.value >= 12 && slider1.value <= 36) {
+          rh = "25";
+          ra = "21";
+          rc = "21";
+          rs = "21";
+          rl = "21";
+        } else if (slider1.value >= 0 && slider1.value <= 11) {
+          rh = "30";
+          ra = "25";
+          rc = "25";
+          rs = "25";
+          rl = "25";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myBY15() {
+        tbs = 709;
+        pellets = 8;
+        myFull1();
+        gun = 36;
+        d.innerHTML = "BY15<br><br>Pellets: 8";
+        if (slider1.value >= 42 && slider1.value <= 100) {
+          rh = "0";
+          ra = "0";
+          rc = "0";
+          rs = "0";
+          rl = "0";
+
+        } else if (slider1.value >= 18 && slider1.value <= 41) {
+          rh = "16";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 14 && slider1.value <= 17) {
+          rh = "24";
+          ra = "24";
+          rc = "24";
+          rs = "24";
+          rl = "24";
+        } else if (slider1.value >= 8 && slider1.value <= 13) {
+          rh = "27";
+          ra = "27";
+          rc = "27";
+          rs = "27";
+          rl = "27";
+        } else if (slider1.value >= 0 && slider1.value <= 7) {
+          rh = "35";
+          ra = "35";
+          rc = "35";
+          rs = "35";
+          rl = "35";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myHS2126() {
+        pellets = 8;
+        tbs = 101.6949153;
+        tbb = 508.4745763;
+        bib = 4;
+        myFull1();
+        gun = 37;
+        d.innerHTML = "HS2126<br><br>Pellets: 8<br><br>4 round bursts";
+        if (slider1.value >= 34 && slider1.value <= 100) {
+          rh = "0";
+          ra = "0";
+          rc = "0";
+          rs = "0";
+          rl = "0";
+        } else if (slider1.value >= 10 && slider1.value <= 33) {
+          rh = "6";
+          ra = "6";
+          rc = "6";
+          rs = "6";
+          rl = "6";
+        } else if (slider1.value >= 0 && slider1.value <= 9) {
+          rh = "9";
+          ra = "9";
+          rc = "9";
+          rs = "9";
+          rl = "9";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myHS0405() {
+        pellets = 10;
+        tbs = 1203;
+        myFull1();
+        gun = 38;
+        d.innerHTML = "HS0405<br><br>Pellets: 10";
+        if (slider1.value >= 45 && slider1.value <= 100) {
+          rh = "0";
+          ra = "0";
+          rc = "0";
+          rs = "0";
+          rl = "0";
+        } else if (slider1.value >= 20 && slider1.value <= 44) {
+          rh = "10";
+          ra = "10";
+          rc = "10";
+          rs = "10";
+          rl = "10";
+        } else if (slider1.value >= 14 && slider1.value <= 19) {
+          rh = "16";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 10 && slider1.value <= 13) {
+          rh = "28";
+          ra = "28";
+          rc = "28";
+          rs = "28";
+          rl = "28";
+        } else if (slider1.value >= 0 && slider1.value <= 9) {
+          rh = "39";
+          ra = "39";
+          rc = "39";
+          rs = "39";
+          rl = "39";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myEcho() {
+        pellets = 8;
+        tbs = 264.8305085;
+        myFull1();
+        gun = 51;
+        d.innerHTML = "Echo<br><br>Pellets: 8";
+        if (slider1.value >= 33 && slider1.value <= 100) {
+          rh = "0";
+          ra = "0";
+          rc = "0";
+          rs = "0";
+          rl = "0";
+        } else if (slider1.value >= 13 && slider1.value <= 32) {
+          rh = "13";
+          ra = "13";
+          rc = "13";
+          rs = "13";
+          rl = "13";
+        } else if (slider1.value >= 9 && slider1.value <= 12) {
+          rh = "15";
+          ra = "15";
+          rc = "15";
+          rs = "15";
+          rl = "15";
+        } else if (slider1.value >= 0 && slider1.value <= 8) {
+          rh = "17";
+          ra = "17";
+          rc = "17";
+          rs = "17";
+          rl = "17";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myStriker() {
+        pellets = 8;
+        tbs = 198;//oki
+        myFull1();
+        gun = 39;
+        d.innerHTML = "Striker<br><br>Pellets: 8";
+        if (slider1.value >= 34 && slider1.value <= 100) {
+          rh = "0";
+          ra = "0";
+          rc = "0";
+          rs = "0";
+          rl = "0";
+        } else if (slider1.value >= 10 && slider1.value <= 33) {
+          rh = "7";
+          ra = "7";
+          rc = "7";
+          rs = "7";
+          rl = "7";
+        } else if (slider1.value >= 5 && slider1.value <= 9) {
+          rh = "10";
+          ra = "10";
+          rc = "10";
+          rs = "10";
+          rl = "10";
+        } else if (slider1.value >= 0 && slider1.value <= 5) {
+          rh = "12";
+          ra = "12";
+          rc = "12";
+          rs = "12";
+          rl = "12";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myKRM262() {
+        pellets = 8;
+        tbs = 934.3220339;
+        myFull1();
+        gun = 40;
+        d.innerHTML = "KRM262<br><br>Pellets: 8";
+        if (slider1.value >= 37 && slider1.value <= 100) {
+          rh = "0";
+          ra = "0";
+          rc = "0";
+          rs = "0";
+          rl = "0";
+        } else if (slider1.value >= 14 && slider1.value <= 36) {
+          rh = "16";
+          ra = "16";
+          rc = "16";
+          rs = "16";
+          rl = "16";
+        } else if (slider1.value >= 12 && slider1.value <= 13) {
+          rh = "22";
+          ra = "22";
+          rc = "22";
+          rs = "22";
+          rl = "22";
+        } else if (slider1.value >= 9 && slider1.value <= 11) {
+          rh = "34";
+          ra = "34";
+          rc = "34";
+          rs = "34";
+          rl = "34";
+        } else if (slider1.value >= 0 && slider1.value <= 8) {
+          rh = "36";
+          ra = "36";
+          rc = "36";
+          rs = "36";
+          rl = "36";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myLocus() {
+        tbs = 991;
+        myFull1();
+        gun = 41;
+        d.innerHTML = "Locus";
+        if (document.getElementById("MpBr1").checked == true) {
+          rh = "142";
+          ra = "142";
+          rc = "142";
+          rs = "95";
+          rl = "95";
+        } else if (document.getElementById("MpBr2").checked == true) {
+          rh = "143";
+          ra = "143";
+          rc = "143";
+          rs = "95";
+          rl = "95";
+        }
+        myText();
+      }
+
+      function myXPR50SP() {
+        tbs = 250;
+        myFull1();
+        gun = 43;
+        d.innerHTML = "XPR 50 with Stopping Power Mag";
+        rh = "110";
+        ra = "55";
+        rc = "110";
+        rs = "55";
+        rl = "55";
+        myText();
+      }
+
+      function myXPR50() {
+        tbs = 250;
+        myFull1();
+        gun = 42;
+        if (slider1.value >= 63 && slider1.value <= 100) {
+          d.innerHTML = "XPR 50";
+          rh = "75";
+          ra = "50";
+          rc = "50";
+          rs = "50";
+          rl = "50";
+        } else if (slider1.value >= 0 && slider1.value <= 62) {
+          d.innerHTML = "XPR 50";
+          rh = "110";
+          ra = "55";
+          rc = "55";
+          rs = "55";
+          rl = "55";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myArctic50() {
+        tbs = 482;
+        myFull1();
+        gun = 44;
+        d.innerHTML = "Arctic 50";
+        rh = "144";
+        ra = "126";
+        rc = "126";
+        rs = "90";
+        rl = "90";
+        myText();
+      }
+
+      function myArctic50SP() { //can anyone tell me the arctic 50 stopping power headshot damage in br? Mine comes out as 378 halp pls
+        tbs = 482;
+        myFull1();
+        gun = 50;
+        d.innerHTML = "Arctic 50 with Stopping Power Mag";
+        if (document.getElementById("MpBr1").checked == true) {
+          rh = "216";
+          ra = "131";
+          rc = "159";
+          rs = "178";
+          rl = "150";
+        } else if (document.getElementById("MpBr2").checked == true) {
+          rh = "387";
+          ra = "90";
+          rc = "90";
+          rs = "90";
+          rl = "90";
+        }
+        myText();
+      }
+
+      function myM21EBR() {
+        tbs = 293;
+        myFull1();
+        gun = 45;
+        if (slider1.value >= 75 && slider1.value <= 100) {
+          d.innerHTML = "M21 EBR";
+          rh = "82";
+          ra = "55";
+          rc = "55";
+          rs = "55";
+          rl = "55";
+        } else if (slider1.value >= 0 && slider1.value <= 74) {
+          d.innerHTML = "M21 EBR";
+          rh = "102";
+          ra = "60";
+          rc = "60";
+          rs = "60";
+          rl = "60";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myDLQ33() {
+        tbs = 1186;
+        myFull1();
+        gun = 46;
+        d.innerHTML = "DLQ33";
+        if (document.getElementById("MpBr1").checked == true) {
+          rh = "120";
+          ra = "120";
+          rc = "120";
+          rs = "120";
+          rl = "80";
+        } else if (document.getElementById("MpBr2").checked == true) {
+          rh = "144";
+          ra = "120";
+          rc = "120";
+          rs = "120";
+          rl = "80";
+        }
+        myText();
+      }
+
+      function myLocusSP() {
+        tbs = 991;
+        myFull1();
+        gun = 47;
+        d.innerHTML = "Locus with Stopping Power Mag";
+        if (document.getElementById("MpBr1").checked == true) {
+          rh = "143";
+          ra = "143";
+          rc = "143";
+          rs = "143";
+          rl = "95";
+        } else if (document.getElementById("MpBr2").checked == true) {
+          rh = "142";
+          ra = "142";
+          rc = "142";
+          rs = "142";
+          rl = "95";
+        }
+        myText();
+      }
+
+      function myOutlaw() {
+        tbs = 901;
+        myFull1();
+        gun = 48;
+        d.innerHTML = "Outlaw";
+        if (slider1.value >= 31 && slider1.value <= 100) {
+          rh = "112";
+          ra = "90";
+          rc = "112";
+          rs = "75";
+          rl = "75";
+        } else if (slider1.value >= 0 && slider1.value <= 30) {
+          rh = "135";
+          ra = "108";
+          rc = "135";
+          rs = "90";
+          rl = "90";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myKar98() {
+        tbs = 921;
+        myFull1();
+        gun = 49;
+        d.innerHTML = "Kilo Bolt-Action";
+        if (slider1.value >= 42 && slider1.value <= 100) { //hands 96
+          rh = "120";
+          ra = "104";
+          rc = "104";
+          rs = "80";
+          rl = "80";
+        } else if (slider1.value >= 0 && slider1.value <= 41) { //hands 120
+          rh = "127";
+          ra = "110";
+          rc = "110";
+          rs = "85";
+          rl = "85";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myKar98SP() {
+        tbs = 921;
+        myFull1();
+        gun = 56;
+        d.innerHTML = "Kilo Bolt-Action with Stopping Power Mag";
+        if (slider1.value >= 51 && slider1.value <= 100) { //hands 120
+          rh = "120";
+          ra = "104";
+          rc = "104";
+          rs = "120";
+          rl = "80";
+        } else if (slider1.value >= 0 && slider1.value <= 50) { //hands 127
+          rh = "127";
+          ra = "110";
+          rc = "110";
+          rs = "127";
+          rl = "85";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myNA45() {
+        tbs = 153;
+        myFull1();
+        gun = 53;
+        d.innerHTML = "NA45";
+        rh = "105";
+        ra = "30";
+        rc = "33";
+        rs = "30";
+        rl = "30";
+        myText();
+      }
+
+      function myPurifier() {
+        tbs = 153;
+        myFull1();
+        d.innerHTML = "Purifier";
+        if (slider1.value >= 14 && slider1.value <= 100) { //hands 120
+          rh = "0";
+          ra = "0";
+          rc = "0";
+          rs = "0";
+          rl = "0";
+        } else if (slider1.value >= 0 && slider1.value <= 13) { //hands 127
+          rh = "127";
+          ra = "110";
+          rc = "110";
+          rs = "127";
+          rl = "85";
+        } else {
+          myError();
+        }
+        myText();
+      }
+
+      function myGunsmith() {
+        if (gun == 0) {
+          if(el==1){
+            idkerr1 = 1;
+            errmes.innerHTML = "Select a weapon first to visit the gunsmithing page.";
+            $( function() {
+              $( "#dialog-message" ).dialog({
+                modal: true,
+                buttons: {
+                  Ok: function() {
+                    $( this ).dialog( "close" );
+                  }
+                }
+              });
+            throw new Error("Weapon not selected");
+            } );
+          } else{
+            var timerId1 = setInterval(function(){
+              if(idkerr1 == 1) {
+                clearInterval(timerId1);
+                return;
+              }
+              myGunsmith();
+            }, 500);
+          }
+        } else if (gun == 1) {
+          window.open("Redirected/index.html");
+        } else if (gun == 2) {
+          window.open("Redirected/index.html");
+        } else if (gun == 3) {
+          window.open("AK117/index.html");
+        } else if (gun == 4) {
+          window.open("Redirected/index.html");
+        } else if (gun == 5) {
+          window.open("Redirected/index.html");
+        } else if (gun == 6) {
+          window.open("Redirected/index.html");
+        } else if (gun == 7) {
+          window.open("Redirected/index.html");
+        } else if (gun == 8) {
+          window.open("Redirected/index.html");
+        } else if (gun == 9) {
+          window.open("Redirected/index.html");
+        } else if (gun == 10) {
+          window.open("Redirected/index.html");
+        } else if (gun == 11) {
+          window.open("Redirected/index.html");
+        } else if (gun == 12) {
+          window.open("Redirected/index.html");
+        } else if (gun == 13) {
+          window.open("Redirected/index.html");
+        } else if (gun == 14) {
+          window.open("Redirected/index.html");
+        } else if (gun == 15) {
+          window.open("Redirected/index.html");
+        } else if (gun == 16) {
+          window.open("Redirected/index.html");
+        } else if (gun == 17) {
+          window.open("Redirected/index.html");
+        } else if (gun == 18) {
+          window.open("Redirected/index.html");
+        } else if (gun == 19) {
+          window.open("Redirected/index.html");
+        } else if (gun == 20) {
+          window.open("Redirected/index.html");
+        } else if (gun == 21) {
+          window.open("Redirected/index.html");
+        } else if (gun == 22) {
+          window.open("Redirected/index.html");
+        } else if (gun == 23) {
+          window.open("Redirected/index.html");
+        } else if (gun == 24) {
+          window.open("Redirected/index.html");
+        } else if (gun == 25) {
+          window.open("Redirected/index.html");
+        } else if (gun == 26) {
+          window.open("Redirected/index.html");
+        } else if (gun == 27) {
+          window.open("Redirected/index.html");
+        } else if (gun == 28) {
+          window.open("Redirected/index.html");
+        } else if (gun == 29) {
+          window.open("Redirected/index.html");
+        } else if (gun == 30) {
+          window.open("Redirected/index.html");
+        } else if (gun == 31) {
+          window.open("Redirected/index.html");
+        } else if (gun == 32) {
+          window.open("Redirected/index.html");
+        } else if (gun == 33) {
+          window.open("Redirected/index.html");
+        } else if (gun == 34) {
+          window.open("Redirected/index.html");
+        } else if (gun == 35) {
+          window.open("Redirected/index.html");
+        } else if (gun == 36) {
+          window.open("Redirected/index.html");
+        } else if (gun == 37) {
+          window.open("Redirected/index.html");
+        } else if (gun == 38) {
+          window.open("Redirected/index.html");
+        } else if (gun == 39) {
+          window.open("Redirected/index.html");
+        } else if (gun == 40) {
+          window.open("Redirected/index.html");
+        } else if (gun == 41) {
+          window.open("Redirected/index.html");
+        } else if (gun == 42) {
+          window.open("Redirected/index.html");
+        } else if (gun == 43) {
+          window.open("Redirected/index.html");
+        } else if (gun == 44) {
+          window.open("Redirected/index.html");
+        } else if (gun == 45) {
+          window.open("Redirected/index.html");
+        } else if (gun == 46) {
+          window.open("Redirected/index.html");
+        } else if (gun == 47) {
+          window.open("Redirected/index.html");
+        } else if (gun == 48) {
+          window.open("Redirected/index.html");
+        } else if (gun == 49) {
+          window.open("Redirected/index.html");
+        } else if (gun == 50) {
+          window.open("Redirected/index.html");
+        } else if (gun == 51) {
+          window.open("Redirected/index.html");
+        } else if (gun == 52) {
+          window.open("Redirected/index.html");
+        } else if (gun == 53) {
+          window.open("Redirected/index.html");
+        } else if (gun == 54) {
+          window.open("Redirected/index.html");
+        } else if (gun == 55) {
+          window.open("Redirected/index.html");
+        } else if (gun == 56) {
+          window.open("Redirected/index.html");
+        } else if (gun == 57) {
+          window.open("Redirected/index.html");
+        } else {
+          myError();
+        }
+      }
+
+      function shhpbar() {
+        if (document.getElementById("MpHp3").checked == true && document.getElementById("MpBr1").checked == true) {
+          document.getElementById("HPBar").style.display = "block";
+        } else if (document.getElementById("BrHp3").checked == true && document.getElementById("MpBr2").checked == true) {
+          document.getElementById("HPBar").style.display = "block";
+        } else {
+          document.getElementById("HPBar").style.display = "none";
+        }
+      }
+
+      function selectOnlyThis(id) {
+        for (var i = 1; i <= 4; i++) {
+          document.getElementById("Check" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        eef();
+      }
+
+      function selectOnlyThis1(id) {
+        for (var i = 1; i <= 2; i++) {
+          document.getElementById("MpBr" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        if (document.getElementById("MpBr1").checked == true) {
+          document.getElementById("mpmode").style.display = "block";
+          document.getElementById("brmode").style.display = "none";
+          document.getElementById("myRange2").max = 100;
+
+          if (document.getElementById("myRange2").value > 100) {
+            document.getElementById("myRange2").value = 100;
+          }
+          if (hp > 100) {
+            hp = 100;
+          }
+          for (var i = 1; i <= 2; i++) {
+            if (document.getElementById("MpHp" + i).checked == true) {
+              selectOnlyThis2("MpHp" + i);
+              hp = document.getElementById("MpHp" + i).value;
+            }
+          }
+          if (document.getElementById("MpHp3").checked == true) {
+            selectOnlyThis2("MpHp3");
+            hp = document.getElementById('myRange2').value;
+          }
+        } else if (document.getElementById("MpBr2").checked == true) {
+          document.getElementById("mpmode").style.display = "none";
+          document.getElementById("brmode").style.display = "block";
+          document.getElementById("myRange2").max = 150;
+          if (document.getElementById("myRange2").value == 100) {
+            document.getElementById("myRange2").value = 150;
+          }
+          for (var i = 1; i <= 2; i++) {
+            if (document.getElementById("BrHp" + i).checked == true) {
+              selectOnlyThis3("BrHp" + i);
+              hp = document.getElementById("BrHp" + i).value;
+            }
+          }
+          if (document.getElementById("BrHp3").checked == true) {
+            selectOnlyThis2("BrHp3");
+            hp = document.getElementById('myRange2').value;
+          }
+        }
+        document.getElementById("demo2").innerHTML = document.getElementById("myRange2").value;
+        shhpbar();
+        eef();
+      }
+
+      function selectOnlyThis2(id) {
+        for (var i = 1; i <= 3; i++) {
+          document.getElementById("MpHp" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        shhpbar();
+        eef();
+      }
+
+      function selectOnlyThis3(id) {
+        for (var i = 1; i <= 3; i++) {
+          document.getElementById("BrHp" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        shhpbar();
+        eef();
+      }
+
+      function selectOnlyThis4(id) {
+        for (var i = 0; i <= 3; i++) {
+          document.getElementById("Vest" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        eef();
+      }
+
+      function selectOnlyThis5(id) {
+        for (var i = 0; i <= 2; i++) {
+          document.getElementById("Wbv" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        eef();
+      }
+
+      function selectOnlyThis6(id) {
+        for (var i = 0; i <= 2; i++) {
+          document.getElementById("Wb" + i).checked = false;
+        }
+        document.getElementById(id).checked = true;
+        eef();
+      }
+
+      window.addEventListener('DOMContentLoaded', (event) => {
+
+        //https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
+        //https://code.jquery.com/ui/1.12.1/jquery-ui.js
+        //https://files.codepedia.info/files/uploads/iScripts/html2canvas.js
+        var myscript1 = document.createElement('script');
+        myscript1.setAttribute('src', 'https://code.jquery.com/jquery-1.12.4.js');
+        document.head.appendChild(myscript1);/*
+        var myscript2 = document.createElement('script');
+        myscript2.setAttribute('src', 'https://files.codepedia.info/files/uploads/iScripts/html2canvas.js');
+        document.head.appendChild(myscript2);*/
+        var myscript3 = document.createElement('script');
+        myscript3.setAttribute('src', 'https://code.jquery.com/ui/1.12.1/jquery-ui.js');
+        document.head.appendChild(myscript3);
+        if(document.createStyleSheet) {
+          document.createStyleSheet('https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+        }
+        else {
+          var styles = "@import url(' https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css ');";
+          var newSS=document.createElement('link');
+          newSS.rel='stylesheet';
+          newSS.href='data:text/css,'+escape(styles);
+          document.getElementsByTagName("head")[0].appendChild(newSS);
+        }
+        var myscript4 = document.createElement('script');
+        myscript4.setAttribute('src', 'index.js');
+        document.head.appendChild(myscript4);//el=1;
+        myResize();
+        myResize();
+      });
+      window.addEventListener('load', function() {
+        el=1;
+      })
+      myResize();
+      myResize();
+
+    </script>
+  </body>
+
+</html>

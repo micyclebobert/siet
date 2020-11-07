@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>SMRS Practice</title>
+    <meta name="title" content="Stuff | CoDM Database">
+    <meta name="description" content="CoD Mobile actual weapon data. Efficiently designed Gunsmithing software with brilliant and exotic features. First and Fastest of it&#39;s kind.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://codmdatabase.ml/">
+    <meta property="og:title" content="&gt;Stuff | CoDM Database">
+    <meta property="og:description" content="CoD Mobile actual weapon data. Efficiently designed Gunsmithing software with brilliant and exotic features. First and Fastest of it&#39;s kind.">
+    <meta property="og:image" content="https://codmdatabase.ml/Display.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://codmdatabase.ml/">
+    <meta property="twitter:title" content="&gt;Stuff | CoDM Database">
+    <meta property="twitter:description" content="CoD Mobile actual weapon data. Efficiently designed Gunsmithing software with brilliant and exotic features. First and Fastest of it&#39;s kind.">
+    <meta property="twitter:image" content="https://codmdatabase.ml/Display.png">
+
+    <meta name="KeyWords" content="CoD Mobile, Damage, Ads time, Movement Speed, Call of Duty Mobile, Database, Gunsmithing, Time to kill, Shots to kill, Damage Range, Type 25, AK117, M16, KN44, AK47, ASM10, M4, BK57, LK24, ICR-1, MAN-O-WAR, HBRa3, DR-H, Rus79U, Chicom, PDW57, Razorback, MSMC, HG40, Pharo, GKS, Corodite, QQ9, DLQ33, Arctic .50, XPR 50, Locus, Outlaw, M21 EBR, Kilo Bolt Action Rifle, BY15, HS2126, HS0405, KRM262, Striker, MW11, J358, Assault Rifle, Sub-Machine Guns, Sniper Rifle, Shotgun, Marksman Rifle, Pistols, Sniper, AR, SMG, Operator Skills, MP, BR">
+
+    <link rel="icon" type="image/png" sizes="16×16" href="https://www.codmdatabase.ml/Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="SMRS_Practice.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body onResize="myresize()">
+    <div id="m">
+      <div id="he" class="header">
+        <div class="page-header">
+          <a href="https://www.codmdatabase.ml/stuff/alpha/index.html" class="logo">CoDM Database</a>
+          <div class="header-right">
+            <a href="https://www.codmdatabase.ml/index.html">Stats</a>
+            <a href="https://www.codmdatabase.ml/MP/index.html">MP</a>
+            <a href="https://www.codmdatabase.ml/BR/index.html">BR</a>
+            <a href="https://www.codmdatabase.ml/Stuff/index.html">Stuff</a>
+            <a href="https://www.codmdatabase.ml/Contact/index.html">Contact</a>
+            <a href="https://www.codmdatabase.ml/About/index.html">About</a>
+          </div>
+        </div>
+      </div>
+      <nobr><h2 style="position: absolute;top: 60px;left: 420px;">Shots fired: <span id="tota">0</span></h2></nobr>
+      <nobr><h2 style="position: absolute;top: 60px;left: 840px;">Hits: <span id="hits">0</span></h2></nobr>
+      <div id="ll" style="position: absolute;animation-timing-function: linear;top: 388px;" class="mm">
+        <img id="jjj" src="../../Picture2.png" width="16" height="42" alt="">
+      </div>
+      <div id="a3" style="position: absolute;top: 380px;left: 626px;display: none;" class="mm22">
+        <img src="../../5.png" alt="" />
+      </div>
+      <div id="a4" style="position: absolute;top: 370px;left: 604px;display: none;">
+        <img src="../../6.png" width="100" alt="" />
+      </div>
+      <div id="a1" style="position: absolute;top: 255px;left: 561px;">
+        <img src="../../SMRS ads.png" width="719" height="516" alt="">
+      </div>
+      <div id="a2" style="position: absolute;top: 293px;left: 367px;display: none;">
+        <img src="../../4.png" width="913" height="478" alt="" />
+      </div>
+      <button type="button" id="fire" class="btn" style="position: absolute;top: 120px;left: 50px;" onclick="Fire()">Shoot</button>
+      <button type="button" id="reset" class="btn" style="position: absolute;top: 120px;left: 1150px;" onclick="clean()">Reset</button>
+    </div>
+    <div id="dialog" style="display: none">
+      <p>Please use landscape mode if possible.</p>
+    </div>
+    <script type="text/javascript" src="SMRS_Practice.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+.row {
+    display: flex;
+}
+/* Create three equal columns that sits next to each other */
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+</style>
+<title>CoD Mobile | Help</title>
+</head>
+
+<body>
+<h2>Vertical Recoil:</h2>
+<p style="padding-left:20px">Vertical Recoil means the up and down recoil. Easy to control after a bit of practice. It only goes upwards.</p>
+<div>
+<style>
+.collapsible {
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: dodgerblue;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+<button class="collapsible" style="padding-left:20px; padding-right:20px;">Example</button>
+<div class="content">
+<div class="row">
+  <div class="column">
+    <h3>Before Vertical Recoil:</h3>
+    <img src="Before.png" width="100%" height="auto" alt=""/></div>
+  <div class="column">
+    <h3>After Vertical Recoil:</h3>
+    <img src="After Vert.png" width="100%" height="auto" alt=""/> </div></div>
+</div>
+<h2>Lateral Recoil:</h2>
+<p style="padding-left:20px">Lateral Recoil means the side to side recoil (Horizontal recoil). Harder to control becuse it may go towards the left or the right randomly.</p>
+<div>
+<button class="collapsible" style="padding-left:20px; padding-right:20px;">Example</button>
+<div class="content">
+<div class="row">
+  <div class="column">
+    <h3>Before Lateral Recoil:</h3>
+    <img src="Before.png" width="100%" height="auto" alt=""/></div>
+  <div class="column">
+    <h3>After Lateral Recoil:</h3>
+    <img src="After Lat.png" width="100%" height="auto" alt=""/> </div></div>
+</div>
+	<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+<h2>Recoil deviation:</h2>
+<p style="padding-left:20px">From season 9 each gun has a fixed recoil pattern. Recoil deviation is how much the recoil changes from it's fixed recoil pattern.</p>
+<h2>Aim Shake:</h2>
+	<p style="padding-left:20px">When shooting with any type of scopes/sights the reticle moves away from the center in random direction. It is almost impossible to control and can't be seen when using iron sights. It may make you miss easy shots at longer distances. Tap fire to prevent missing shots at longer range with high aim shake weapon. It is called Ads Bullet Spread Accuracy inside the game.</p>
+<h2>Ads Time:</h2>
+<p style="padding-left:20px">The time taken to open your scope. When you are not ads-ed/completely ads-ed the bullets will travel in random direction and not where you are trying to aim.</p>
+<h2>Movement Speed:</h2>
+<p style="padding-left:20px">The maximum distance you can move in 1 seconds is your movement speed. m/s means meters per second.</p>
+<h2>Ads Movement Speed:</h2>
+	<p style="padding-left:20px">The maximum distance you can move in 1 seconds, while ads-ing, is your ads movement speed. Better known by "strafing speed"</p>
+<h2>Sprint to Fire Speed:</h2>
+	<p style="padding-left:20px">The time taken to start shooting from running.</p>
+<h2>Miscellaneous:</h2>
+	<p style="padding-left:20px"><span style="color:#2196F3;">Less </span><b>Ads Time </b>is <span style="color:#2196F3;">good</span>.</p>
+	<p style="padding-left:20px"><span style="color:#2196F3;">Less </span><b>Vertical Recoil </b>is <span style="color:#2196F3;">good</span>.</p>
+	<p style="padding-left:20px"><span style="color:#2196F3;">Less </span><b>Lateral Recoil </b>is <span style="color:#2196F3;">good</span>.</p>
+	<p style="padding-left:20px"><span style="color:#2196F3;">More </span><b>Movement speed </b>is <span style="color:#2196F3;">good</span>.</p>
+	<p style="padding-left:20px"><span style="color:#2196F3;">More </span><b>Ads Movement speed </b>is <span style="color:#2196F3;">good</span>.</p>
+	<p style="padding-left:20px"><span style="color:#2196F3;">More </span><b>Ammo </b>is <span style="color:#2196F3;">good</span> for <em>killing more </em>enemies or <em>missing a few shots</em>.</p>
+	<p style="padding-left:20px"><span style="color:#2196F3;">More </span><b>Rate of Fire </b>is <span style="color:#2196F3;">good</span> if you need to <em>recover </em>from <em>missing a few shots</em>.</p>
+	<p style="padding-left:20px"><span style="color:#2196F3;">Less </span><b>Time between Shots </b>is <span style="color:#2196F3;">good</span> if you need to <em>recover </em>from <em>missing a few shots</em>.</p>
+<p style="padding-left:20px"><span style="color:#2196F3;">Less </span><b>Aim Shake </b>is <span style="color:#2196F3;">good</span> for <em>hitting shots</em> more often <em>at longer ranges</em>.</p>
+	<p style="padding-left:20px"><span style="color:#2196F3;">Less </span><b>Sprint to Fire Speed </b>is <span style="color:#2196F3;">good</span> for <em>hip-firing</em>.</p>
+</body>
+</html>
